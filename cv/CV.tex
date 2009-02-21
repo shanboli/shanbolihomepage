@@ -1,0 +1,415 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %% 
+%% LaTeX to get the ``??'' replaced with the number of the last page  %% 
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article} 
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{textcomp}
+\usepackage{amssymb}
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=1in,               % 1 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+%% This gives us fun enumeration environments. compactitem will be nice.
+\usepackage{paralist}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+%
+% Usage: \makeheading{name}
+%
+% Place at top of document. It should be the first thing.
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+%
+% Follow this section IMMEDIATELY with the first line of the section
+% text. Do not put whitespace in between. That is, do this:
+%
+%       \section{My Information}
+%       Here is my information.
+%
+% and NOT this:
+%
+%       \section{My Information}
+%
+%       Here is my information.
+%
+% Otherwise the top of the section header will not line up with the top
+% of the section. Of course, using a single comment character (%) on
+% empty lines allows for the function of the first example with the
+% readability of the second example.
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section 
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{Shanbo Li}
+
+\section{Contact Information}
+%
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table \textasciitilde
+%       (adjust it to your liking; default is 1.85in).
+%
+\newlength{\rcollength}\setlength{\rcollength}{2.85in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+Rum 0738            & \textit{Tel:} 0046 70-4646157 \\
+Hanstav\"{a}gen 51           & \textit{E-mail:}
+\href{mailto:shanboli@gmail.com}{shanboli@gmail.com}\\
+164 53 Kista, Sweden    
+&\textit{Homepage:}\href{http://www.isk.kth.se/~shanbo/}{http://www.isk.kth.se/\textasciitilde shanbo}\\
+\end{tabular}
+
+\section{Nationality}
+%
+Chinese
+
+\section{Data of birth}
+%
+1984-08-10
+
+\section{Gender}
+%
+male
+
+\section{Education}
+%
+\href{http://www.kth.se/}{\textbf{Royal Institute of Technology / Kungliga Tekniska H\"{o}gskolan (KTH)}},\\ 
+\textbf{Stockholm, Sweden}
+\begin{outerlist}
+\item[] Master's Degree,\\ 
+        {Software Engineering of Distributed Systems} \\
+        expected graduation date: April 2009
+\end{outerlist}
+\blankline
+
+\href{http://www.njtu.edu.cn/en/}{\textbf{Beijing Jiaotong University}},\\
+\textbf{Beijing, China}
+\begin{outerlist}
+\item[] 4-year Bachelor's Degree in Engineering, \\
+             {Computer Science}, September 2003 - June 2007
+\end{outerlist}       
+\section{Social Skills}
+{\textbf{Full of Team Spirit}}\\
+{\textbf{Good Ability of Communication}}\\
+{\textbf{Cope with Pressure}}\\
+{\textbf{Willing to Learn New Technology}}\\
+{\textbf{Good at Written and Spoken English (CET-6)}}\\
+{\textbf{Travelling 7 days a week is Acceptable}}\\
+
+\section{Knowledge Domain}
+{\textbf{IP Multimedia Subsystem (IMS)}}\\ 
+{\textbf{SIP}}, {\textbf{SDP}}, {\textbf{VoIP}}\\ 
+{\textbf{TCP, UDP, HTTP}}\\ 
+{\textbf{Network Security}}\\ 
+
+\section{Technical Skills} 
+%
+{\textbf{6 Years of Java Programming Experience:}}\\
+Very Good at Java EE/ Java SE/ Java ME
+
+\blankline
+
+{\textbf{Database development and Management:}}\\
+JDBC, SQL, MySQL, Oracle
+
+\blankline
+
+{\textbf{Java API/Frameworks:}}\\
+Hibernate, EJB3, Spring2.5, JSF, Struts, Swing, Apache\nobreak\space commons\nobreak\space logging,\\ Log4j, JUnit4 
+
+\blankline
+
+
+{\textbf{Skill set of Web Services development:}}\\
+SOAP, Metro, AXIS, RESTful Web Service, BPEL, jUDDI
+
+
+\blankline
+
+
+{\textbf{Skill set of Web Site development:}}\\
+XHTML, XHTML MP, HTML, CSS, Javascript, JSON, AJAX, JSP, JSF, XML,\\ Ruby \nobreak on \nobreak Rails, PHP 
+
+\blankline
+
+{\textbf{Application Server:}}\\
+Apache Tomcat, Glassfish, JBoss, Apache HTTP Server
+
+\blankline
+
+{\textbf{Software Development Concept:}}\\
+Object-oriented Programming, UML, Design \nolinebreak Patterns
+, Scrum, Extreme Programming,\\ Agile Software Development
+
+\blankline
+
+{\textbf{Project management and comprehension tool:}}\\
+Ant, Maven
+
+\blankline
+
+
+{\textbf{Source Code Management:}}\\
+Subversion, CVS
+
+\blankline
+
+{\textbf{Development Tools:}}\\
+Eclipse, Intellij IDEA, NetBeans, IBM\circledR\space Rational\circledR\space Software Architect (RSA), JBuilder
+
+
+\blankline
+
+{\textbf{Other Programming Experience:}}\\
+Ruby/Ruby on Rails, C/C++, PHP, Erlang, Prolog
+
+\blankline
+
+{\textbf{Documentation Tools:}}\\ 
+\LaTeX{}, Microsoft Office,
+and other common productivity packages for Windows,\\  Mac\nolinebreak OS\nolinebreak X, and
+Linux platforms
+
+\blankline
+
+{\textbf{Operating Systems:}}\\
+Windows, Mac OS X, Linux
+
+
+
+\section{Professional Projects}
+%
+\href{http://www.ericsson.com/}{\textbf{Ericsson AB}}, \href{http://www.ericsson.com/mobilityworld}{Developer Program Ericsson Mobility World} ,
+Sweden
+\begin{outerlist}
+
+\item[] \textit{Java Programmer}%
+        \hfill \textbf{March 2008 to February 2009}
+\begin{innerlist}
+\item[] {\textbf{Web Call SDK}}
+\begin{innerlist}
+\item Description:\\
+A Java EE web application for making VoIP calls. It supplies both browser client and Java ME client. 
+\item[\textbullet] Technologies:\\
+IMS, VoIP, SIP, SDP, 3PCC, Web Application, Web Service, MIDlet
+\item[\textbullet] API/Framework and Database:\\
+Java EE, Metro, MjSIP, JMF, Mobile Front Controller, Tomcat, JSR 172, JSR 75, MySQL
+\end{innerlist}
+\end{innerlist}
+\end{outerlist}
+\blankline
+
+
+\section{Academic Projects}
+\textbf{Message Integrity}, KTH, Sweden \hfill \textbf{October 2008 to December 2008}
+\begin{outerlist}
+\item Description:\\
+A Java application with both server and client for message integrity.
+\item Technologies:\\
+Java, Message Integrity, Hash Function, SHA, MD5
+\item API/Framework and Database:\\
+Java SE, Spring, Swing
+\end{outerlist}
+
+\blankline
+
+\textbf{Bouncer}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item Description:\\
+A Packet bouncer that "bounces" connections from one machine to another.
+\item Technologies:\\
+Java, TCP, UDP, FTP
+\item API/Framework and Database:\\
+Jpcap
+\end{outerlist}
+
+\blankline
+
+\textbf{RUDP}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item Description:\\
+A reliable transport protocol that runs on top of UDP which supplies multi-files to multi-users.
+\item Technologies:\\
+C, UDP
+\item API/Framework and Database:\\
+C
+\end{outerlist}
+
+\blankline
+
+\textbf{Sip Speaker}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item Description:\\
+A SIP user agent (UA) that waits for incoming calls and answers them when received.
+\item Technologies:\\
+Java, SIP, VoIP
+\item API/Framework and Database:\\
+JMF, FreeTTS
+\end{outerlist}
+
+\blankline
+
+\textbf{Web Mail}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item Description:\\
+A web server for sending e-mails. No 3rd party library.
+\item Technologies:\\
+Java, HTTP, SMTP, DNS, MIME
+\item API/Framework and Database:\\
+Java
+\end{outerlist}
+
+
+Cool Streaming Demo
+Missionaries and Cannibals
+Flight Test
+
+\begin{outerlist}
+
+\item abc
+
+\end{outerlist}
+
+\section{Private Projects}
+scallope
+
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
