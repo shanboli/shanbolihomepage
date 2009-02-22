@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=latex 2009.2.2)  21 FEB 2009 11:13
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.2.1)  21 FEB 2009 21:45
 entering extended mode
 **CV.tex
 (CV.tex
@@ -161,13 +161,11 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 ("C:\My_Software\MiKTeX 2.7\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: dvips.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\My_Software\MiKTeX 2.7\tex\latex\graphics\dvips.def"
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-)
-("C:\My_Software\MiKTeX 2.7\tex\latex\graphics\dvipsnam.def"
-File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+("C:\My_Software\MiKTeX 2.7\tex\latex\graphics\pdftex.def"
+File: pdftex.def 2007/06/12 v0.04h Graphics/color for pdfTeX
+\Gread@gobject=\count93
 ))
 ("C:\My_Software\MiKTeX 2.7\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2007/11/20 v6.77g Hypertext links for LaTeX
@@ -177,8 +175,8 @@ Package: hycolor 2007/04/11 v1.1 Code for color options of hyperref/bookmark (H
 O)
 )
 \@linkdim=\dimen109
-\Hy@linkcounter=\count93
-\Hy@pagecounter=\count94
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
 
 ("C:\My_Software\MiKTeX 2.7\tex\latex\confproc\pd1enc.def"
 File: pd1enc.def 1999/03/30 v0.3 PDFDocEncoding (Heiko Oberdiek)
@@ -232,7 +230,7 @@ Package pdftexcmds Info: LuaTeX not detected on input line 139.
 Package: kvsetkeys 2007/09/29 v1.3 Key value parser with default handler suppor
 t (HO)
 )
-\Fld@menulength=\count95
+\Fld@menulength=\count96
 \Field@Width=\dimen110
 \Fld@charsize=\dimen111
 \Field@toks=\toks18
@@ -247,24 +245,17 @@ Package: atbegshi 2007/09/09 v1.6 At begin shipout hook (HO)
 
 ("C:\My_Software\MiKTeX 2.7\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2007/12/12 v1.6 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode not detected.
+Package ifpdf Info: pdfTeX in pdf mode detected.
 ))
-\Hy@abspage=\count96
-\c@Item=\count97
-\c@Hfootnote=\count98
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
 )
-*hyperref using default driver hdvips*
-("C:\My_Software\MiKTeX 2.7\tex\latex\hyperref\hdvips.def"
-File: hdvips.def 2007/11/20 v6.77g Hyperref driver for dvips
-
-("C:\My_Software\MiKTeX 2.7\tex\latex\hyperref\pdfmark.def"
-File: pdfmark.def 2007/11/20 v6.77g Hyperref definitions for pdfmark specials
-\pdf@docset=\toks19
-\pdf@box=\box26
-\pdf@toks=\toks20
-\pdf@defaulttoks=\toks21
-\Fld@listcount=\count99
-))
+*hyperref using default driver hpdftex*
+("C:\My_Software\MiKTeX 2.7\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2007/11/20 v6.77g Hyperref driver for pdfTeX
+\Fld@listcount=\count100
+)
 Package hyperref Info: Option `colorlinks' set `true' on input line 104.
 Package hyperref Info: Option `breaklinks' set `true' on input line 104.
  (CV.aux)
@@ -307,7 +298,7 @@ truedimen: --
 includehead: --
 includefoot: --
 includemp: true
-driver: 
+driver: pdftex
 -------------------- Page layout dimensions and switches
 \paperwidth  614.295pt
 \paperheight 794.96999pt
@@ -329,15 +320,27 @@ driver:
 \@reversemargintrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring ON on input line 176.
 
-("C:\My_Software\MiKTeX 2.7\tex\latex\hyperref\nameref.sty"
+("C:\My_Software\MiKTeX 2.7\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen112
+\scratchbox=\box26
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen113
+\MPnumerator=\count105
+\everyMPtoPDFconversion=\toks19
+)
+Package hyperref Info: Link coloring ON on input line 176.
+ ("C:\My_Software\MiKTeX 2.7\tex\latex\hyperref\nameref.sty"
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 ("C:\My_Software\MiKTeX 2.7\tex\latex\oberdiek\refcount.sty"
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count100
+\c@section@level=\count106
 )
 LaTeX Info: Redefining \ref on input line 176.
 LaTeX Info: Redefining \pageref on input line 176.
@@ -355,7 +358,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 189.
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
 Overfull \hbox (18.0pt too wide) in paragraph at lines 187--196
-[][] [] 
+[] [] 
  []
 
 
@@ -370,14 +373,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
 [1
 
-] [2] AED: lastpage setting LastPage [3] (CV.aux) ) 
+{C:/ProgramData/MiKTeX/2.7/pdftex/config/pdftex.map}] [2]
+AED: lastpage setting LastPage [3] (CV.aux) ) 
 Here is how much of TeX's memory you used:
- 4931 strings out of 95341
- 69797 string characters out of 1184285
- 136841 words of memory out of 1500000
- 8075 multiletter control sequences out of 110000
- 7234 words of font info for 28 fonts, out of 1200000 for 2000
+ 5122 strings out of 95340
+ 71650 string characters out of 1184258
+ 134039 words of memory out of 1500000
+ 8252 multiletter control sequences out of 110000
+ 7402 words of font info for 29 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
- 36i,13n,43p,250b,371s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 36i,13n,43p,250b,363s stack positions out of 5000i,500n,10000p,200000b,5000s
+{C:/My_Software/MiKTeX 2.7/dvips/c
+m-super/cm-super-ts1.enc}<C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx
+10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx12.pfb><C:/My_Soft
+ware/MiKTeX 2.7/fonts/type1/bluesky/cm/cmcsc10.pfb><C:/My_Software/MiKTeX 2.7/f
+onts/type1/bluesky/cm/cmr10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/
+cm/cmr7.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmti10.pfb><C:/My
+_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmtt10.pfb><C:/My_Software/MiKTeX 2
+.7/fonts/type1/bluesky/ams/msam10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/pu
+blic/cm-super/sfrm1000.pfb>
+Output written on CV.pdf (3 pages, 77808 bytes).
+PDF statistics:
+ 114 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 131072)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on CV.dvi (3 pages, 15696 bytes).
