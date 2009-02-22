@@ -107,6 +107,16 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{narrow}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}} 
 
 % The title (name) with a horizontal rule under it
 %
@@ -147,6 +157,7 @@
          \marginpar{
          \raggedright \scshape #1}#2}
 
+
 % An itemize-style list with lots of space between items
 \newenvironment{outerlist}[1][\enskip\textbullet]%
         {\begin{itemize}[#1]}{\end{itemize}%
@@ -159,6 +170,13 @@
         \setlength{\partopsep}{0pt}%
         \setlength{\topsep}{0pt}}}
         {\end{list}\vspace{-.6\baselineskip}}
+
+\newenvironment{king}
+{\rule{1ex}{1ex}%
+\hspace{\stretch{1}}}
+{\hspace{\stretch{1}}%
+\rule{1ex}{1ex}}
+
 
 % An itemize-style list with little space between items
 \newenvironment{innerlist}[1][\enskip\textbullet]%
@@ -223,6 +241,166 @@ male
 \item[] 4-year Bachelor's Degree in Engineering, \\
              {Computer Science}, September 2003 - June 2007
 \end{outerlist}       
+
+\section{Professional Projects}
+%
+\href{http://www.ericsson.com/}{\textbf{Ericsson AB}}, \href{http://www.ericsson.com/mobilityworld}{Developer Program Ericsson Mobility World} ,
+Sweden
+\begin{outerlist}
+
+\item[] \textit{Java Programmer}%
+        \hfill \textbf{March 2008 to February 2009}
+
+\item[] {\textbf{Web Call SDK}}
+\begin{outerlist}
+\item \textit{Description:}\\
+A Java EE web application for making VoIP calls. It supplies both browser client and Java ME client. 
+\item \textit{Technologies:}\\
+IMS, VoIP, SIP, SDP, 3PCC, Web Application, Web Service, MIDlet
+\item \textit{API/Framework:}\\
+Java EE, Metro, MjSIP, JMF, Mobile Front Controller, JSR\nobreak\space 172, JSR\nobreak\space 75,\\ Tomcat, MySQL
+\end{outerlist}
+\end{outerlist}
+\blankline
+
+\section{Private Projects}
+\href{http://code.google.com/p/scallope/}{\textbf{Scallope}} \hfill \textbf{October 2008 to December 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+a application acts as a web client login to sip provider's web page and make VoIP calls. 
+\item \texttt{API/Framework:}
+Java, Apache common HTTP.
+\end{outerlist}
+
+\section{Academic Projects}
+\textbf{Message Integrity}, KTH, Sweden \hfill \textbf{October 2008 to December 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A Java application with both server and client for message integrity.
+\item \texttt{API/Framework:}
+Java, Spring, Swing
+\end{outerlist}
+\blankline
+
+\textbf{Bouncer}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{innerlist}
+\item \texttt{Description:}
+A Packet bouncer that "bounces" connections from one machine to another.
+\item \texttt{API/Framework:}
+Java, Jpcap
+\end{innerlist}
+
+\blankline
+
+\textbf{RUDP}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A reliable transport protocol that runs on top of UDP which supplies multi-files to multi-users.
+\item \texttt{API/Framework:}
+C
+\end{outerlist}
+
+\blankline
+
+\textbf{Sip Speaker}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A SIP user agent (UA) that waits for incoming calls and answers them when received.
+\item \texttt{API/Framework:}
+Java, JMF, FreeTTS
+\end{outerlist}
+
+\blankline
+
+\textbf{Web Mail}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A web server for sending e-mails. No 3rd party library.
+\item \texttt{API/Framework:}
+Java
+\end{outerlist}
+
+\blankline
+
+\textbf{Web Mail}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A web server for sending e-mails. No 3rd party library.
+\item \texttt{API/Framework:}
+Java
+\end{outerlist}
+
+\blankline
+
+\textbf{Flight Ticket Reservation}, KTH, Sweden \hfill \textbf{January 2008 to March 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A web service for booking flight tickets.
+\item \texttt{API/Framework:}
+Java EE, JSF, Web Service (Metro), BPEL, JPA, MySQL 
+\end{outerlist}
+
+\blankline
+
+\textbf{E-Shop}, KTH, Sweden \hfill \textbf{November 2007 to January 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A web shop
+\item \texttt{API/Framework:}
+Java EE, Struts, MySQL
+\end{outerlist}
+
+\blankline
+
+\textbf{Forex}, KTH, Sweden \hfill \textbf{November 2007 to January 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A web site for checking currency exchange rate
+\item \texttt{API/Framework:}
+Java EE, JSF, EJB3
+\end{outerlist}
+
+\blankline
+
+\textbf{Hangman}, KTH, Sweden \hfill \textbf{November 2007 to January 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A Java ME game with a server.
+\item \texttt{API/Framework:}
+Java ME, Java SE, Swing
+\end{outerlist}
+
+\blankline
+
+\textbf{Market Place}, KTH, Sweden \hfill \textbf{November 2007 to January 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A Java application for simulating a market place.
+\item \texttt{API/Framework:}
+Java SE, Java RMI, JPA, MySQL
+\end{outerlist}
+
+\blankline
+
+\textbf{iAd}, KTH, Sweden \hfill \textbf{November 2007 to January 2008}
+\begin{outerlist}
+\item \texttt{Description:}
+A resource management system for advertisment company, which is Developed with Extreme Programming.
+\item \texttt{API/Framework:}
+Ruby on Rails, MySQL
+\end{outerlist}
+
+\blankline
+
+\textbf{Anti-Counterfeiting System}, BJTU, China \hfill \textbf{September 2006 to January 2007}
+\begin{outerlist}
+\item \texttt{Description:}
+A online anti-conterfeiting system
+\item \texttt{API/Framework:}
+Java, Struts, Spring, Hibernate, MySQL
+\end{outerlist}
+
+
 \section{Social Skills}
 {\textbf{Full of Team Spirit}}\\
 {\textbf{Good Ability of Communication}}\\
@@ -311,93 +489,40 @@ Linux platforms
 Windows, Mac OS X, Linux
 
 
+\newpage
+\section{References}
+\begin{minipage}[t]{0.9\textwidth}
+\begin{itemize}
+\item Peter Yeung \\ Chief Strategist - Strategy \& Development \\ Developer Program, Ericsson Mobility World \\ Ericsson \\
+  +46 1071 36652\\
+  \href{mailto:peter.yeung@ericsson.com}{\tt peter.yeung@ericsson.com}
+\end{itemize}
+\begin{itemize}
+\item Mihhail Matskin, PhD \\ Professor of Software Engineering  \\ Royal Institute of Technology (KTH), Sweden \\
+  +46 8 790 4128 \\
+  \href{mailto:misha@kth.se}{\tt misha@kth.se}
+\end{itemize}
+\begin{itemize}
+\item Nima Dokoohaki \\ Junior Researcher  \\ Royal Institute of Technology (KTH), Sweden \\
+  +46 8 790 4149 \\
+  \href{mailto:nimad@kth.se}{\tt nimad@kth.se}
+\end{itemize}
+\end{minipage}
 
-\section{Professional Projects}
-%
-\href{http://www.ericsson.com/}{\textbf{Ericsson AB}}, \href{http://www.ericsson.com/mobilityworld}{Developer Program Ericsson Mobility World} ,
-Sweden
-\begin{outerlist}
-
-\item[] \textit{Java Programmer}%
-        \hfill \textbf{March 2008 to February 2009}
-
-\item[] {\textbf{Web Call SDK}}
-\begin{outerlist}
-\item \textit{Description:}\\
-A Java EE web application for making VoIP calls. It supplies both browser client and Java ME client. 
-\item \textit{Technologies:}\\
-IMS, VoIP, SIP, SDP, 3PCC, Web Application, Web Service, MIDlet
-\item \textit{API/Framework:}\\
-Java EE, Metro, MjSIP, JMF, Mobile Front Controller, JSR\nobreak\space 172, JSR\nobreak\space 75,\\ Tomcat, MySQL
-\end{outerlist}
-\end{outerlist}
-\blankline
-
-
-\section{Academic Projects}
-\textbf{Message Integrity}, KTH, Sweden \hfill \textbf{October 2008 to December 2008}
-\begin{outerlist}
-\item \texttt{Description:}
-A Java application with both server and client for message integrity.
-\item \texttt{API/Framework:}
-Java, Spring, Swing
-\end{outerlist}
-\blankline
-
-\textbf{Bouncer}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
-\begin{innerlist}
-\item \texttt{Description:}
-A Packet bouncer that "bounces" connections from one machine to another.
-\item \texttt{API/Framework:}
-Java, Jpcap
-\end{innerlist}
-
-\blankline
-
-\textbf{RUDP}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
-\begin{outerlist}
-\item \texttt{Description:}
-A reliable transport protocol that runs on top of UDP which supplies multi-files to multi-users.
-\item \texttt{API/Framework:}
-C
-\end{outerlist}
-
-\blankline
-
-\textbf{Sip Speaker}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
-\begin{outerlist}
-\item \texttt{Description:}
-A SIP user agent (UA) that waits for incoming calls and answers them when received.
-\item \texttt{API/Framework:}
-Java, JMF, FreeTTS
-\end{outerlist}
-
-\blankline
-
-\textbf{Web Mail}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
-\begin{outerlist}
-\item \texttt{Description:}
-A web server for sending e-mails. No 3rd party library.
-\item \texttt{API/Framework:}
-Java
-\end{outerlist}
-
-\blankline
-
-\textbf{Web Mail}, KTH, Sweden \hfill \textbf{March 2008 to May 2008}
-\begin{outerlist}
-\item \texttt{Description:}
-A web server for sending e-mails. No 3rd party library.
-\item \texttt{API/Framework:}
-Java
-\end{outerlist}
+\bigskip
+\bigskip
 
 
+% Footer
 
-
-\section{Private Projects}
-scallope
-
+\begin{narrow}{0.7in}{2.0in}
+\begin{center}
+\begin{footnotesize}
+Last updated: \today \\
+\href{http://www.isk.kth.se/shanbo/CV.pdf}{\tt http://www.isk.kth.se/\textasciitilde shanbo/CV.pdf}
+\end{footnotesize}
+\end{center}
+\end{narrow}
 
 
 \end{document}

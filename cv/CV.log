@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.2.1)  21 FEB 2009 21:45
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.2.1)  22 FEB 2009 14:40
 entering extended mode
 **CV.tex
 (CV.tex
@@ -259,28 +259,28 @@ File: hpdftex.def 2007/11/20 v6.77g Hyperref driver for pdfTeX
 Package hyperref Info: Option `colorlinks' set `true' on input line 104.
 Package hyperref Info: Option `breaklinks' set `true' on input line 104.
  (CV.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 176.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 176.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 194.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 194.
 
 
 ("C:\My_Software\MiKTeX 2.7\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
 -------------------- Geometry parameters
 paper: letterpaper
 landscape: --
@@ -333,7 +333,7 @@ driver: pdftex
 \MPnumerator=\count105
 \everyMPtoPDFconversion=\toks19
 )
-Package hyperref Info: Link coloring ON on input line 176.
+Package hyperref Info: Link coloring ON on input line 194.
  ("C:\My_Software\MiKTeX 2.7\tex\latex\hyperref\nameref.sty"
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -342,59 +342,59 @@ Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
 \c@section@level=\count106
 )
-LaTeX Info: Redefining \ref on input line 176.
-LaTeX Info: Redefining \pageref on input line 176.
+LaTeX Info: Redefining \ref on input line 194.
+LaTeX Info: Redefining \pageref on input line 194.
  (CV.out) (CV.out)
 \@outlinefile=\write3
 \AtBeginShipoutBox=\box27
 \rcollength=\skip60
-LaTeX Font Info:    Try loading font information for U+msa on input line 189.
+LaTeX Font Info:    Try loading font information for U+msa on input line 207.
  ("C:\My_Software\MiKTeX 2.7\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 189.
+LaTeX Font Info:    Try loading font information for U+msb on input line 207.
 
 ("C:\My_Software\MiKTeX 2.7\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-Overfull \hbox (18.0pt too wide) in paragraph at lines 187--196
+Overfull \hbox (18.0pt too wide) in paragraph at lines 205--214
 [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--239
-
  []
 
 [1
 
 {C:/ProgramData/MiKTeX/2.7/pdftex/config/pdftex.map}] [2]
-AED: lastpage setting LastPage [3] (CV.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 405--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
+
+ []
+
+[3] [4] AED: lastpage setting LastPage [5] (CV.aux) ) 
 Here is how much of TeX's memory you used:
- 5122 strings out of 95340
- 71650 string characters out of 1184258
- 134039 words of memory out of 1500000
- 8252 multiletter control sequences out of 110000
- 7402 words of font info for 29 fonts, out of 1200000 for 2000
+ 5135 strings out of 95340
+ 71763 string characters out of 1184258
+ 136150 words of memory out of 1500000
+ 8260 multiletter control sequences out of 110000
+ 7869 words of font info for 31 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
  36i,13n,43p,250b,363s stack positions out of 5000i,500n,10000p,200000b,5000s
-{C:/My_Software/MiKTeX 2.7/dvips/c
-m-super/cm-super-ts1.enc}<C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx
-10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx12.pfb><C:/My_Soft
-ware/MiKTeX 2.7/fonts/type1/bluesky/cm/cmcsc10.pfb><C:/My_Software/MiKTeX 2.7/f
-onts/type1/bluesky/cm/cmr10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/
-cm/cmr7.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmti10.pfb><C:/My
-_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmtt10.pfb><C:/My_Software/MiKTeX 2
-.7/fonts/type1/bluesky/ams/msam10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/pu
-blic/cm-super/sfrm1000.pfb>
-Output written on CV.pdf (3 pages, 77808 bytes).
+{C:/My_Software/MiKTeX 2.7
+/dvips/cm-super/cm-super-ts1.enc}<C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky
+/cm/cmbx10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx12.pfb><C:
+/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmcsc10.pfb><C:/My_Software/MiKT
+eX 2.7/fonts/type1/bluesky/cm/cmr10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/
+bluesky/cm/cmr7.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmr8.pfb>
+<C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmti10.pfb><C:/My_Software/Mi
+KTeX 2.7/fonts/type1/bluesky/cm/cmtt10.pfb><C:/My_Software/MiKTeX 2.7/fonts/typ
+e1/bluesky/cm/cmtt8.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/ams/msam
+10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on CV.pdf (5 pages, 94645 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 131072)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 131072)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
