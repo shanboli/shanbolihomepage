@@ -305,6 +305,11 @@ ul.bigLinks li a:hover span.desc {
     border-top: 1px solid #BDEDDE;
 }
 
+.language {
+    padding: 1px 2px;
+    background: #99ff99;
+}
+
 .highlight:hover {
     padding: 1px 2px;
     background: #d9f5da;
