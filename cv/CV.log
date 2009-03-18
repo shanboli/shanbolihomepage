@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.2.24)  7 MAR 2009 23:15
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.2.1)  18 MAR 2009 22:59
 entering extended mode
 **CV.tex
 (CV.tex
@@ -282,13 +282,13 @@ LaTeX Font Info:    ... okay on input line 194.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
 LaTeX Font Info:    ... okay on input line 194.
 -------------------- Geometry parameters
-paper: letterpaper
+paper: a4paper
 landscape: --
 twocolumn: --
 twoside: --
 asymmetric: --
-h-parts: 72.26999pt, 469.75502pt, 72.26999pt
-v-parts: 72.26999pt, 650.43001pt, 72.26999pt
+h-parts: 71.13188pt, 455.24411pt, 71.13188pt
+v-parts: 71.13188pt, 702.78308pt, 71.13188pt
 hmarginratio: --
 vmarginratio: --
 lines: --
@@ -300,18 +300,18 @@ includefoot: --
 includemp: true
 driver: pdftex
 -------------------- Page layout dimensions and switches
-\paperwidth  614.295pt
-\paperheight 794.96999pt
-\textwidth  379.41754pt
-\textheight 650.43001pt
-\oddsidemargin  90.33748pt
-\evensidemargin 90.33748pt
-\topmargin  -37.0pt
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  364.19531pt
+\textheight 702.78308pt
+\oddsidemargin  89.91069pt
+\evensidemargin 89.91069pt
+\topmargin  -38.1381pt
 \headheight 12.0pt
 \headsep    25.0pt
 \footskip   30.0pt
-\marginparwidth 86.72377pt
-\marginparsep   3.61371pt
+\marginparwidth 86.7809pt
+\marginparsep   4.2679pt
 \columnsep  10.0pt
 \skip\footins  9.0pt plus 4.0pt minus 2.0pt
 \hoffset 0.0pt
@@ -377,20 +377,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 388--393
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 395--398
 
  []
 
+[2]
+Overfull \hbox (7.91655pt too wide) in paragraph at lines 433--435
+\OT1/cmr/m/n/10 Object-oriented Pro-gram-ming, UML, De-sign Pat-terns, Ex-treme
+ Pro-gram-ming, Scrum,
+ []
+
 [3] AED: lastpage setting LastPage [4] (CV.aux) ) 
 Here is how much of TeX's memory you used:
- 5151 strings out of 95340
- 71997 string characters out of 1184257
- 136150 words of memory out of 1500000
- 8274 multiletter control sequences out of 110000
+ 5150 strings out of 95340
+ 71987 string characters out of 1184258
+ 136151 words of memory out of 1500000
+ 8273 multiletter control sequences out of 110000
  7869 words of font info for 31 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
- 36i,14n,43p,250b,274s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 36i,13n,43p,250b,274s stack positions out of 5000i,500n,10000p,200000b,5000s
 {C:/My_Software/MiKTeX 2.7/dvi
 ps/cm-super/cm-super-ts1.enc}<C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/
 cmbx10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx12.pfb><C:/My_
@@ -402,7 +408,7 @@ My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy10.pfb><C:/My_Software/MiKTeX
 luesky/cm/cmtt10.pfb><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/cm/cmtt8.pf
 b><C:/My_Software/MiKTeX 2.7/fonts/type1/bluesky/ams/msam10.pfb><C:/My_Software
 /MiKTeX 2.7/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on CV.pdf (4 pages, 98066 bytes).
+Output written on CV.pdf (4 pages, 98100 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 131072)
