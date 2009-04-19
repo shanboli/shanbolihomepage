@@ -118,8 +118,7 @@
     \input supp-mis.tex
     \input supp-pdf.tex
     \pdfimageresolution=600
-    
-    %\usepackage{thumbpdf} 
+%    \usepackage{thumbpdf} 
 \else
     \usepackage{hyperref}
 \fi
@@ -186,6 +185,9 @@
 \newcommand{\myepigraph}[4]{%
 	\epigraph{\epitext #1\episkip}{\epiauthor #2\\\epititle #3 \epidate(#4)}\noindent}
 
+\newenvironment{dedication}
+      {\cleardoublepage \thispagestyle{empty} \vspace*{\stretch{1}} \begin{center} \em}
+      {\end{center} \vspace*{\stretch{3}} \clearpage} 
 % *************** Other ***************
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
