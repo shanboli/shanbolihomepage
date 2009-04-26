@@ -1,20 +1,18 @@
-\BOOKMARK [0][-]{section*.1}{Contents}{}
-\BOOKMARK [-1][-]{part.1}{Theory}{}
-\BOOKMARK [0][-]{chapter.1}{Introduction}{part.1}
-\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}
-\BOOKMARK [1][-]{section.1.2}{Problem}{chapter.1}
-\BOOKMARK [0][-]{chapter.2}{Requirement}{part.1}
-\BOOKMARK [0][-]{chapter.3}{Study}{part.1}
-\BOOKMARK [0][-]{chapter.4}{Solution}{part.1}
-\BOOKMARK [-1][-]{part.2}{Implementation}{}
-\BOOKMARK [0][-]{chapter.5}{Web Call Architecture}{part.2}
-\BOOKMARK [0][-]{chapter.6}{SIP Call Component}{part.2}
-\BOOKMARK [0][-]{chapter.7}{Web Application}{part.2}
-\BOOKMARK [0][-]{chapter.8}{Web Service Interface}{part.2}
-\BOOKMARK [0][-]{chapter.9}{Web Service Client}{part.2}
-\BOOKMARK [0][-]{chapter.10}{Conclusion}{part.2}
-\BOOKMARK [0][-]{section*.4}{Bibliography}{part.2}
-\BOOKMARK [0][-]{appendix.A}{Appendix title}{part.2}
-\BOOKMARK [0][-]{appendix*.5}{List of Symbols and Abbreviations}{part.2}
-\BOOKMARK [0][-]{section*.6}{List of Figures}{part.2}
-\BOOKMARK [0][-]{section*.7}{List of Tables}{part.2}
+\BOOKMARK [0][-]{section*.1}{\376\377\000C\000o\000n\000t\000e\000n\000t\000s}{}
+\BOOKMARK [0][-]{chapter.1}{\376\377\0001\000\040\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{}
+\BOOKMARK [1][-]{section.1.1}{\376\377\0001\000.\0001\000\040\000B\000a\000c\000k\000g\000r\000o\000u\000n\000d}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{\376\377\0001\000.\0002\000\040\000P\000r\000o\000b\000l\000e\000m}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{\376\377\0002\000\040\000R\000e\000q\000u\000i\000r\000e\000m\000e\000n\000t}{}
+\BOOKMARK [0][-]{chapter.3}{\376\377\0003\000\040\000S\000t\000u\000d\000y}{}
+\BOOKMARK [0][-]{chapter.4}{\376\377\0004\000\040\000S\000o\000l\000u\000t\000i\000o\000n}{}
+\BOOKMARK [0][-]{chapter.5}{\376\377\0005\000\040\000W\000e\000b\000\040\000C\000a\000l\000l\000\040\000A\000r\000c\000h\000i\000t\000e\000c\000t\000u\000r\000e}{}
+\BOOKMARK [0][-]{chapter.6}{\376\377\0006\000\040\000S\000I\000P\000\040\000C\000a\000l\000l\000\040\000C\000o\000m\000p\000o\000n\000e\000n\000t}{}
+\BOOKMARK [0][-]{chapter.7}{\376\377\0007\000\040\000W\000e\000b\000\040\000A\000p\000p\000l\000i\000c\000a\000t\000i\000o\000n}{}
+\BOOKMARK [0][-]{chapter.8}{\376\377\0008\000\040\000W\000e\000b\000\040\000S\000e\000r\000v\000i\000c\000e\000\040\000I\000n\000t\000e\000r\000f\000a\000c\000e}{}
+\BOOKMARK [0][-]{chapter.9}{\376\377\0009\000\040\000W\000e\000b\000\040\000S\000e\000r\000v\000i\000c\000e\000\040\000C\000l\000i\000e\000n\000t}{}
+\BOOKMARK [0][-]{chapter.10}{\376\377\0001\0000\000\040\000C\000o\000n\000c\000l\000u\000s\000i\000o\000n}{}
+\BOOKMARK [0][-]{section*.4}{\376\377\000B\000i\000b\000l\000i\000o\000g\000r\000a\000p\000h\000y}{}
+\BOOKMARK [0][-]{appendix.A}{\376\377\000A\000\040\000A\000p\000p\000e\000n\000d\000i\000x\000\040\000t\000i\000t\000l\000e}{}
+\BOOKMARK [0][-]{appendix*.5}{\376\377\000L\000i\000s\000t\000\040\000o\000f\000\040\000S\000y\000m\000b\000o\000l\000s\000\040\000a\000n\000d\000\040\000A\000b\000b\000r\000e\000v\000i\000a\000t\000i\000o\000n\000s}{}
+\BOOKMARK [0][-]{section*.6}{\376\377\000L\000i\000s\000t\000\040\000o\000f\000\040\000F\000i\000g\000u\000r\000e\000s}{}
+\BOOKMARK [0][-]{section*.7}{\376\377\000L\000i\000s\000t\000\040\000o\000f\000\040\000T\000a\000b\000l\000e\000s}{}

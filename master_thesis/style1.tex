@@ -191,5 +191,15 @@
 % *************** Other ***************
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 %\renewcommand{\familydefault}{\sfdefault}
+\usepackage{url}
+
+%% Define a new 'leo' style for the package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
 
 % *************** End of document style definition ***************

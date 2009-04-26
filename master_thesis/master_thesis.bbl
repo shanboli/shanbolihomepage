@@ -1,14 +1,15 @@
 \begin{thebibliography}{1}
 
-\bibitem{Led2004}
-S.~Deorowicz and A.~Sk\'orczy\'nski.
-\newblock {\em LEd documentation}.
-\newblock 2004.
+\bibitem{RFC3725}
+Peterson J. Schulzrinne~H. Rosenberg, J. and G.~Camarillo.
+\newblock Best current practices for third party call control (3pcc) in the
+  session initiation protocol (sip), {RFC} 3725.
+\newblock \\ \url{http://www.ietf.org/rfc/rfc3725.txt}, April 2004.
 
 \bibitem{RFC3261}
 Schulzrinne H. Camarillo G. Johnston A. Peterson J. Sparks R. Handley~M.
   Rosenberg, J. and E.~Schooler.
-\newblock {\em {SIP}: Session Initiation Protocol}.
-\newblock RFC 3261, June 2002.
+\newblock {SIP}: Session initiation protocol, {RFC} 3261.
+\newblock \\ \url{http://www.ietf.org/rfc/rfc3261.txt}, June 2002.
 
 \end{thebibliography}

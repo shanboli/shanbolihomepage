@@ -4,22 +4,20 @@
 \select@language {english}
 \select@language {english}
 \contentsline {chapter}{Contents}{1}{section*.1}
-\contentsline {part}{\partnumberline {I}Theory}{5}{part.1}
-\contentsline {chapter}{\chapternumberline {1}Introduction}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Background}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Problem}{7}{section.1.2}
-\contentsline {chapter}{\chapternumberline {2}Requirement}{9}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}Study}{11}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Solution}{13}{chapter.4}
-\contentsline {part}{\partnumberline {II}Implementation}{15}{part.2}
-\contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{17}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}SIP Call Component}{19}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Web Application}{21}{chapter.7}
-\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{23}{chapter.8}
-\contentsline {chapter}{\chapternumberline {9}Web Service Client}{25}{chapter.9}
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{27}{chapter.10}
-\contentsline {chapter}{Bibliography}{29}{section*.4}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{33}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{35}{appendix*.5}
-\contentsline {chapter}{List of Figures}{36}{section*.6}
-\contentsline {chapter}{List of Tables}{37}{section*.7}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Problem}{5}{section.1.2}
+\contentsline {chapter}{\chapternumberline {2}Requirement}{7}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Study}{9}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Solution}{11}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{13}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}SIP Call Component}{15}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Web Application}{17}{chapter.7}
+\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{19}{chapter.8}
+\contentsline {chapter}{\chapternumberline {9}Web Service Client}{21}{chapter.9}
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{23}{chapter.10}
+\contentsline {chapter}{Bibliography}{25}{section*.4}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{29}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{31}{appendix*.5}
+\contentsline {chapter}{List of Figures}{32}{section*.6}
+\contentsline {chapter}{List of Tables}{33}{section*.7}
