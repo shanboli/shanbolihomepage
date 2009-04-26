@@ -5,4 +5,10 @@ S.~Deorowicz and A.~Sk\'orczy\'nski.
 \newblock {\em LEd documentation}.
 \newblock 2004.
 
+\bibitem{RFC3261}
+Schulzrinne H. Camarillo G. Johnston A. Peterson J. Sparks R. Handley~M.
+  Rosenberg, J. and E.~Schooler.
+\newblock {\em {SIP}: Session Initiation Protocol}.
+\newblock RFC 3261, June 2002.
+
 \end{thebibliography}
