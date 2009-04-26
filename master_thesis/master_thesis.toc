@@ -14,12 +14,9 @@
 \contentsline {chapter}{\chapternumberline {7}Chapter's title}{17}{chapter.7}
 \contentsline {chapter}{\chapternumberline {8}Chapter's title}{19}{chapter.8}
 \contentsline {chapter}{\chapternumberline {9}Chapter's title}{21}{chapter.9}
-\contentsline {chapter}{\chapternumberline {10}Chapter's title}{23}{chapter.10}
-\contentsline {chapter}{\chapternumberline {11}Chapter's title}{25}{chapter.11}
-\contentsline {chapter}{\chapternumberline {12}Chapter's title}{27}{chapter.12}
-\contentsline {chapter}{Bibliography}{29}{section*.4}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{33}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{35}{appendix*.5}
-\contentsline {chapter}{List of Figures}{36}{section*.6}
-\contentsline {chapter}{List of Tables}{37}{section*.7}
-\contentsline {chapter}{Index}{39}{section*.8}
+\contentsline {chapter}{Bibliography}{23}{section*.4}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{27}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{29}{appendix*.5}
+\contentsline {chapter}{List of Figures}{30}{section*.6}
+\contentsline {chapter}{List of Tables}{31}{section*.7}
+\contentsline {chapter}{Index}{33}{section*.8}
