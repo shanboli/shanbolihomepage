@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{WhatIsWeb2dot0}
+Tim O'Reilly.
+\newblock What is web 2.0.
+\newblock \\
+  \url{http://www.oreillynet.com/pub/a/oreilly/tim/news/2005/09/30/what-is-web%
+-20.html}, September 2005.
+
 \bibitem{RFC3725}
 Peterson J. Schulzrinne~H. Rosenberg, J. and G.~Camarillo.
 \newblock Best current practices for third party call control (3pcc) in the
@@ -11,5 +18,10 @@ Schulzrinne H. Camarillo G. Johnston A. Peterson J. Sparks R. Handley~M.
   Rosenberg, J. and E.~Schooler.
 \newblock {SIP}: Session initiation protocol, {RFC} 3261.
 \newblock \\ \url{http://www.ietf.org/rfc/rfc3261.txt}, June 2002.
+
+\bibitem{Web2dot0}
+Wikipedia.
+\newblock Web 2.0.
+\newblock \\ \url{http://en.wikipedia.org/wiki/Web_2.0}.
 
 \end{thebibliography}

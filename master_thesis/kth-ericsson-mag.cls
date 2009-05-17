@@ -86,7 +86,7 @@
   \begingroup
   \sffamily
   \pagestyle{empty}
-  \renewcommand*{\thepage}{title-\arabic{page}}
+  \renewcommand*{\thepage}{\thetitle - \arabic{page}}
   \noindent
   \parbox[b][0.6\textheight]{\textwidth}{\centering\noindent
     \scalebox{0.192}{\includegraphics{\thekthlogo}}\par

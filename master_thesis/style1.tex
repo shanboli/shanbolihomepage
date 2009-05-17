@@ -107,8 +107,9 @@
 % *************** Enable hyperlinks in PDF documents ***************
 \ifpdf
     \pdfcompresslevel=9
-        \usepackage[plainpages=false,pdfpagelabels,bookmarksnumbered,%
+        \usepackage[plainpages=false,pdfpagelabels,bookmarksnumbered,%        
         colorlinks=true,%
+        hyperfootnotes=true,%
         linkcolor=red,%
         citecolor=sepia,%
         filecolor=maroon,%
@@ -117,7 +118,7 @@
         unicode]{hyperref} 
     \input supp-mis.tex
     \input supp-pdf.tex
-    \pdfimageresolution=600
+    \pdfimageresolution=1200
 %    \usepackage{thumbpdf} 
 \else
     \usepackage{hyperref}
@@ -189,7 +190,7 @@
       {\cleardoublepage \thispagestyle{empty} \vspace*{\stretch{1}} \begin{center} \em}
       {\end{center} \vspace*{\stretch{3}} \clearpage} 
 % *************** Other ***************
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 %\renewcommand{\familydefault}{\sfdefault}
 \usepackage{url}
 
