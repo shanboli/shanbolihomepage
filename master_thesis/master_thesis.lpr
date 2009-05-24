@@ -16,13 +16,13 @@ CharSet=def
 FileName=master_thesis.tex
 FoldedLines=
 IsMainFile=yes
-Opened=yes
+Opened=no
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=5
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -44,13 +44,13 @@ CharSet=def
 FileName=style1.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
-ScrollPos.Y=1
+ScrollPos.Y=22
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=4
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -156,13 +156,13 @@ CharSet=def
 FileName=abstract.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=2
 UseThesaurus=yes
 WrapLine=yes
 
@@ -190,7 +190,7 @@ ScrollPos.Y=1
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=1
+TabOrder=6
 UseThesaurus=yes
 WrapLine=yes
 
@@ -240,13 +240,13 @@ CharSet=def
 FileName=chap03\chap03.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -274,7 +274,7 @@ ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=3
+TabOrder=7
 UseThesaurus=yes
 WrapLine=yes
 
@@ -296,13 +296,13 @@ CharSet=def
 FileName=chap05\chap05.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=8
 UseThesaurus=yes
 WrapLine=yes
 
@@ -324,13 +324,13 @@ CharSet=def
 FileName=ack\ack.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=3
 UseThesaurus=yes
 WrapLine=yes
 
@@ -520,13 +520,13 @@ CharSet=def
 FileName=app1\app1.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=4
 UseThesaurus=yes
 WrapLine=yes
 
@@ -576,13 +576,13 @@ CharSet=def
 FileName=back.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=2
+ScrollPos.Y=1
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=5
 UseThesaurus=yes
 WrapLine=yes
 
@@ -638,7 +638,7 @@ ScrollPos.Y=1
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=2
+TabOrder=9
 UseThesaurus=yes
 WrapLine=yes
 
@@ -660,13 +660,13 @@ CharSet=def
 FileName=master_thesis.bib
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
-ScrollPos.Y=1
+ScrollPos.Y=4
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=no
-TabOrder=6
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -729,9 +729,6 @@ WrapLine=no
 [Files]
 Count=26
 
-[ProjectDictionary]
-handley
-
 [Project]
 ActiveFilters=
 
@@ -791,7 +788,7 @@ Magnifier=5
 Page=13
 PaperHeight=297
 PaperWidth=210
-Zoom=6
+Zoom=3
 
 [Project\Dictionaries\1033\0]
 Active=Yes
