@@ -40,7 +40,7 @@ public class PNG2PDF {
 
         for (String pngFile : pngFiles) {
 
-            if (renew) {
+            if (!renew) {
                 String epsFile = pngFile.substring(0,pngFile.length()-3) + "eps";
                 if (allFiles.contains(epsFile)) {
                     System.out.println(epsFile + " already exist.");
