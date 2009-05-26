@@ -7,23 +7,32 @@
 
 
 \subsection{VoIP Service Provider}
-\label{sec:BackgroundStudy:VoIPMarket}
+\label{sec:BackgroundStudy:VoIPMarket:VoIPServiceProvider}
 
 \subsection{VoIP Client}
+\label{sec:BackgroundStudy:VoIPMarket:VoIPClient}
 
 \subsection{Solution Provider}
+\label{sec:BackgroundStudy:VoIPMarket:SolutionProvider}
 
 
 
 \section{Third Party Call Control}
+\label{sec:BackgroundStudy:ThirdPartyCallControl}
 
-In the traditional telephony context, third party call control allows one entity (which we call the controller) to set up and manage a communications relationship between two or ore other parties.  Third party call control (referred to as \textbf{3pcc}\label{sym:3pcc}) is often used for operator
-services (where an operator creates a call that connects two participants together) and conferencing.\cite{RFC3725}
+In the traditional telephony context, third party call control allows one entity (which we call the controller) to set up and manage a communications relationship between two or ore other parties.  Third party call control (referred to as \textbf{3pcc}\label{sym:3pcc}) is often used for operator services (where an operator creates a call that connects two participants together) and conferencing.\cite{RFC3725}
 
 \begin{figure}
 \centering
 \epsfig{file=chap03/resources/3pcc, width=4in}
 \caption{Third party call control}
+\label{fig:ThirdPartyCallControl}
 \end{figure}
+
+A general work flow of 3pcc is shown in Figure \ref{fig:ThirdPartyCallControl}. The initial side of the phone is the \textit{controller}. The \textit{controller} sends a signal ``connect \textit{client A} and \textit{client B}'' to the server \ding{172}. And the server establishes a call between \textit{client A} and \textit{B} \ding{173}.
+
+\section{3pcc in VoIP}
+\label{sec:BackgroundStudy:3pccInVoIP}
+
 
 % ********** End of chapter 3 **********

@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{TheJavaProgrammingLanguage}
+Mary Campione and Kathy Walrath.
+\newblock The java programming language.
+\newblock \\
+  \url{http://java.sun.com/docs/books/tutorial/getStarted/intro/definition.htm%
+l}, February 2008.
+
 \bibitem{WhatIsWeb2dot0}
 Tim O'Reilly.
 \newblock What is web 2.0.
