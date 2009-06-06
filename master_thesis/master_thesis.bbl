@@ -38,4 +38,9 @@ Wikipedia.
 \newblock Web 2.0.
 \newblock \\ \url{http://en.wikipedia.org/wiki/Web_2.0}.
 
+\bibitem{MobileFrontController}
+Peter Yeung and P{\"{a}}r Johansson.
+\newblock Mobile {F}ront {C}ontroller.
+\newblock \\ \url{http://www.ericsson.com}, March 2009.
+
 \end{thebibliography}
