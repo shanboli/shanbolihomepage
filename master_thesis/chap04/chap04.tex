@@ -16,13 +16,25 @@ The source code of Java is first written in plain text files which ends with the
 
 \subsection{SIP}
 \label{sec:Solution:InvolvedTechnology:SIP}
+\label{sym:SIP}
 
-``Session Initiation Protocol (SIP\label{sym:SIP}) is an application-layer control (signaling) protocol for creating, modifying, and terminating sessions with one or more participants. These sessions include Internet telephone calls, multimedia distribution, and multimedia conferences.''\cite{RFC3261}
+``Session Initiation Protocol (SIP) is an application-layer control (signaling) protocol for creating, modifying, and terminating sessions with one or more participants. These sessions include Internet telephone calls, multimedia distribution, and multimedia conferences.''\cite{RFC3261}
+
+SIP is the format of control signal in VoIP. It describes the sender, receiver. A agent use SIP messages to register on a proxy, establish session or close session. 
+
+\subsection{SDP}
+\label{sec:Solution:InvolvedTechnology:SDP}
+\label{sym:SDP}
+
+SDP is short for Session Description Protocol. ``It is intended for describing multimedia sessions for the purposes of session announcement, session invitation, and other forms of multimedia session initiation.''\cite{RFC4566}
+
+A SIP message may carry a SDP message. The SDP message contains protocol version, session name, information, and most important, the connection data and media descriptions. This supplies a way to manipulate the connection of media flow. 
 
 \subsection{Mobile Front Controller}
 \label{sec:Solution:InovlvedTechnology:MobileFrontController}
 
-``Mobile Front Controller (MFC) is a light-weight Java EE web application framework for creating web applications for web browsing and mobile browsing.''\cite{MobileFrontController}
+``Mobile Front Controller (MFC) is a light-weight Java EE web application framework for creating web applications for web browsing and mobile browsing.'' \cite{MobileFrontController}
+
 
 
 \subsection{Web Service}

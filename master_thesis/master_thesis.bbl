@@ -14,6 +14,11 @@ Paul~D. Kretkowski.
   \url{http://www.voip-news.com/feature/state-voip-market-2008-031008/}, March
   2008.
 
+\bibitem{RFC4566}
+C.~Perkins M.~Handley, V.~Jacobson.
+\newblock {SDP}: {S}ession {D}escription {P}rotocol , {RFC} 4566.
+\newblock \\ \url{http://www.ietf.org/rfc/rfc4566.txt}, July 2006.
+
 \bibitem{WhatIsWeb2dot0}
 Tim O'Reilly.
 \newblock What is web 2.0.
@@ -23,14 +28,14 @@ Tim O'Reilly.
 
 \bibitem{RFC3725}
 Peterson J. Schulzrinne~H. Rosenberg, J. and G.~Camarillo.
-\newblock Best current practices for third party call control (3pcc) in the
-  session initiation protocol (sip), {RFC} 3725.
+\newblock {B}est {C}urrent {P}ractices for {T}hird {P}arty {C}all {C}ontrol
+  (3pcc) in the {S}ession {I}nitiation {P}rotocol (sip), {RFC} 3725.
 \newblock \\ \url{http://www.ietf.org/rfc/rfc3725.txt}, April 2004.
 
 \bibitem{RFC3261}
 Schulzrinne H. Camarillo G. Johnston A. Peterson J. Sparks R. Handley~M.
   Rosenberg, J. and E.~Schooler.
-\newblock {SIP}: Session initiation protocol, {RFC} 3261.
+\newblock {SIP}: {S}ession {I}nitiation {P}rotocol, {RFC} 3261.
 \newblock \\ \url{http://www.ietf.org/rfc/rfc3261.txt}, June 2002.
 
 \bibitem{Web2dot0}

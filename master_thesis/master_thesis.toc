@@ -25,8 +25,9 @@
 \contentsline {section}{\numberline {4.1}Involved Technology}{11}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Java}{11}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}SIP}{11}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Mobile Front Controller}{11}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Web Service}{12}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.3}SDP}{11}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Mobile Front Controller}{12}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Web Service}{12}{subsection.4.1.5}
 \contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{13}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}SIP Call Component}{15}{chapter.6}
 \contentsline {chapter}{\chapternumberline {7}Web Application}{17}{chapter.7}
