@@ -7,36 +7,30 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Task}{3}{section.1.2}
-\contentsline {chapter}{\chapternumberline {2}Requirement}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Programming Language}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Simple}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Stability}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Reusability}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}Extendibility}{6}{section.2.5}
-\contentsline {section}{\numberline {2.6}Integration}{6}{section.2.6}
-\contentsline {chapter}{\chapternumberline {3}Background Study}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}VoIP Market}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}VoIP Service Provider}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}VoIP Client}{7}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Solution Provider}{8}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Third Party Call Control}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Why Web Call SDK?}{9}{section.3.3}
-\contentsline {chapter}{\chapternumberline {4}Solution}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Involved Technology}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Java}{11}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}SIP}{11}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}SDP}{12}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Mobile Front Controller}{12}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Web Service}{12}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Java ME}{12}{subsection.4.1.6}
-\contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{13}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}SIP Call Component}{15}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Web Application}{17}{chapter.7}
-\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{19}{chapter.8}
-\contentsline {chapter}{\chapternumberline {9}Web Service Client}{21}{chapter.9}
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{23}{chapter.10}
-\contentsline {chapter}{Bibliography}{25}{section*.4}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{29}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{31}{appendix*.5}
-\contentsline {chapter}{List of Figures}{32}{section*.6}
-\contentsline {chapter}{List of Tables}{33}{section*.7}
+\contentsline {section}{\numberline {1.3}Terminology}{4}{section.1.3}
+\contentsline {chapter}{\chapternumberline {2}Requirement}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Programming Language}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Simple}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Stability}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Reusability}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Extendibility}{8}{section.2.5}
+\contentsline {section}{\numberline {2.6}Integration}{8}{section.2.6}
+\contentsline {chapter}{\chapternumberline {3}Background Study}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}VoIP Market}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}VoIP Service Provider}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}VoIP Client}{9}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Solution Provider}{10}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Third Party Call Control}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Why Web Call SDK?}{11}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}Solution}{13}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{15}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}SIP Call Component}{17}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Web Application}{19}{chapter.7}
+\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{21}{chapter.8}
+\contentsline {chapter}{\chapternumberline {9}Web Service Client}{23}{chapter.9}
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{25}{chapter.10}
+\contentsline {chapter}{Bibliography}{27}{section*.17}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{31}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{33}{appendix*.18}
+\contentsline {chapter}{List of Figures}{34}{section*.19}
+\contentsline {chapter}{List of Tables}{35}{section*.20}

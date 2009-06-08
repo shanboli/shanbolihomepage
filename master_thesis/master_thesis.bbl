@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{TheJavaProgrammingLanguage}
 Mary Campione and Kathy Walrath.
@@ -7,8 +7,24 @@ Mary Campione and Kathy Walrath.
   \url{http://java.sun.com/docs/books/tutorial/getStarted/intro/definition.htm%
 l}, February 2008.
 
+\bibitem{WSDL1dot1}
+Erik Christensen, Francisco Curbera, Greg Meredith, and Sanjiva Weerawarana.
+\newblock {W}eb {S}ervices {D}escription {L}anguage {(WSDL)} 1.1.
+\newblock \\ \url{http://www.w3.org/TR/wsdl}, March 2001.
+
+\bibitem{SOAPVersion1dot2}
+Martin Gudgin, Marc Hadley, Noah Mendelsohn, Jean-Jacques Moreau,
+  Henrik~Frystyk Nielsen, Anish Karmarkar, and Yves Lafon.
+\newblock Soap {V}ersion 1.2.
+\newblock \\ \url{http://www.w3.org/TR/soap12}, April 2007.
+
+\bibitem{RFC4566}
+M.~Handley, V.~Jacobson, and C.~Perkins.
+\newblock {SDP}: {S}ession {D}escription {P}rotocol , {RFC} 4566.
+\newblock \\ \url{http://www.ietf.org/rfc/rfc4566.txt}, July 2006.
+
 \bibitem{WebServicesGlossary}
-Allen~Brown Hugo~Hass.
+Hugo Hass and Allen Brown.
 \newblock Web services glossary.
 \newblock \\ \url{http://www.w3.org/TR/ws-gloss/}, February 2004.
 
@@ -19,10 +35,21 @@ Paul~D. Kretkowski.
   \url{http://www.voip-news.com/feature/state-voip-market-2008-031008/}, March
   2008.
 
-\bibitem{RFC4566}
-C.~Perkins M.~Handley, V.~Jacobson.
-\newblock {SDP}: {S}ession {D}escription {P}rotocol , {RFC} 4566.
-\newblock \\ \url{http://www.ietf.org/rfc/rfc4566.txt}, July 2006.
+\bibitem{LearningPathMIDletLifeCycle}
+Richard Marejka.
+\newblock {Learning Path: MIDlet Life Cycle}.
+\newblock \\ \url{http://developers.sun.com/mobility/learn/midp/lifecycle/},
+  February 2005.
+
+\bibitem{JavaEETechnology}
+Sun {M}icrosystems.
+\newblock Java {EE} {T}echnology.
+\newblock \\ \url{http://java.sun.com/javaee/technologies/}, June 2009.
+
+\bibitem{JavaMETechnology}
+Sun {M}icrosystems.
+\newblock Java {ME} {T}echnology.
+\newblock \\ \url{http://java.sun.com/javame/technology/}, June 2009.
 
 \bibitem{WhatIsWeb2dot0}
 Tim O'Reilly.
@@ -32,16 +59,27 @@ Tim O'Reilly.
 -20.html}, September 2005.
 
 \bibitem{RFC3725}
-Peterson J. Schulzrinne~H. Rosenberg, J. and G.~Camarillo.
+J.~Rosenberg, J.~Peterson, H.~Schulzrinne, and G.~Camarillo.
 \newblock {B}est {C}urrent {P}ractices for {T}hird {P}arty {C}all {C}ontrol
   (3pcc) in the {S}ession {I}nitiation {P}rotocol (sip), {RFC} 3725.
 \newblock \\ \url{http://www.ietf.org/rfc/rfc3725.txt}, April 2004.
 
 \bibitem{RFC3261}
-Schulzrinne H. Camarillo G. Johnston A. Peterson J. Sparks R. Handley~M.
-  Rosenberg, J. and E.~Schooler.
+J.~Rosenberg., H.~Schulzrinne, G.~Camarillo, A.~Johnston, J.~Peterson,
+  R.~Sparks, M.~Handley, and E.~Schooler.
 \newblock {SIP}: {S}ession {I}nitiation {P}rotocol, {RFC} 3261.
 \newblock \\ \url{http://www.ietf.org/rfc/rfc3261.txt}, June 2002.
+
+\bibitem{RFC3550}
+H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
+\newblock {RTP}: {A} {T}ransport {P}rotocol for {R}eal-{T}ime {A}pplications,
+  {RFC} 3550.
+\newblock \\ \url{http://www.ietf.org/rfc/rfc3550.txt}, July 2003.
+
+\bibitem{SSL}
+Wikipedia.
+\newblock Transport layer security.
+\newblock \\ \url{http://en.wikipedia.org/wiki/Secure_Sockets_Layer}.
 
 \bibitem{Web2dot0}
 Wikipedia.
