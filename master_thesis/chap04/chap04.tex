@@ -2,8 +2,24 @@
 \chapter{Solution}
 \label{sec:Solution}
 
+There are two kind of connection solution of the core of Web Call, the Relay Call and Third Party Call. The different between them is the way they handle media stream.
+
+The Relay Call Controller works as a back-to-back agent and forwards media streams, while Third Party Call Controller only establishes connections by sending out SIP messages and it does not handles any streams itself. 
+
 \section{Relay Call}
 \label{sec:Solution:RelayCall}
+
+The signal and media flow of Relay Call is shown in Figure \ref{fig:TheSignalAndMediaFlowOfRelayCall}. In this scenario, the Web Call Example Application acts as a back-to-back user agent. It sets up the connection and forwards the media stream. It can be seen from the picture that both signal and media are handled by Web Call Server. When it starts, it try to call client A. After it establishes a session with client A, it will try to call client B and also establish a session with client B. After that, it will work as a media stream bridge and forward media stream from client A to B, as well as from client B to A.
+
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap04/resources/the_signal_and_media_flow_of_relay_call, width=6in}
+\caption{The signal and media flow of Relay Call}
+\label{fig:TheSignalAndMediaFlowOfRelayCall}
+\end{figure}
+
+
 
 \section{Third Party Call}
 \label{sec:Solution:ThirdPartyCall}
