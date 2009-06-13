@@ -1,1 +1,1 @@
-java -jar "C:\IdeaProjects\master_thesis\tools\PNG2PDF\PNG2PDF.jar" -Dpng2pdf.renew="true" -Dpng2pdf.baseDir="C:\IdeaProjects\master_thesis" 
+java -jar  -Dpng2pdf.renew=true -Dpng2pdf.baseDir=C:\IdeaProjects\master_thesis "C:\IdeaProjects\master_thesis\tools\PNG2PDF\PNG2PDF.jar" 
