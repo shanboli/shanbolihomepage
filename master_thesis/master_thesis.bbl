@@ -7,10 +7,20 @@ Mary Campione and Kathy Walrath.
   \url{http://java.sun.com/docs/books/tutorial/getStarted/intro/definition.htm%
 l}, February 2008.
 
+\bibitem{WebCallSDK}
+Yuening Chen.
+\newblock {\em Web Call SDK}.
+\newblock Uppsala Universitet, March 2003.
+
 \bibitem{WSDL1dot1}
 Erik Christensen, Francisco Curbera, Greg Meredith, and Sanjiva Weerawarana.
 \newblock {W}eb {S}ervices {D}escription {L}anguage {(WSDL)} 1.1.
 \newblock \\ \url{http://www.w3.org/TR/wsdl}, March 2001.
+
+\bibitem{DemoAtJavaOne}
+Elena Fersman and Peter Yeung.
+\newblock {Using REST and Web Services to Mash Up Communications Capabilities}.
+\newblock In {\em JavaOne 2009}, June 2009.
 
 \bibitem{SOAPVersion1dot2}
 Martin Gudgin, Marc Hadley, Noah Mendelsohn, Jean-Jacques Moreau,
@@ -57,6 +67,14 @@ Tim O'Reilly.
 \newblock \\
   \url{http://www.oreillynet.com/pub/a/oreilly/tim/news/2005/09/30/what-is-web%
 -20.html}, September 2005.
+
+\bibitem{EricssonJavaOne}
+Benny Ritz{\'{e}}n.
+\newblock {JavaOne: Come to Ericsson's BOFs and technical session and be
+  inspired }.
+\newblock \\
+  \url{http://www.ericsson.com/developer/sub/articles/other_articles/090514_ja%
+vaone_bof}, May 2009.
 
 \bibitem{RFC3725}
 J.~Rosenberg, J.~Peterson, H.~Schulzrinne, and G.~Camarillo.
