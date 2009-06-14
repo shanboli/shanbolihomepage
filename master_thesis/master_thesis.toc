@@ -25,12 +25,16 @@
 \contentsline {section}{\numberline {3.3}Why Web Call SDK?}{13}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}Solution}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Relay Call}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Third Party Call}{18}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Call Transfer}{18}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}SDP Swap}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Re-invite}{18}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Web Client}{18}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Conclusion}{18}{section.4.3}
+\contentsline {section}{\numberline {4.2}Problem of Relay Call}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The load on controller}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}The latency of the phone call}{16}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Lack of Reliability}{16}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Third Party Call}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Call Transfer}{17}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}SDP Swap}{17}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Re-invite}{17}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Web Client}{17}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Conclusion}{17}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{19}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}SIP Call Component}{21}{chapter.6}
 \contentsline {chapter}{\chapternumberline {7}Web Application}{23}{chapter.7}
