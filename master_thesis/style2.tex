@@ -25,6 +25,7 @@
 \usepackage{longtable}
 \usepackage[figuresright]{rotating}
 \usepackage{pifont}
+\usepackage{multirow}
 
 % *************** Enable index generation ***************
 \makeindex
@@ -106,25 +107,23 @@
 \definecolor{white}         {cmyk}{0   , 0   , 0   , 0   } 
 
 % *************** Enable hyperlinks in PDF documents ***************
-%\ifpdf
-%    \pdfcompresslevel=9
-%        \usepackage[plainpages=false,pdfpagelabels,bookmarksnumbered,%
-%        colorlinks=true,%
-%        linkcolor=sepia,%
-%        citecolor=sepia,%
-%        filecolor=maroon,%
-%        pagecolor=red,%
-%        urlcolor=sepia,%
-%        pdftex,%
-%        unicode]{hyperref} 
-%    \input supp-mis.tex
-%    \input supp-pdf.tex
-%    \pdfimageresolution=600
-%    \usepackage{thumbpdf} 
-%\else
-%    \usepackage{hyperref}
-%\fi
-%
+\ifpdf
+    \pdfcompresslevel=9
+        \usepackage[plainpages=false,pdfpagelabels,bookmarksnumbered,%
+        colorlinks=true,%
+        linkcolor=black,%
+        citecolor=black,%
+        filecolor=black,%
+        urlcolor=sepia,%
+        pdftex,%
+        unicode]{hyperref} 
+    \input supp-mis.tex
+    \input supp-pdf.tex
+    \pdfimageresolution=600
+\else
+    \usepackage{hyperref}
+\fi
+
 %\usepackage{memhfixc}
 
 % *************** Page layout ***************
@@ -191,6 +190,17 @@
       {\cleardoublepage \thispagestyle{empty} \vspace*{\stretch{1}} \begin{center} \em}
       {\end{center} \vspace*{\stretch{3}} \clearpage} 
 % *************** Other ***************
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage{url}
+
+%% Define a new 'leo' style for the package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+% ****************************************************************
 
 % *************** End of document style definition ***************
