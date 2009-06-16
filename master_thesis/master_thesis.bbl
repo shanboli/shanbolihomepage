@@ -94,6 +94,11 @@ H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
   {RFC} 3550.
 \newblock \\ \url{http://www.ietf.org/rfc/rfc3550.txt}, July 2003.
 
+\bibitem{RFC3515}
+R.~Sparks.
+\newblock {The Session Initiation Protocol (SIP) Refer Method}.
+\newblock \\ \url{http://www.ietf.org/rfc/rfc3515.txt}, April 2003.
+
 \bibitem{SSL}
 Wikipedia.
 \newblock Transport layer security.

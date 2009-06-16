@@ -21,21 +21,22 @@ The signal and media flow of Relay Call is shown in Figure \ref{fig:TheSignalAnd
 For a detail description and mechanism of Relay Call, please refer to the master thesis of \textbf{Web Call SDK} by \textit{Yuening Chen}\cite{WebCallSDK}.
 
 \section{Problem of Relay Call}
-\label{}
+\label{sec:Solution:ProblemOfRelayCall}
 
-\subsection{The load on controller}
+\subsection{The Load on Controller}
+\label{sec:Solution:ProblemOfRelayCall:TheLoadOnController}
  
 The controller here acts as a back to back user agent (B2BUA). It receives the RTP flow from one client and transfers it to another client. It does the same in the opposite direction. That means all of the RTP traffic will go through the controller. So the load on controller will be heavier as with the number of concurrent users increases. A powerful host is needed to handle the RTP flows. However the design goal of Web Call SDK was simply a tool kit that can easily be integrated into a web site. Unfortunately, this  current mechanism of session control will decrease the performance of whole web site. 
 
-\subsection{The latency of the phone call}
+\subsection{The Latency of Audio}
+\label{sec:Solution:ProblemOfRelayCall:TheLatencyOfThePhoneCall}
  
 As can be seen from the session flow, the RTP goes from one client to the controller via a SIP provider and then the controller transfers the RTP to another client via the SIP provider again. This means that each direction of RTP will go through SIP provider twice. So the latency of the phone call via the SIP provider will be double that of normal calls.  The latency of phone-to-phone call via Web Call SDK test turned to be more then 2 seconds. It is quite unacceptable. 
 
 \subsection{Lack of Reliability}
+\label{sec:Solution:ProblemOfRelayCall:LackOfReliability}
 
 Since all of RTP flows go through the controller, thus if the controller crashes, all of calls will be immediately interrupted. 
-
-
 
 \section{Third Party Call}
 \label{sec:Solution:ThirdPartyCall}
@@ -49,18 +50,43 @@ In the traditional telephony context, third party call control allows one entity
 \label{fig:TheSignalAndMediaFlowOf3pc}
 \end{figure}
 
-
-
-
 \subsection{Call Transfer}
 \label{sec:Solution:ThirdPartyCall:CallTransfer}
 
+The call transfer implementation use a \texttt{REFER} method which defined in \textit{The Session Initiation Protocol (SIP) Refer Method} (RFC \nobreak 3515)\cite{RFC3515}. The \texttt{REFER} method indicates that the recipient (identified by the Request-URI) should contact a third party using the contact information provided in the request\cite{RFC3515}. 
+
+The Call flow is shown in Figure \ref{fig:CallTransfer}. The controller first sends an \texttt{INVITE} to client A (1). This invite is just a normal invite. A's phone rings and answers. This results in a \texttt{200 OK} (2). The controller then answer client A an \texttt{ACK} (3). Follow that, the controller send out a \texttt{REFER refer-to}: Client B (4), which means controller wish client A to make a phone call to client B. The client A understands that and returns a \texttt{200 \nobreak OK} to controller (5). Then client A sends an \texttt{INVITE referred-By}: C to client B (6). Client A and Client B can establish a session according the \texttt{INVITE} from A to B.  The \texttt{BYE} (8) and \texttt{200 \nobreak OK} (9) means the controller cut the media stream between itself and client A. 
+
+To accomplish the whole call flow, client A must support RFC3515.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap04/resources/call_transfer, width=5.34in}
+\caption{The signal and media flow of Call Transfer}
+\label{fig:CallTransfer}
+\end{figure}
 
 \subsection{SDP Swap}
 \label{sec:Solution:ThirdPartyCall:SDPSwep}
 
+This implementation of third party call control swaps SDP from two clients. The prototype of SDP swap comes from RFC 3725 \textit{Best Current Practices for Third Party Call Control (3pcc) in the Session Initiation Protocol (SIP)} (RFC3725). However, the call flow in RFC 3725 is quite complicate. The concept of SDP is that controller calls to client and swaps two SDP which got from clients. These two clients seem to call controller but the media stream is connected between them.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap04/resources/sdp_swap, width=5.34in}
+\caption{The signal and media flow of SDP Swap}
+\label{fig:SdpSwap}
+\end{figure}
+
 \subsection{Re-invite}
 \label{sec:Solution:ThirdPartyCall:Re-invite}
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap04/resources/re-invite, width=5.34in}
+\caption{The signal and media flow of SDP Swap}
+\label{fig:Re-invite}
+\end{figure}
 
 \subsection{Web Client}
 \label{sec:Solution:ThirdPartyCall:WebClient}

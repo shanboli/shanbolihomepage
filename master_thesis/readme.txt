@@ -19,5 +19,5 @@ About PNG2PDF.jar
 	2.To use PNG2PDF, you need to download and install "dklibs-win32". google it and get it.
 	3.Set DKLIBS_HOME/bin to system environment.
 	4.run use two parameters, see example at user2.bat and user4.bat
-	5.The PNG2PDF will search all png files under project folder and sub-folders and generate eps files.
+	5.The PNG2PDF will search all png files under project folder and sub-folders and generate eps files for them.
 	
