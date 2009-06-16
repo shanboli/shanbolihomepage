@@ -62,7 +62,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="71" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.59322035">
+            <state line="68" column="71" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.033898305">
               <folding />
             </state>
           </provider>
@@ -291,8 +291,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="Regex">
     <option name="pos1" value="218" />
@@ -476,7 +476,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21654676" sideWeight="0.5" order="3" side_tool="false" />
@@ -586,7 +586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="71" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.59322035">
+        <state line="68" column="71" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.033898305">
           <folding />
         </state>
       </provider>
