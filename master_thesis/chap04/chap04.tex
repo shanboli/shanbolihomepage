@@ -97,11 +97,17 @@ The call flow is shown in Figure \ref{fig:Re-invite}. From the SIP message (1) t
 \subsection{Web Client}
 \label{sec:Solution:ThirdPartyCall:WebClient}
 
+Most of the VoIP service provider supply a way of make phone to phone call via their web site. To establish the call, user have to login to the web site and fill in the caller number and callee number. The web client way of third party call use a project called \textbf{scallope}\cite{ScallopeAPI}. It is a application which acts as a web client and login to sip provider's web page and to make VoIP calls.
 
+Scallope is a Java API which based on \texttt{apache common http} API. All user need to do is just pass the user name, password, caller number and callee number to the API. The Scallope will access VoIP service provider's web page via http protocol and establish a call session for user.
+
+This kind of 3pcc makes it possible to start a phone to phone call with out a web browser. For the aspect of control signal and media flow, everything is within provider's network. So the quality of audio is quite close to PSTN and very much acceptable.
 
 \section{Conclusion}
 \label{sec:Solution:Conclusion}
 
+\begin{table}[!hbtp]
+\centering
 \begin{tabular}{|p{0.60in}|p{0.60in}|p{0.65in}|p{0.65in}|p{0.65in}|p{0.65in}|p{0.65in}|}
 \hline
         & \multirow{3}{0.65in}{\textbf{PSTN}} &\multicolumn{5}{c|}{VoIP} \\ \cline{3-7}
@@ -116,8 +122,13 @@ Re-Invite message & The ones who supply web site call \\ \cline{1-7}
 \textbf{Media Stream} & In PSTN network & Internet and/or PSTN, need to be handled on controller & \multicolumn{4}{c|}{Internet and/or PSTN}\\ \cline{1-7}
 \textbf{Latency} & Very Short / QoS guarantee & long & \multicolumn{4}{c|}{Short, acceptable. But no QoS guarantee} \\ \cline{1-7}
 \textbf{Cost} & Expensive (especially for international call ) & \multicolumn{5}{c|}{cheap} \\
-
 \hline
 \end{tabular}
+\caption{Comparison of Call Method}
+\label{table:ComparisonOfCallMethod}
+\end{table}
+
+It can be seen from Table \ref{table:ComparisonOfCallMethod}, when talk about latency, the best call method is the PSTN (the traditional way). But it costs a lot for international sessions.  The Relay call can be used on any server and client with a low fee. But the latency is long and sometimes unacceptable. The relay call method brings media traffic to the controller so it not possible to have it on a small or personal server. The third party call is not support by all of the services. We have developed four different solutions on third party call. Each of them has its own Cons and Pros. It is recommended that when make an international or long distance call, the web client method should be choose. If it is not possible to use web client method, users can try the other third party call implementations. If none of them works, user can choose either the PSTN which supply a good quality and high cost or the relay call which supply a poor quality but with low price.
+
 
 % ********** End of chapter **********

@@ -22,27 +22,27 @@
 \contentsline {subsection}{\numberline {3.1.2}VoIP Client}{11}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Solution Provider}{12}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Third Party Call Control}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Why Web Call SDK?}{12}{section.3.3}
+\contentsline {section}{\numberline {3.3}Why Web Call SDK?}{13}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}Solution}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Relay Call}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Problem of Relay Call}{15}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}The Load on Controller}{15}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.2}Problem of Relay Call}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The Load on Controller}{16}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}The Latency of Audio}{16}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Lack of Reliability}{16}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Third Party Call}{17}{section.4.3}
+\contentsline {section}{\numberline {4.3}Third Party Call}{16}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Call Transfer}{17}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}SDP Swap}{18}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Re-invite}{19}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Web Client}{22}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Conclusion}{22}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.4}Web Client}{20}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Conclusion}{21}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{23}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}SIP Call Component}{25}{chapter.6}
 \contentsline {chapter}{\chapternumberline {7}Web Application}{27}{chapter.7}
 \contentsline {chapter}{\chapternumberline {8}Web Service Interface}{29}{chapter.8}
 \contentsline {chapter}{\chapternumberline {9}Web Service Client}{31}{chapter.9}
 \contentsline {chapter}{\chapternumberline {10}Conclusion}{33}{chapter.10}
-\contentsline {chapter}{Bibliography}{35}{section*.17}
+\contentsline {chapter}{Bibliography}{35}{section*.18}
 \contentsline {appendix}{\chapternumberline {A}Appendix title}{39}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{41}{appendix*.18}
-\contentsline {chapter}{List of Figures}{42}{section*.19}
-\contentsline {chapter}{List of Tables}{43}{section*.20}
+\contentsline {chapter}{List of Symbols and Abbreviations}{41}{appendix*.19}
+\contentsline {chapter}{List of Figures}{42}{section*.20}
+\contentsline {chapter}{List of Tables}{43}{section*.21}
