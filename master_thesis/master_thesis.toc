@@ -35,11 +35,16 @@
 \contentsline {subsection}{\numberline {4.3.3}Re-invite}{19}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Web Client}{20}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Conclusion}{21}{section.4.4}
-\contentsline {chapter}{\chapternumberline {5}Web Call Architecture}{23}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}Web Call SDK Architecture}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Architecture Overview}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}SIP Call Component}{24}{section.5.2}
+\contentsline {section}{\numberline {5.3}Web Application}{24}{section.5.3}
+\contentsline {section}{\numberline {5.4}Web Service Interface}{24}{section.5.4}
+\contentsline {section}{\numberline {5.5}Java ME client}{24}{section.5.5}
 \contentsline {chapter}{\chapternumberline {6}SIP Call Component}{25}{chapter.6}
 \contentsline {chapter}{\chapternumberline {7}Web Application}{27}{chapter.7}
 \contentsline {chapter}{\chapternumberline {8}Web Service Interface}{29}{chapter.8}
-\contentsline {chapter}{\chapternumberline {9}Web Service Client}{31}{chapter.9}
+\contentsline {chapter}{\chapternumberline {9}Java ME Client}{31}{chapter.9}
 \contentsline {chapter}{\chapternumberline {10}Conclusion}{33}{chapter.10}
 \contentsline {chapter}{Bibliography}{35}{section*.18}
 \contentsline {appendix}{\chapternumberline {A}Appendix title}{39}{appendix.A}
