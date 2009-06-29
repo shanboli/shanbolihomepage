@@ -17,6 +17,11 @@ Erik Christensen, Francisco Curbera, Greg Meredith, and Sanjiva Weerawarana.
 \newblock {W}eb {S}ervices {D}escription {L}anguage {(WSDL)} 1.1.
 \newblock \\ \url{http://www.w3.org/TR/wsdl}, March 2001.
 
+\bibitem{JSR172}
+Jon Ellis and Mark Young.
+\newblock {JSR-00172 J2ME Web Services Specification}.
+\newblock \\ \url{http://jcp.org/en/jsr/detail?id=172}, October 2003.
+
 \bibitem{DemoAtJavaOne}
 Elena Fersman and Peter Yeung.
 \newblock {Using REST and Web Services to Mash Up Communications Capabilities}.
@@ -72,6 +77,11 @@ Tim O'Reilly.
 \newblock \\
   \url{http://www.oreillynet.com/pub/a/oreilly/tim/news/2005/09/30/what-is-web%
 -20.html}, September 2005.
+
+\bibitem{JSR75}
+Java~Community Process.
+\newblock {JSR 75: PDA Optional Packages for the J2METM Platform}.
+\newblock \\ \url{http://jcp.org/en/jsr/detail?id=75}, June 2004.
 
 \bibitem{EricssonJavaOne}
 Benny Ritz{\'{e}}n.
