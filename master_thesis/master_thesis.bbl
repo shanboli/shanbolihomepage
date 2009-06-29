@@ -27,6 +27,11 @@ Elena Fersman and Peter Yeung.
 \newblock {Using REST and Web Services to Mash Up Communications Capabilities}.
 \newblock In {\em JavaOne 2009}, June 2009.
 
+\bibitem{J2MERecordManagementStore}
+Soma Ghosh.
+\newblock {J2ME record management store}.
+\newblock \\ \url{http://www.ibm.com/developerworks/library/wi-rms/}, May 2002.
+
 \bibitem{SOAPVersion1dot2}
 Martin Gudgin, Marc Hadley, Noah Mendelsohn, Jean-Jacques Moreau,
   Henrik~Frystyk Nielsen, Anish Karmarkar, and Yves Lafon.
