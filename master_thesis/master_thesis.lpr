@@ -280,7 +280,7 @@ WrapLine=yes
 
 [Files\19]
 ActiveFilters=
-Bookmark#0=32
+Bookmark#0=35
 Bookmark#1=0
 Bookmark#2=0
 Bookmark#3=0
@@ -290,8 +290,8 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=197
-CaretPos.Y=17
+CaretPos.X=19
+CaretPos.Y=5
 CharSet=def
 FileName=chap05\chap05.tex
 FoldedLines=
