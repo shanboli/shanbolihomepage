@@ -41,7 +41,7 @@ Once the wizard is finished, NetBeans will automatically generate some classes t
 \section{Record Store Manager}
 \label{sec:JavaMEClient:RecordStoreManager}
 
-Record Store Manager is used for reading and writing the data from/to Java ME \textit{record management system} (RMS). It extends a abstract class which named \texttt{AbstractRecordStoreManager} which is a stand alone component which supplies a very convenient way to interactive with RMS. The \texttt{AbstractRecordStoreManager} can be not only used in Java ME Client of Web Call Example Application, but also other Java ME applications. A class hierarchy diagram of \texttt{RecordStoreManager} and \texttt{AbstractRecordStoreManager} is shown in Figure \ref{fig:TheClassDiagramofRecordStoreManager}.
+Record Store Manager is used for reading and writing the data from/to Java ME \textit{record management system} (RMS). It extends a abstract class which named \texttt{AbstractRecordStoreManager} which is a stand alone component which supplies a very convenient way to interactive with RMS. The \texttt{AbstractRecordStoreManager} wraps the action of saving and loading data to/from RMS. Two methods \texttt{setData()} and \texttt{getData()} handles everything. The \texttt{AbstractRecordStoreManager} can be not only used in Java ME Client of Web Call Example Application, but also other Java ME applications. A class hierarchy diagram of \texttt{RecordStoreManager} and \texttt{AbstractRecordStoreManager} is shown in Figure \ref{fig:TheClassDiagramofRecordStoreManager}.
 
 \begin{figure}[!hbtp]
 \centering

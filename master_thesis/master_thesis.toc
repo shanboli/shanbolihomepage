@@ -36,12 +36,12 @@
 \contentsline {subsection}{\numberline {4.3.4}Web Client}{20}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Conclusion}{21}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Application Overview}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Architecture Overview}{23}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}SIP Call Component}{24}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Web Application}{24}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Web Service Interface}{24}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Java ME client}{24}{subsection.5.1.4}
-\contentsline {section}{\numberline {5.2}Use Cases}{24}{section.5.2}
+\contentsline {section}{\numberline {5.1}Use Cases}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Architecture Overview}{23}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}SIP Call Component}{24}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Web Application}{24}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Web Service Interface}{24}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Java ME client}{24}{subsection.5.2.4}
 \contentsline {chapter}{\chapternumberline {6}SIP Call Component}{25}{chapter.6}
 \contentsline {chapter}{\chapternumberline {7}Web Application}{27}{chapter.7}
 \contentsline {chapter}{\chapternumberline {8}Web Service Interface}{29}{chapter.8}
