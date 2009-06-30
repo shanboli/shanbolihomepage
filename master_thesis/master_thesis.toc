@@ -49,13 +49,13 @@
 \contentsline {section}{\numberline {9.1}Architecture}{31}{section.9.1}
 \contentsline {section}{\numberline {9.2}Web Service Client Stub}{32}{section.9.2}
 \contentsline {section}{\numberline {9.3}Record Store Manager}{33}{section.9.3}
-\contentsline {section}{\numberline {9.4}PIM Contact Helper}{35}{section.9.4}
+\contentsline {section}{\numberline {9.4}PIM Contact Helper}{33}{section.9.4}
 \contentsline {section}{\numberline {9.5}Web Call Client}{35}{section.9.5}
 \contentsline {section}{\numberline {9.6}User Interface}{35}{section.9.6}
 \contentsline {subsection}{\numberline {9.6.1}VMD-based UI}{35}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Java ME Generic UI}{35}{subsection.9.6.2}
-\contentsline {section}{\numberline {9.7}Installation of Java ME Client}{35}{section.9.7}
-\contentsline {section}{\numberline {9.8}Security of Java ME Client}{35}{section.9.8}
+\contentsline {subsection}{\numberline {9.6.2}Generic UI}{36}{subsection.9.6.2}
+\contentsline {section}{\numberline {9.7}Installation of Java ME Client}{36}{section.9.7}
+\contentsline {section}{\numberline {9.8}Security of Java ME Client}{36}{section.9.8}
 \contentsline {chapter}{\chapternumberline {10}Conclusion}{39}{chapter.10}
 \contentsline {chapter}{Bibliography}{41}{section*.19}
 \contentsline {appendix}{\chapternumberline {A}Appendix title}{45}{appendix.A}

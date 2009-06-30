@@ -53,12 +53,14 @@ Record Store Manager is used for reading and writing the data from/to Java ME \t
 \section{PIM Contact Helper}
 \label{sec:JavaMEClient:PIMContactHelper}
 
+\textsf{PIM Contact Helper} provides access to contact list of \textit{Personal Information Management} (PIM) data on J2ME devices. The PIM API is designed for a widely use and try to compatible with most of Java ME enabler. But it is lack of user friendly. The PIM Contact Helper wraps some APIs of JSR 75 and makes it very easy to load contact lists from mobile phone. Like \textsf{Record Store Manager}, \textsf{PIM Contact Helper} is also a stand alone component. It can also be used in other Java ME applications. To use it, the mobile device must support \texttt{JSR 75}\cite{JSR75}. When first the time use it, there will be pop up option window to ask if user want this application to read contacts list as shown in Figure \ref{fig:LoadPIMContacts}. As long as user approved, a phone contacts list will be shown on screen as shown in Figure \ref{fig:PIMContactsList}.  
+
 
 \begin{figure}[!hbtp]
 \centering
 \epsfig{file=chap09/resources/load_pim_contacts, width=3in}
 \caption{Load PIM Contacts}
-\label{fig:Load PIM Contacts}
+\label{fig:LoadPIMContacts}
 \end{figure}
 
 
@@ -80,6 +82,12 @@ Record Store Manager is used for reading and writing the data from/to Java ME \t
 \section{User Interface}
 \label{sec:JavaMEClient:UserInterface}
 
+
+\subsection{VMD-based UI}
+\label{sec:JavaMEClient:UserInterface:VMDBasedUI}
+
+This Java ME client is first developed with Visual Mobile Designer. The Visual Mobile Designer (VMD) is a graphical interface within NetBeans Mobility that enables you to design mobile applications using drag and drop components. The VMD-based working flow is shown in Figure \ref{fig:JavaMEClientWorkingFlow}. For a large image, please refer to \url{http://code.google.com/p/shanbohomepage/source/browse/trunk/master_thesis/chap09/resources/java_me_working_flow.png}.
+
 \begin{figure}[!hbtp]
 \centering
 \epsfig{file=chap09/resources/java_me_working_flow, width=8.3in, angle=-90}
@@ -87,13 +95,12 @@ Record Store Manager is used for reading and writing the data from/to Java ME \t
 \label{fig:JavaMEClientWorkingFlow}
 \end{figure}
 
-\subsection{VMD-based UI}
-\label{sec:JavaMEClient:UserInterface:VMDBasedUI}
 
 
+\subsection{Generic UI}
+\label{sec:JavaMEClient:UserInterface:GenericUI}
 
-\subsection{Java ME Generic UI}
-\label{sec:JavaMEClient:UserInterface:JavaMEGenericUI}
+To avoid using the VMD library, a generic UI is introduced. It doesn't use any particular class from NetBeans. Change \texttt{WaitScreen} to \texttt{Form}, change \\ \texttt{SimpleCancellableTask} to normal method. There are three sub packages in package \texttt{sip.components.me.ui}, \texttt{nb}, \texttt{nb2} and \texttt{general}. The package \texttt{nb} contains the VMD-based UI. The package \texttt{nb2} is a UI which doesn't contain any NetBeans library. The UI in package \texttt{general} is the code copy from nb2 and refractored according the package name and Midlet name. All three UIs can be treaded as Midlets.  They invoke the same logic in \textsf{Web Call Client} and \textsf{PIM Contact Helper}. By default only the UI in general will be compiled.
 
 \section{Installation of Java ME Client}
 \label{sec:JavaMEClient:InstallationOfJavaMEClient}
