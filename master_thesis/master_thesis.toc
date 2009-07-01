@@ -38,8 +38,8 @@
 \contentsline {chapter}{\chapternumberline {5}Application Overview}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}Use Cases}{23}{section.5.1}
 \contentsline {section}{\numberline {5.2}Architecture Overview}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}SIP Call Component}{24}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Web Application}{24}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.1}SIP Call Component}{23}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Web Application}{23}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Web Service Interface}{24}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Java ME client}{24}{subsection.5.2.4}
 \contentsline {chapter}{\chapternumberline {6}SIP Call Component}{25}{chapter.6}
@@ -50,15 +50,22 @@
 \contentsline {section}{\numberline {9.2}Web Service Client Stub}{32}{section.9.2}
 \contentsline {section}{\numberline {9.3}Record Store Manager}{33}{section.9.3}
 \contentsline {section}{\numberline {9.4}PIM Contact Helper}{33}{section.9.4}
-\contentsline {section}{\numberline {9.5}Web Call Client}{35}{section.9.5}
-\contentsline {section}{\numberline {9.6}User Interface}{35}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}VMD-based UI}{35}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Generic UI}{36}{subsection.9.6.2}
-\contentsline {section}{\numberline {9.7}Installation of Java ME Client}{36}{section.9.7}
-\contentsline {section}{\numberline {9.8}Security of Java ME Client}{36}{section.9.8}
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{39}{chapter.10}
-\contentsline {chapter}{Bibliography}{41}{section*.19}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{45}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{47}{appendix*.20}
-\contentsline {chapter}{List of Figures}{48}{section*.21}
-\contentsline {chapter}{List of Tables}{49}{section*.22}
+\contentsline {section}{\numberline {9.5}Web Call Client}{34}{section.9.5}
+\contentsline {section}{\numberline {9.6}User Interface}{36}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}VoIP Call Form}{36}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}PIM Contacts}{37}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.6.3}My Phone Number}{37}{subsection.9.6.3}
+\contentsline {subsection}{\numberline {9.6.4}Contacts}{38}{subsection.9.6.4}
+\contentsline {subsection}{\numberline {9.6.5}Synchronize}{38}{subsection.9.6.5}
+\contentsline {subsection}{\numberline {9.6.6}Phone Call}{38}{subsection.9.6.6}
+\contentsline {section}{\numberline {9.7}Two implementations of UI}{40}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}VMD-based UI}{40}{subsection.9.7.1}
+\contentsline {subsection}{\numberline {9.7.2}Generic UI}{40}{subsection.9.7.2}
+\contentsline {section}{\numberline {9.8}Installation of Java ME Client}{42}{section.9.8}
+\contentsline {section}{\numberline {9.9}Security of Java ME Client}{42}{section.9.9}
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{43}{chapter.10}
+\contentsline {chapter}{Bibliography}{45}{section*.19}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{49}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{51}{appendix*.20}
+\contentsline {chapter}{List of Figures}{52}{section*.21}
+\contentsline {chapter}{List of Tables}{53}{section*.22}
