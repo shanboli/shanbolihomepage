@@ -64,8 +64,9 @@
 \contentsline {section}{\numberline {9.8}Installation of Java ME Client}{42}{section.9.8}
 \contentsline {section}{\numberline {9.9}Security of Java ME Client}{42}{section.9.9}
 \contentsline {chapter}{\chapternumberline {10}Conclusion}{43}{chapter.10}
-\contentsline {chapter}{Bibliography}{45}{section*.19}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{49}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{51}{appendix*.20}
-\contentsline {chapter}{List of Figures}{52}{section*.21}
-\contentsline {chapter}{List of Tables}{53}{section*.22}
+\contentsline {chapter}{\chapternumberline {11}Future Work}{45}{chapter.11}
+\contentsline {chapter}{Bibliography}{47}{section*.19}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{51}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{53}{appendix*.20}
+\contentsline {chapter}{List of Figures}{54}{section*.21}
+\contentsline {chapter}{List of Tables}{55}{section*.22}

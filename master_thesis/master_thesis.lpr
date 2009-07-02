@@ -16,13 +16,13 @@ CharSet=def
 FileName=master_thesis.tex
 FoldedLines=
 IsMainFile=yes
-Opened=no
+Opened=yes
 ScrollPos.X=0
 ScrollPos.Y=1
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=4
 UseThesaurus=yes
 WrapLine=yes
 
@@ -270,7 +270,7 @@ FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=88
+ScrollPos.Y=1
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
@@ -430,16 +430,25 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=26
-CaretPos.Y=186
+CaretPos.X=943
+CaretPos.Y=84
 CharSet=def
 FileName=chap09\chap09.tex
 FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=233
-SearchListCount=0
+ScrollPos.Y=249
+SearchListCount=1
+
+[Files\23\SearchList\0]
+CaseSensitive=no
+Color=65280
+RegExp=no
+Show=1
+Text=chapter
+
+[Files\23]
 ShowSyntax=yes
 SpellChecking=yes
 TabOrder=0
@@ -464,13 +473,13 @@ CharSet=def
 FileName=chap10\chap10.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=6
 UseThesaurus=yes
 WrapLine=yes
 
@@ -527,6 +536,34 @@ SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
 TabOrder=-1
+UseThesaurus=yes
+WrapLine=yes
+
+[Files\27]
+ActiveFilters=
+Bookmark#0=0
+Bookmark#1=0
+Bookmark#2=0
+Bookmark#3=0
+Bookmark#4=0
+Bookmark#5=0
+Bookmark#6=0
+Bookmark#7=0
+Bookmark#8=0
+Bookmark#9=0
+CaretPos.X=0
+CaretPos.Y=0
+CharSet=def
+FileName=chap11\chap11.tex
+FoldedLines=
+IsMainFile=no
+Opened=yes
+ScrollPos.X=0
+ScrollPos.Y=0
+SearchListCount=0
+ShowSyntax=yes
+SpellChecking=yes
+TabOrder=5
 UseThesaurus=yes
 WrapLine=yes
 
@@ -755,7 +792,7 @@ UseThesaurus=no
 WrapLine=no
 
 [Files]
-Count=27
+Count=28
 
 [Project]
 ActiveFilters=
@@ -813,7 +850,7 @@ Zoom=9
 FileName=1
 FirstPage=0
 Magnifier=5
-Page=2
+Page=42
 PaperHeight=297
 PaperWidth=210
 Zoom=5
