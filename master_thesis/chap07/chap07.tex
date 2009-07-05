@@ -6,9 +6,33 @@
 \section{Overview}
 \label{sec:WebApplication:Overview}
 
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/welcome_desktop_browser_view, width=5.2in}
+\caption{Welcome page of desktop browser view of web application}
+\label{fig:WelcomePageOfDesktopBrowserView}
+\end{figure}
+
+The web application is the main portal of the whole application. It is based on Mobile Front Controller. The role of web application in the whole application is shown in Figure \ref{fig:ArchitectureOfWebCallSDK}. Users can use the web application to manage their accounts and VoIP calls. Administrators can use web applications to manage users. The web application can be packaged into a war file and easily to deploy. It only needs a sevlet container, like Tomcat, to run. It supplies two kind of views one is for desktop browser and another is for mobile browser. Beside these two views, the web application also contains a web service interface. This chapter will focus on two browser view. The web service interface will be introduced with detail in chapter \ref{sec:WebServiceInterface}.
+
+A welcome screen of desktop browser view of Web Application is shown in Figure \ref{fig:WelcomePageOfDesktopBrowserView}.
 
 \section{Architecture of Mobile Front Controller 3}
 \label{sec:WebApplication:ArchitectureOfMobileFrontController3}
+
+Mobile Front Controller\label{sym:MFC} (MFC) is a light-weight Java EE web application framework for creating web applications for web browsing and mobile browsing. It was developed by Peter Yeung and P\"{a}r Johansson from \href{http://www.ericsson.com/developer/}{Ericsson Developer Connection}, Ericsson\cite{MobileFrontController}. The mobile front controller uses a sevlet to handle http request, and redirect request to different kind of view. All views share a same logic. 
+
+The following is an abstract from the documentation of Mobile Front Controller SDK. \textit{``Mobile Front Controller (MFC) is a light-weight Java EE web application framework based on design patterns. MFC is used for creating internet web and mobile applications, i.e. applications with views for web browsing and mobile browsing that share UI logic.''}\cite{MobileFrontController} 
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/MFC_overview, width=5.2in}
+\caption{An overview of Mobile Front Controller used by a web application on a
+Java EE web container. (Figure taken from Mobile Front Controller Developer's guide for software version 3.1\cite{DevelopersGuideOfMFC})}
+\label{fig:MFCOverview}
+\end{figure} 
+
+
 
 \section{Site structure}
 \label{sec:WebApplication:SiteStructure}

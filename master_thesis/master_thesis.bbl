@@ -48,6 +48,12 @@ Hugo Hass and Allen Brown.
 \newblock Web services glossary.
 \newblock \\ \url{http://www.w3.org/TR/ws-gloss/}, February 2004.
 
+\bibitem{DevelopersGuideOfMFC}
+P{\"{a}}r Johansson and Peter Yeung.
+\newblock {\em {Mobile Front Controller Developer's guide for software version
+  3.1}}.
+\newblock Ericsson Developer Connection, Ericsson, October 2008.
+
 \bibitem{StateOfTheVoIPMarket2008}
 Paul~D. Kretkowski.
 \newblock State of the voip market 2008.

@@ -54,53 +54,54 @@
 \contentsline {chapter}{\chapternumberline {7}Web Application}{29}{chapter.7}
 \contentsline {section}{\numberline {7.1}Overview}{29}{section.7.1}
 \contentsline {section}{\numberline {7.2}Architecture of Mobile Front Controller 3}{30}{section.7.2}
-\contentsline {section}{\numberline {7.3}Site structure}{30}{section.7.3}
-\contentsline {section}{\numberline {7.4}Desktop browser view}{30}{section.7.4}
-\contentsline {section}{\numberline {7.5}Mobile browser view}{30}{section.7.5}
-\contentsline {section}{\numberline {7.6}User action}{30}{section.7.6}
-\contentsline {section}{\numberline {7.7}Administrator action}{30}{section.7.7}
-\contentsline {section}{\numberline {7.8}Validation mechanism}{30}{section.7.8}
-\contentsline {subsection}{\numberline {7.8.1}Page level}{30}{subsection.7.8.1}
-\contentsline {subsection}{\numberline {7.8.2}Server level}{30}{subsection.7.8.2}
-\contentsline {section}{\numberline {7.9}Session control}{30}{section.7.9}
-\contentsline {section}{\numberline {7.10}Ajax in web application}{30}{section.7.10}
-\contentsline {section}{\numberline {7.11}Java ME helper}{30}{section.7.11}
-\contentsline {section}{\numberline {7.12}Database}{30}{section.7.12}
-\contentsline {subsection}{\numberline {7.12.1}Design of database}{30}{subsection.7.12.1}
-\contentsline {subsection}{\numberline {7.12.2}User database utility}{30}{subsection.7.12.2}
-\contentsline {section}{\numberline {7.13}Security}{30}{section.7.13}
-\contentsline {subsection}{\numberline {7.13.1}Certificate}{30}{subsection.7.13.1}
-\contentsline {subsection}{\numberline {7.13.2}Security constraint}{30}{subsection.7.13.2}
-\contentsline {subsection}{\numberline {7.13.3}Authorization}{30}{subsection.7.13.3}
-\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{31}{chapter.8}
-\contentsline {section}{\numberline {8.1}Metro}{31}{section.8.1}
-\contentsline {section}{\numberline {8.2}SOAP web service}{31}{section.8.2}
-\contentsline {section}{\numberline {8.3}Synchronize}{31}{section.8.3}
-\contentsline {chapter}{\chapternumberline {9}Java ME Client}{33}{chapter.9}
-\contentsline {section}{\numberline {9.1}Architecture}{33}{section.9.1}
-\contentsline {section}{\numberline {9.2}Web Service Client Stub}{34}{section.9.2}
-\contentsline {section}{\numberline {9.3}Record Store Manager}{35}{section.9.3}
-\contentsline {section}{\numberline {9.4}PIM Contact Helper}{35}{section.9.4}
-\contentsline {section}{\numberline {9.5}Web Call Client}{36}{section.9.5}
-\contentsline {section}{\numberline {9.6}User Interface}{38}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}VoIP Call Form}{38}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}PIM Contacts}{39}{subsection.9.6.2}
-\contentsline {subsection}{\numberline {9.6.3}My Phone Number}{39}{subsection.9.6.3}
-\contentsline {subsection}{\numberline {9.6.4}Contacts}{40}{subsection.9.6.4}
-\contentsline {subsection}{\numberline {9.6.5}Synchronize}{40}{subsection.9.6.5}
-\contentsline {subsection}{\numberline {9.6.6}Phone Call}{40}{subsection.9.6.6}
-\contentsline {section}{\numberline {9.7}Two implementations of UI}{42}{section.9.7}
-\contentsline {subsection}{\numberline {9.7.1}VMD-based UI}{42}{subsection.9.7.1}
-\contentsline {subsection}{\numberline {9.7.2}Generic UI}{42}{subsection.9.7.2}
-\contentsline {section}{\numberline {9.8}Installation of Java ME Client}{44}{section.9.8}
-\contentsline {section}{\numberline {9.9}Security of Java ME Client}{44}{section.9.9}
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{45}{chapter.10}
-\contentsline {chapter}{\chapternumberline {11}Future Work}{47}{chapter.11}
-\contentsline {section}{\numberline {11.1}RESTful web service interface}{47}{section.11.1}
-\contentsline {section}{\numberline {11.2}Support for more mobile devices}{47}{section.11.2}
-\contentsline {section}{\numberline {11.3}Gadgets}{47}{section.11.3}
-\contentsline {chapter}{Bibliography}{49}{section*.19}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{53}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{55}{appendix*.20}
-\contentsline {chapter}{List of Figures}{56}{section*.21}
-\contentsline {chapter}{List of Tables}{57}{section*.22}
+\contentsline {section}{\numberline {7.3}Site structure}{31}{section.7.3}
+\contentsline {section}{\numberline {7.4}Desktop browser view}{31}{section.7.4}
+\contentsline {section}{\numberline {7.5}Mobile browser view}{31}{section.7.5}
+\contentsline {section}{\numberline {7.6}User action}{31}{section.7.6}
+\contentsline {section}{\numberline {7.7}Administrator action}{31}{section.7.7}
+\contentsline {section}{\numberline {7.8}Validation mechanism}{31}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}Page level}{31}{subsection.7.8.1}
+\contentsline {subsection}{\numberline {7.8.2}Server level}{31}{subsection.7.8.2}
+\contentsline {section}{\numberline {7.9}Session control}{31}{section.7.9}
+\contentsline {section}{\numberline {7.10}Ajax in web application}{31}{section.7.10}
+\contentsline {section}{\numberline {7.11}Java ME helper}{31}{section.7.11}
+\contentsline {section}{\numberline {7.12}Database}{31}{section.7.12}
+\contentsline {subsection}{\numberline {7.12.1}Design of database}{31}{subsection.7.12.1}
+\contentsline {subsection}{\numberline {7.12.2}User database utility}{31}{subsection.7.12.2}
+\contentsline {section}{\numberline {7.13}Security}{31}{section.7.13}
+\contentsline {subsection}{\numberline {7.13.1}Certificate}{31}{subsection.7.13.1}
+\contentsline {subsection}{\numberline {7.13.2}Security constraint}{31}{subsection.7.13.2}
+\contentsline {subsection}{\numberline {7.13.3}Authorization}{31}{subsection.7.13.3}
+\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{33}{chapter.8}
+\contentsline {section}{\numberline {8.1}Metro}{33}{section.8.1}
+\contentsline {section}{\numberline {8.2}SOAP web service}{33}{section.8.2}
+\contentsline {section}{\numberline {8.3}Synchronize}{33}{section.8.3}
+\contentsline {chapter}{\chapternumberline {9}Java ME Client}{35}{chapter.9}
+\contentsline {section}{\numberline {9.1}Architecture}{35}{section.9.1}
+\contentsline {section}{\numberline {9.2}Web Service Client Stub}{36}{section.9.2}
+\contentsline {section}{\numberline {9.3}Record Store Manager}{37}{section.9.3}
+\contentsline {section}{\numberline {9.4}PIM Contact Helper}{37}{section.9.4}
+\contentsline {section}{\numberline {9.5}Web Call Client}{38}{section.9.5}
+\contentsline {section}{\numberline {9.6}User Interface}{40}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}VoIP Call Form}{40}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}PIM Contacts}{41}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.6.3}My Phone Number}{41}{subsection.9.6.3}
+\contentsline {subsection}{\numberline {9.6.4}Contacts}{42}{subsection.9.6.4}
+\contentsline {subsection}{\numberline {9.6.5}Synchronize}{42}{subsection.9.6.5}
+\contentsline {subsection}{\numberline {9.6.6}Phone Call}{42}{subsection.9.6.6}
+\contentsline {section}{\numberline {9.7}Two implementations of UI}{44}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}VMD-based UI}{44}{subsection.9.7.1}
+\contentsline {subsection}{\numberline {9.7.2}Generic UI}{44}{subsection.9.7.2}
+\contentsline {section}{\numberline {9.8}Installation of Java ME Client}{46}{section.9.8}
+\contentsline {section}{\numberline {9.9}Security of Java ME Client}{46}{section.9.9}
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{47}{chapter.10}
+\contentsline {chapter}{\chapternumberline {11}Future Work}{49}{chapter.11}
+\contentsline {section}{\numberline {11.1}RESTful web service interface}{49}{section.11.1}
+\contentsline {section}{\numberline {11.2}Support for more mobile devices}{49}{section.11.2}
+\contentsline {section}{\numberline {11.3}Gadgets}{49}{section.11.3}
+\contentsline {section}{\numberline {11.4}Call history}{49}{section.11.4}
+\contentsline {chapter}{Bibliography}{51}{section*.18}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{55}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{57}{appendix*.19}
+\contentsline {chapter}{List of Figures}{58}{section*.20}
+\contentsline {chapter}{List of Tables}{59}{section*.21}
