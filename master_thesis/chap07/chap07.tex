@@ -46,23 +46,78 @@ MFC does the following:}
 
 The version of Mobile Front Controller used in Web Call Example Application is the latest version, v3.1.
 
+\section{Dual view}
+\label{sec:WebApplication:DualView}
+
+As described in the section \ref{sec:WebApplication:ArchitectureOfMobileFrontController3}, Mobile Front Controller supplies multi-view function. Web Call Example Application is developed with two view, one is desktop browser view and the other is mobile browser view. The will be illustrated separately in subsection \ref{sec:WebApplication:DualView:DesktopBrowserView} and \ref{sec:WebApplication:DualView:MobileBrowserView}.
+
+\subsection{Desktop browser view}
+\label{sec:WebApplication:DualView:DesktopBrowserView}
+
+The Mobile Front Controller supplies a function of select view. If the user access web application via a desktop browser, the desktop browser view (XHTML view) will return to user. The desktop browser view is a normal web site that follows the standard of The XHTML 1.0. Extensible HyperText Markup Language (XHTML\label{sym:XHTML}) is a markup language for web pages which developed by W3C HTML Working Group. It is widely used as a standard language of web page on Internet. A example page (the user profile information page) of desktop browser view is shown in Figure \ref{fig:UserProfileInformationDesktopView}.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/user_profile_info_desktop_view, width=5.2in}
+\caption{User profile information page of desktop browser view}
+\label{fig:UserProfileInformationDesktopView}
+\end{figure} 
+
+\subsection{Mobile browser view}
+\label{sec:WebApplication:DualView:MobileBrowserView}
+
+If the user access web application via a mobile browser, the mobile browser view (XHTML MP view) will return to user. The mobile browser view is a normal web site that follows the standard of XHTML MP 1.1. XHTML Mobile Profile (XHTML MP) is a computer language standard designed specifically for mobile phones. It is developed by  A example page (the user profile information page) of is shown in Figure \ref{fig:UserProfileInformationMobileView}.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/user_profile_info_mobile_view, width=2.5in}
+\caption{User profile information page of desktop browser view}
+\label{fig:UserProfileInformationMobileView}
+\end{figure} 
+
 \section{Site structure}
 \label{sec:WebApplication:SiteStructure}
 
-\section{Desktop browser view}
-\label{sec:WebApplication:DesktopBrowserView}
+The web set structure contains three levels. \texttt{Base} \textrightarrow{} \texttt{Protected} \textrightarrow{} \texttt{admin}. Both desktop browser view and mobile browser view use the exactly same structure. 
 
-\section{Mobile browser view}
-\label{sec:WebApplication:MobileBrowserView}
+Under base directory, there is welcome page, user register page and login page. The pages on this level are public opened. There are no restrictions on requesting these pages. 
+
+All pages in protected directory are authenticated resources. To visit these pages, the user has to login first. Both user and administrator can request this kind of resources. Under user panel, user can freely edit information, e.g. user phone number, contact book, change password, VoIP provider account and recent calls. Users can make VoIP calls by clicking the link of Phone to Phone Call under user panel. 
+The pages under admin directory are used for managing user information. Only user who has a role of administrator can access pages under admin directory. Administrator can modify user information or even delete users. 
+For more details about security, please refer section \ref{sec:WebApplication:Security:SecurityConstraint}.
 
 \section{User action}
 \label{sec:WebApplication:UserAction}
 
+
 \section{Administrator action}
 \label{sec:WebApplication:AdministratorAction}
 
+
 \section{Validation mechanism}
 \label{sec:WebApplication:ValidationMechanism}
+
+The validation of web application is implemented both at presentation tier and logic tier. On presentation tier, all form are validated by \texttt{javascript}. The validation on presentation can save the time of communication between browser and server. 
+
+\lstset{language=Java}
+\begin{lstlisting}[frame=lines, float, caption=A floating example]]
+import java.io.File;
+
+public class SpaceChecker {
+  public static void main(String[] args) {
+    File[] roots = File.listRoots();
+
+    for (int i = 0; i < roots.length; i++) {
+      System.out.println(roots[i]);
+      System.out.println("Free space = " + roots[i].getFreeSpace());
+      System.out.println();
+    }
+  }
+}
+
+\end{lstlisting}
+
+However, to prevent user disables \texttt{javascript}, there is also a validation mechanism on logic tier.  
 
 \subsection{Page level}
 \label{sec:WebApplication:ValidationMechanism:PageLevel}
