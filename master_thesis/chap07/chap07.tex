@@ -54,25 +54,18 @@ As described in the section \ref{sec:WebApplication:ArchitectureOfMobileFrontCon
 \subsection{Desktop browser view}
 \label{sec:WebApplication:DualView:DesktopBrowserView}
 
-The Mobile Front Controller supplies a function of select view. If the user access web application via a desktop browser, the desktop browser view (XHTML view) will return to user. The desktop browser view is a normal web site that follows the standard of The XHTML 1.0. Extensible HyperText Markup Language (XHTML\label{sym:XHTML}) is a markup language for web pages which developed by W3C HTML Working Group. It is widely used as a standard language of web page on Internet. A example page (the user profile information page) of desktop browser view is shown in Figure \ref{fig:UserProfileInformationDesktopView}.
-
-\begin{figure}[!hbtp]
-\centering
-\epsfig{file=chap07/resources/user_profile_info_desktop_view, width=5.2in}
-\caption{User profile information page of desktop browser view}
-\label{fig:UserProfileInformationDesktopView}
-\end{figure} 
+The Mobile Front Controller supplies a function of select view. If the user access web application via a desktop browser, the desktop browser view (XHTML view) will return to user. The desktop browser view is a normal web site that follows the standard of The XHTML 1.0. Extensible HyperText Markup Language (XHTML\label{sym:XHTML}) is a markup language for web pages which developed by W3C HTML Working Group. It is widely used as a standard language of web page on Internet. A example page (welcome page) of desktop browser view is shown in Figure \ref{fig:WelcomePageOfDesktopBrowserView}.
 
 \subsection{Mobile browser view}
 \label{sec:WebApplication:DualView:MobileBrowserView}
 
-If the user access web application via a mobile browser, the mobile browser view (XHTML MP view) will return to user. The mobile browser view is a normal web site that follows the standard of XHTML MP 1.1. XHTML Mobile Profile (XHTML MP) is a computer language standard designed specifically for mobile phones. It is developed by  A example page (the user profile information page) of is shown in Figure \ref{fig:UserProfileInformationMobileView}.
+If the user access web application via a mobile browser, the mobile browser view (XHTML MP view) will return to user. The mobile browser view is a normal web site that follows the standard of XHTML MP 1.1. XHTML Mobile Profile (XHTML MP) is a computer language standard designed specifically for mobile phones. It is developed by  A example page (welcome page) of mobile browser view is shown in Figure \ref{fig:WelcomePageOfMobileBrowserview}.
 
 \begin{figure}[!hbtp]
 \centering
-\epsfig{file=chap07/resources/user_profile_info_mobile_view, width=2.5in}
-\caption{User profile information page of desktop browser view}
-\label{fig:UserProfileInformationMobileView}
+\epsfig{file=chap07/resources/welcome_mobile_view, width=2.5in}
+\caption{Welcome page of mobile browser view}
+\label{fig:WelcomePageOfMobileBrowserview}
 \end{figure} 
 
 \section{Site structure}
@@ -89,6 +82,37 @@ For more details about security, please refer section \ref{sec:WebApplication:Se
 \section{User action}
 \label{sec:WebApplication:UserAction}
 
+\subsection{User Registration}
+
+To use the Web Call Example Application, a user must register him on the web site. It is quite easy and simple to register and there are only three steps: 
+\begin{enumerate}
+\item Navigate to the web site url and open the welcome page. There are user registration functions on both desktop and mobile views. So users can register either from a computer or a mobile phone.
+\item At the welcome page. Click the link to New User Registration.
+\item Fill the form, include user name (in the format of email address), password and confirm password.
+\end{enumerate}
+
+\subsection{User panel}
+
+The user profile information menu is shown in Figure \ref{fig:UserProfileInformationDesktopView}. User can edit his phone number, contact book, password, VoIP provider accounts and recent calls log.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/user_profile_info_desktop_view, width=5.2in}
+\caption{User profile information page of desktop browser view}
+\label{fig:UserProfileInformationDesktopView}
+\end{figure} 
+
+\subsection{VoIP service provider account}
+
+To make a VoIP call, the user must have a VoIP Provider Account first. Figure \ref{fig:RegisterVoIPAccount} shows how to register a VoIP provider account. To get the view of adding VoIP provider account, user should go to user panel \textrightarrow{} User Profile Information \textrightarrow{} VoIP Provider Account \textrightarrow{} add new VoIP provider account.
+Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP account information. The outbound proxy should in a format of SIP\_PROVIDER\_URL$\colon$PORT\_NUMBER. If no port number specified, the port 5060 will be used as defined in RFC3261\cite{RFC3261}.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/register_voip_service_provider_account, width=5.2in}
+\caption{Register VoIP service provider account}
+\label{fig:RegisterVoIPAccount}
+\end{figure} 
 
 \section{Administrator action}
 \label{sec:WebApplication:AdministratorAction}
@@ -97,33 +121,35 @@ For more details about security, please refer section \ref{sec:WebApplication:Se
 \section{Validation mechanism}
 \label{sec:WebApplication:ValidationMechanism}
 
-The validation of web application is implemented both at presentation tier and logic tier. On presentation tier, all form are validated by \texttt{javascript}. The validation on presentation can save the time of communication between browser and server. 
-
-\lstset{language=Java}
-\begin{lstlisting}[frame=lines, float, caption=A floating example]]
-import java.io.File;
-
-public class SpaceChecker {
-  public static void main(String[] args) {
-    File[] roots = File.listRoots();
-
-    for (int i = 0; i < roots.length; i++) {
-      System.out.println(roots[i]);
-      System.out.println("Free space = " + roots[i].getFreeSpace());
-      System.out.println();
-    }
-  }
-}
-
-\end{lstlisting}
-
-However, to prevent user disables \texttt{javascript}, there is also a validation mechanism on logic tier.  
+The validation of web application is implemented both at presentation tier and logic tier. On presentation tier, all form are validated by \texttt{javascript}. 
 
 \subsection{Page level}
 \label{sec:WebApplication:ValidationMechanism:PageLevel}
 
+The validation on presentation layer can save the time of communication between browser and server. Web Call Example Application uses \texttt{JavaScript} to validate user input. All pages share the same generic validation methods. An example code of ``checking if a field is empty'' is shown in Listing \ref{JavaScriptValidationCode}.
+
+\lstdefinelanguage{Java}
+{morekeywords={function, true, false, return}}
+\lstset{language=Java}
+\lstset{emph={function}, emphstyle={\color{blue}},
+		  emph={value}, emphstyle={\color{purple}},
+		  emph={field, field1, field2, alert_message}, emphstyle={\underbar},
+}
+
+\begin{lstlisting}[frame=lines, float, caption=JavaScript validation code, label=JavaScriptValidationCode]
+function has_value(field, alert_message) {
+    if (field.value == null || field.value == "") {
+        alert(alert_message);
+        return false;
+    }
+    return true;
+}
+\end{lstlisting}
+
 \subsection{Server level}
 \label{sec:WebApplication:ValidationMechanism:ServerLevel}
+
+However, to prevent user disables \texttt{javascript}, there is also a validation mechanism on logic layer, that is called server level validation. To make the server response faster, only important or sensitive actions use a server level validation. E.g. The action of changing password has a server level validation of checking if password matched. The action of cancel call is another sensitive function. Beside the session id, server will also check if this session belongs to the user who want to cancel it. This will prevent from arbitrary interrupt calls.
 
 \section{Session control}
 \label{sec:WebApplication:SessionControl}
