@@ -210,9 +210,11 @@ Web Call Example Application supports multi thread actions, that is many users c
 \section{Ajax in web application}
 \label{sec:WebApplication:AjaxInWebApplication}
 
-Ajax\label{sym:Ajax} is short for Asynchronous JavaScript and XML. It is a set of Internet techniques used on the client to generate interactive web applications or rich Internet applications. For more detail about Ajax, please refer to \textit{Ajax : A New Approach to Web Applications} by Jesse James Garrett\cite{Ajax}.
+Ajax\label{sym:Ajax} is short for Asynchronous JavaScript and XML. It is a set of Internet techniques used on the client to generate interactive web applications or rich Internet applications. For more detail about Ajax, please refer to \textit{Ajax : A New Approach to Web Applications} by Jesse James Garrett\cite{AjaxJesse}.
 
 There are two places use Ajax in Web Call Example Application. One is at phone to phone call page, which is shown in Figure \ref{fig:PhoneToPhoneCall}. When user chooses a different VoIP service provider account. An Ajax request will be used to fetch account information from server. The fields will be updated automatically after browser get new account info. And there is no refresh of the page. 
+
+Another place that uses Ajax is the call state page. The call state page shows a real time state of a call session. There is a \texttt{JavaScript} function named \texttt{updateState} sends ajaxGet request to server to check the session state in every minute. An action named \texttt{LoadCallState} at server side will communicate with \texttt{CallSessions} which described in section \ref{sec:WebApplication:SessionControl}, and response browser with the latest state of that session.
 
 \section{Java ME helper}
 \label{sec:WebApplication:JavaMEHelper}
