@@ -105,7 +105,7 @@ The user profile information menu is shown in Figure \ref{fig:UserProfileInforma
 \subsection{VoIP service provider account}
 
 To make a VoIP call, the user must have a VoIP Provider Account first. Figure \ref{fig:RegisterVoIPAccount} shows how to register a VoIP provider account. To get the view of adding VoIP provider account, user should go to user panel \textrightarrow{} User Profile Information \textrightarrow{} VoIP Provider Account \textrightarrow{} add new VoIP provider account.
-Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP account information. The outbound proxy should in a format of SIP\_PROVIDER\_URL$\colon$PORT\_NUMBER. If no port number specified, the port 5060 will be used as defined in RFC3261\cite{RFC3261}.
+Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP account information. The outbound proxy should in a format of SIP\_PROVIDER\_URL:PORT\_NUMBER. If no port number specified, the port \texttt{5060} will be used as defined in RFC3261\cite{RFC3261}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -114,9 +114,55 @@ Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP ac
 \label{fig:RegisterVoIPAccount}
 \end{figure} 
 
+Web Call Example Application supports multi-account. This means as a user, you can have more than one account and choose a cheaper one when you make VoIP calls.
+
+\subsection{Phone-to-Phone call}
+
+The integrated web application offers phone-to-phone function for registered users. 
+
+Figure \ref{fig:UserPanelDesktopBrowserView} is the user panel of desktop browser view. Users can either go to user profile Information page or the phone-to-phone dialing page. To make VoIP calls, the user just need click the link of Phone to phone call.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/user_panel_desktop, width=5.2in}
+\caption{User panel desktop browser view}
+\label{fig:UserPanelDesktopBrowserView}
+\end{figure} 
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/phone_to_phone_call_desktop, width=5.2in}
+\caption{Phone to phone call}
+\label{fig:PhoneToPhoneCall}
+\end{figure} 
+
+In the phone-to-phone call page, which is shown in Figure \ref{fig:PhoneToPhoneCall}, users can input their own number, or use the default numbers, which is set in ``my phone number'' of user profiles information. And input the destination phone number, or select from recent calls or the contact list. The client number could either be SIP address or a complete phone number. If users have more than one VoIP provider account, they can use the drop down list of VoIP provider account and choose an account as their wish. Different VoIP service provider may supply different rate for different destination. So the multi-account function can help user save money by choosing a cheapest provider. This page uses the technology of Ajax to dynamically show the information of VoIP account. More Ajax technologies will be introduced in section \ref{sec:WebApplication:AjaxInWebApplication}. 
+
+There is a drop down list of call methods. Five different implementations of connection methods will be illustrated at that list. They are Relay Call, Call transfer, Re-invite, SDP swap and Web client. The last four methods are so called third party call control (3PCC)\cite{RFC3725}. The differences of connection methods will be discussed in chapter \ref{sec:Solution}. It is recommend that by default user uses the method of Web client. 
+
+After user clicked ``Call'' button. The page will be directed to call state page. On call state page, users can see the phone numbers of two sides, call state, or even cancel the call.
+
 \section{Administrator action}
 \label{sec:WebApplication:AdministratorAction}
 
+The administrator actions include user profile management as well as all of user relevant information. 
+Figure \ref{fig:UserListOfAdministratorPanel} is the user list page. The administrator can use the button of edit to change the user information as well as user roles.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/user_list_desktop, width=5.2in}
+\caption{User list of administrator panel}
+\label{fig:UserListOfAdministratorPanel}
+\end{figure} 
+
+Figure \ref{fig:AdministratorViewOfUserInformation} shows a administrator view of user info. The administrator can update user's basic info, E.g. password and roles. Administrators can change SIP relevant information, such as user's phone number, user's contact list and user's VoIP account info by clicking ``show'' button in the SIP relevant info section.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/admin_view_of_user_info, width=5.2in}
+\caption{Administrator view of user information}
+\label{fig:AdministratorViewOfUserInformation}
+\end{figure} 
 
 \section{Validation mechanism}
 \label{sec:WebApplication:ValidationMechanism}
@@ -129,14 +175,12 @@ The validation of web application is implemented both at presentation tier and l
 The validation on presentation layer can save the time of communication between browser and server. Web Call Example Application uses \texttt{JavaScript} to validate user input. All pages share the same generic validation methods. An example code of ``checking if a field is empty'' is shown in Listing \ref{JavaScriptValidationCode}.
 
 \lstdefinelanguage{Java}
-{morekeywords={function, true, false, return}}
+{morekeywords={function, alert, true, false, return}}
 \lstset{language=Java}
 \lstset{emph={function}, emphstyle={\color{blue}},
-		  emph={value}, emphstyle={\color{purple}},
-		  emph={field, field1, field2, alert_message}, emphstyle={\underbar},
-}
+		  emph={value}, emphstyle={\color{purple}},}
 
-\begin{lstlisting}[frame=lines, float, caption=JavaScript validation code, label=JavaScriptValidationCode]
+\begin{lstlisting}[frame=lines, float=!bph, caption=JavaScript validation code, label=JavaScriptValidationCode]
 function has_value(field, alert_message) {
     if (field.value == null || field.value == "") {
         alert(alert_message);
@@ -149,13 +193,26 @@ function has_value(field, alert_message) {
 \subsection{Server level}
 \label{sec:WebApplication:ValidationMechanism:ServerLevel}
 
-However, to prevent user disables \texttt{javascript}, there is also a validation mechanism on logic layer, that is called server level validation. To make the server response faster, only important or sensitive actions use a server level validation. E.g. The action of changing password has a server level validation of checking if password matched. The action of cancel call is another sensitive function. Beside the session id, server will also check if this session belongs to the user who want to cancel it. This will prevent from arbitrary interrupt calls.
+However, to prevent user disables \texttt{javascript}, there is also a validation mechanism on server side, that is called server level validation. To make the server response faster, only important or sensitive actions use a server level validation. E.g. The action of changing password has a server level validation of checking if password matched. The action of cancel call is another sensitive function. Beside the session id, server will also check if this session belongs to the user who want to cancel it. This will prevent from arbitrary interrupt calls.
 
 \section{Session control}
 \label{sec:WebApplication:SessionControl}
 
+Web Call Example Application supports multi thread actions, that is many users can make phone calls concurrently. An \texttt{enum} class \texttt{CallSessions} works as a singleton\footnote{Singleton is a design pattern that used to restrict instantiation of a class to one object.} and manages call sessions. A class diagram of \texttt{CallSessions} is shown in Figure \ref{fig:ClassDiagramOfCallSessions}. It can be seen from picture, the four methods \texttt{add}, \texttt{getCallInfo}, \texttt{remove}, \texttt{contains} supply a very convenient way to manipulate sessions. A instance of \texttt{CallInfo} contains all of information of a phone call, it can be treated as a information pack.
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap07/resources/CallSessions_class_diagram, width=2.5in}
+\caption{Class diagram of CallSessions}
+\label{fig:ClassDiagramOfCallSessions}
+\end{figure} 
+
 \section{Ajax in web application}
 \label{sec:WebApplication:AjaxInWebApplication}
+
+Ajax\label{sym:Ajax} is short for Asynchronous JavaScript and XML. It is a set of Internet techniques used on the client to generate interactive web applications or rich Internet applications. For more detail about Ajax, please refer to \textit{Ajax : A New Approach to Web Applications} by Jesse James Garrett\cite{Ajax}.
+
+There are two places use Ajax in Web Call Example Application. One is at phone to phone call page, which is shown in Figure \ref{fig:PhoneToPhoneCall}. When user chooses a different VoIP service provider account. An Ajax request will be used to fetch account information from server. The fields will be updated automatically after browser get new account info. And there is no refresh of the page. 
 
 \section{Java ME helper}
 \label{sec:WebApplication:JavaMEHelper}

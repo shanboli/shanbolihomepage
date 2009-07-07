@@ -27,6 +27,13 @@ Elena Fersman and Peter Yeung.
 \newblock {Using REST and Web Services to Mash Up Communications Capabilities}.
 \newblock In {\em JavaOne 2009}, June 2009.
 
+\bibitem{Ajax}
+Jesse~James Garrett.
+\newblock {Ajax: A New Approach to Web Applications}.
+\newblock \\
+  \url{http://www.adaptivepath.com/ideas/essays/archives/000385.php}, February
+  2005.
+
 \bibitem{J2MERecordManagementStore}
 Soma Ghosh.
 \newblock {J2ME record management store}.
