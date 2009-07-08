@@ -73,40 +73,40 @@
 \contentsline {section}{\numberline {7.11}Database}{39}{section.7.11}
 \contentsline {subsection}{\numberline {7.11.1}Design of database}{39}{subsection.7.11.1}
 \contentsline {subsection}{\numberline {7.11.2}User database utility}{39}{subsection.7.11.2}
-\contentsline {section}{\numberline {7.12}Security}{39}{section.7.12}
-\contentsline {subsection}{\numberline {7.12.1}Certificate}{39}{subsection.7.12.1}
-\contentsline {subsection}{\numberline {7.12.2}Security constraint}{39}{subsection.7.12.2}
-\contentsline {subsection}{\numberline {7.12.3}Authorization}{39}{subsection.7.12.3}
-\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{41}{chapter.8}
-\contentsline {section}{\numberline {8.1}Metro}{41}{section.8.1}
-\contentsline {section}{\numberline {8.2}SOAP web service}{41}{section.8.2}
-\contentsline {section}{\numberline {8.3}Synchronize}{41}{section.8.3}
-\contentsline {chapter}{\chapternumberline {9}Java ME Client}{43}{chapter.9}
-\contentsline {section}{\numberline {9.1}Architecture}{43}{section.9.1}
-\contentsline {section}{\numberline {9.2}Web Service Client Stub}{44}{section.9.2}
-\contentsline {section}{\numberline {9.3}Record Store Manager}{45}{section.9.3}
-\contentsline {section}{\numberline {9.4}PIM Contact Helper}{45}{section.9.4}
-\contentsline {section}{\numberline {9.5}Web Call Client}{46}{section.9.5}
-\contentsline {section}{\numberline {9.6}User Interface}{48}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}VoIP Call Form}{48}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}PIM Contacts}{49}{subsection.9.6.2}
-\contentsline {subsection}{\numberline {9.6.3}My Phone Number}{49}{subsection.9.6.3}
-\contentsline {subsection}{\numberline {9.6.4}Contacts}{50}{subsection.9.6.4}
-\contentsline {subsection}{\numberline {9.6.5}Synchronize}{50}{subsection.9.6.5}
-\contentsline {subsection}{\numberline {9.6.6}Phone Call}{50}{subsection.9.6.6}
-\contentsline {section}{\numberline {9.7}Two implementations of UI}{52}{section.9.7}
-\contentsline {subsection}{\numberline {9.7.1}VMD-based UI}{52}{subsection.9.7.1}
-\contentsline {subsection}{\numberline {9.7.2}Generic UI}{52}{subsection.9.7.2}
-\contentsline {section}{\numberline {9.8}Installation of Java ME Client}{54}{section.9.8}
-\contentsline {section}{\numberline {9.9}Security of Java ME Client}{54}{section.9.9}
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{55}{chapter.10}
-\contentsline {chapter}{\chapternumberline {11}Future Work}{57}{chapter.11}
-\contentsline {section}{\numberline {11.1}RESTful web service interface}{57}{section.11.1}
-\contentsline {section}{\numberline {11.2}Support for more mobile devices}{57}{section.11.2}
-\contentsline {section}{\numberline {11.3}Gadgets}{57}{section.11.3}
-\contentsline {section}{\numberline {11.4}Call history}{57}{section.11.4}
-\contentsline {chapter}{Bibliography}{59}{section*.18}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{65}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{67}{appendix*.19}
-\contentsline {chapter}{List of Figures}{68}{section*.20}
-\contentsline {chapter}{List of Tables}{70}{section*.21}
+\contentsline {section}{\numberline {7.12}Security}{41}{section.7.12}
+\contentsline {subsection}{\numberline {7.12.1}Certificate}{41}{subsection.7.12.1}
+\contentsline {subsection}{\numberline {7.12.2}Security constraint}{41}{subsection.7.12.2}
+\contentsline {subsection}{\numberline {7.12.3}Authorization}{41}{subsection.7.12.3}
+\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{43}{chapter.8}
+\contentsline {section}{\numberline {8.1}Metro}{43}{section.8.1}
+\contentsline {section}{\numberline {8.2}SOAP web service}{43}{section.8.2}
+\contentsline {section}{\numberline {8.3}Synchronize}{43}{section.8.3}
+\contentsline {chapter}{\chapternumberline {9}Java ME Client}{45}{chapter.9}
+\contentsline {section}{\numberline {9.1}Architecture}{45}{section.9.1}
+\contentsline {section}{\numberline {9.2}Web Service Client Stub}{46}{section.9.2}
+\contentsline {section}{\numberline {9.3}Record Store Manager}{47}{section.9.3}
+\contentsline {section}{\numberline {9.4}PIM Contact Helper}{47}{section.9.4}
+\contentsline {section}{\numberline {9.5}Web Call Client}{48}{section.9.5}
+\contentsline {section}{\numberline {9.6}User Interface}{50}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}VoIP Call Form}{50}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}PIM Contacts}{51}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.6.3}My Phone Number}{51}{subsection.9.6.3}
+\contentsline {subsection}{\numberline {9.6.4}Contacts}{52}{subsection.9.6.4}
+\contentsline {subsection}{\numberline {9.6.5}Synchronize}{52}{subsection.9.6.5}
+\contentsline {subsection}{\numberline {9.6.6}Phone Call}{52}{subsection.9.6.6}
+\contentsline {section}{\numberline {9.7}Two implementations of UI}{54}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}VMD-based UI}{54}{subsection.9.7.1}
+\contentsline {subsection}{\numberline {9.7.2}Generic UI}{54}{subsection.9.7.2}
+\contentsline {section}{\numberline {9.8}Installation of Java ME Client}{56}{section.9.8}
+\contentsline {section}{\numberline {9.9}Security of Java ME Client}{56}{section.9.9}
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{57}{chapter.10}
+\contentsline {chapter}{\chapternumberline {11}Future Work}{59}{chapter.11}
+\contentsline {section}{\numberline {11.1}RESTful web service interface}{59}{section.11.1}
+\contentsline {section}{\numberline {11.2}Support for more mobile devices}{59}{section.11.2}
+\contentsline {section}{\numberline {11.3}Gadgets}{59}{section.11.3}
+\contentsline {section}{\numberline {11.4}Call history}{59}{section.11.4}
+\contentsline {chapter}{Bibliography}{61}{section*.18}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{67}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{69}{appendix*.19}
+\contentsline {chapter}{List of Figures}{70}{section*.20}
+\contentsline {chapter}{List of Tables}{72}{section*.21}
