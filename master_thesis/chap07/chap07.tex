@@ -13,7 +13,7 @@
 \label{fig:WelcomePageOfDesktopBrowserView}
 \end{figure}
 
-The web application is the main portal of the whole application. It is based on Mobile Front Controller. The role of web application in the whole application is shown in Figure \ref{fig:ArchitectureOfWebCallSDK}. Users can use the web application to manage their accounts and VoIP calls. Administrators can use web applications to manage users. The web application can be packaged into a war file and easily to deploy. It only needs a sevlet container, like Tomcat, to run. It supplies two kind of views one is for desktop browser and another is for mobile browser. Beside these two views, the web application also contains a web service interface. This chapter will focus on two browser view. The web service interface will be introduced with detail in chapter \ref{sec:WebServiceInterface}.
+The web application is the main portal of the whole application. It is based on Mobile Front Controller. The role of web application in the whole application is shown in Figure \ref{fig:ArchitectureOfWebCallExampleApplication}. Users can use the web application to manage their accounts and VoIP calls. Administrators can use web applications to manage users. The web application can be packaged into a war file and easily to deploy. It only needs a sevlet container, like Tomcat, to run. It supplies two kind of views one is for desktop browser and another is for mobile browser. Beside these two views, the web application also contains a web service interface. This chapter will focus on two browser view. The web service interface will be introduced with detail in chapter \ref{sec:WebServiceInterface}.
 
 A welcome screen of desktop browser view of Web Application is shown in Figure \ref{fig:WelcomePageOfDesktopBrowserView}.
 
@@ -77,7 +77,7 @@ Under base directory, there is welcome page, user register page and login page. 
 
 All pages in protected directory are authenticated resources. To visit these pages, the user has to login first. Both user and administrator can request this kind of resources. Under user panel, user can freely edit information, e.g. user phone number, contact book, change password, VoIP provider account and recent calls. Users can make VoIP calls by clicking the link of Phone to Phone Call under user panel. 
 The pages under admin directory are used for managing user information. Only user who has a role of administrator can access pages under admin directory. Administrator can modify user information or even delete users. 
-For more details about security, please refer section \ref{sec:WebApplication:Security:SecurityConstraint}.
+For more details about security, please refer section \ref{sec:WebApplication:Security}.
 
 \section{User action}
 \label{sec:WebApplication:UserAction}
@@ -92,6 +92,7 @@ To use the Web Call Example Application, a user must register him on the web sit
 \end{enumerate}
 
 \subsection{User panel}
+\label{sec:WebApplication:UserAction:UserPanel}
 
 The user profile information menu is shown in Figure \ref{fig:UserProfileInformationDesktopView}. User can edit his phone number, contact book, password, VoIP provider accounts and recent calls log.
 
@@ -103,6 +104,7 @@ The user profile information menu is shown in Figure \ref{fig:UserProfileInforma
 \end{figure} 
 
 \subsection{VoIP service provider account}
+\label{sec:WebApplication:UserAction:VoIPServiceProviderAccount}
 
 To make a VoIP call, the user must have a VoIP Provider Account first. Figure \ref{fig:RegisterVoIPAccount} shows how to register a VoIP provider account. To get the view of adding VoIP provider account, user should go to user panel \textrightarrow{} User Profile Information \textrightarrow{} VoIP Provider Account \textrightarrow{} add new VoIP provider account.
 Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP account information. The outbound proxy should in a format of SIP\_PROVIDER\_URL:PORT\_NUMBER. If no port number specified, the port \texttt{5060} will be used as defined in RFC3261\cite{RFC3261}.
@@ -117,6 +119,7 @@ Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP ac
 Web Call Example Application supports multi-account. This means as a user, you can have more than one account and choose a cheaper one when you make VoIP calls.
 
 \subsection{Phone-to-Phone call}
+\label{sec:WebApplication:UserAction:Phone2PhoneCall}
 
 The integrated web application offers phone-to-phone function for registered users. 
 
@@ -257,15 +260,8 @@ As long as user creates a database, he can use Web Call Example Application. Whe
 \section{Security}
 \label{sec:WebApplication:Security}
 
-\subsection{SSL & Certificate}
-\label{sec:WebApplication:Security:Certificate}
+There are two parts of resources are in the security constraint domain. One is the user resource and another is administrator resources. They are both in the CONFIDENTIAL level. \textit{``A user data constraint (<user-data-constraint> in the deployment descriptor) requires that all constrained URL patterns and HTTP methods specified in the security constraint are received over a protected transport layer connection such as HTTPS (HTTP over SSL).''} from Java EE 5 Tutorial\cite{JavaEE5Tutorial}.  
 
-TODO: ssh
-
-\subsection{Security constraint}
-\label{sec:WebApplication:Security:SecurityConstraint}
-
-
-
+Web Call Example Application supports six different ways of password digest. They are MD2, MD5, SHA-1, SHA-256, SHA-384 and SHA-512. The method of digest can be specified in \texttt{web.xml}. They are fully compatible with standard servlet containers such as \textsf{Apache Tomcat}. All users' passwords in database are hashed password, even site/database managers can not get the plain text of users' passwords. The hashed password is also used in operations of web service interface. 
 
 % ********** End of chapter **********

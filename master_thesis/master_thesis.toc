@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.1.2}VoIP Client}{11}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Solution Provider}{12}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Third Party Call Control}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Why Web Call SDK?}{13}{section.3.3}
+\contentsline {section}{\numberline {3.3}Why Web Call Example Application?}{13}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}Solution}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Relay Call}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Problem of Relay Call}{16}{section.4.2}
@@ -74,9 +74,6 @@
 \contentsline {subsection}{\numberline {7.11.1}Design of database}{39}{subsection.7.11.1}
 \contentsline {subsection}{\numberline {7.11.2}User database utility}{39}{subsection.7.11.2}
 \contentsline {section}{\numberline {7.12}Security}{41}{section.7.12}
-\contentsline {subsection}{\numberline {7.12.1}Certificate}{41}{subsection.7.12.1}
-\contentsline {subsection}{\numberline {7.12.2}Security constraint}{41}{subsection.7.12.2}
-\contentsline {subsection}{\numberline {7.12.3}Authorization}{41}{subsection.7.12.3}
 \contentsline {chapter}{\chapternumberline {8}Web Service Interface}{43}{chapter.8}
 \contentsline {section}{\numberline {8.1}Metro}{43}{section.8.1}
 \contentsline {section}{\numberline {8.2}SOAP web service}{43}{section.8.2}
