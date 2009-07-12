@@ -39,6 +39,12 @@ Soma Ghosh.
 \newblock {J2ME record management store}.
 \newblock \\ \url{http://www.ibm.com/developerworks/library/wi-rms/}, May 2002.
 
+\bibitem{WebServicesW3C}
+Web Services Architecture~Working Group.
+\newblock {Web Services Glossary}.
+\newblock \\ \url{http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/}, February
+  2004.
+
 \bibitem{SOAPVersion1dot2}
 Martin Gudgin, Marc Hadley, Noah Mendelsohn, Jean-Jacques Moreau,
   Henrik~Frystyk Nielsen, Anish Karmarkar, and Yves Lafon.
@@ -49,11 +55,6 @@ Martin Gudgin, Marc Hadley, Noah Mendelsohn, Jean-Jacques Moreau,
 M.~Handley, V.~Jacobson, and C.~Perkins.
 \newblock {SDP}: {S}ession {D}escription {P}rotocol , {RFC} 4566.
 \newblock \\ \url{http://www.ietf.org/rfc/rfc4566.txt}, July 2006.
-
-\bibitem{WebServicesGlossary}
-Hugo Hass and Allen Brown.
-\newblock Web services glossary.
-\newblock \\ \url{http://www.w3.org/TR/ws-gloss/}, February 2004.
 
 \bibitem{JavaEE5Tutorial}
 Eric Jendrock, Jennifer Ball, Debbie Carson, Ian Evans, Scott Fordin, and Kim
@@ -94,6 +95,11 @@ Sun {M}icrosystems.
 Sun {M}icrosystems.
 \newblock Java {ME} {T}echnology.
 \newblock \\ \url{http://java.sun.com/javame/technology/}, June 2009.
+
+\bibitem{MetroHomepage}
+Sun Microsystems.
+\newblock {metro: Home}.
+\newblock \\ \url{https://metro.dev.java.net/}, July 2009.
 
 \bibitem{WhatIsWeb2dot0}
 Tim O'Reilly.

@@ -128,13 +128,13 @@ CharSet=def
 FileName=dedication.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=12
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -178,15 +178,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=1458
-CaretPos.Y=30
+CaretPos.X=0
+CaretPos.Y=0
 CharSet=def
 FileName=chap01\chap01.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
-ScrollPos.Y=21
+ScrollPos.Y=1
 SearchListCount=1
 
 [Files\15\SearchList\0]
@@ -199,7 +199,7 @@ Text=sdk
 [Files\15]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=3
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -215,13 +215,13 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=97
-CaretPos.Y=8
+CaretPos.X=0
+CaretPos.Y=0
 CharSet=def
 FileName=chap02\chap02.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=1
@@ -236,7 +236,7 @@ Text=sdk
 [Files\16]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=4
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -252,15 +252,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=294
-CaretPos.Y=49
+CaretPos.X=0
+CaretPos.Y=0
 CharSet=def
 FileName=chap03\chap03.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
-ScrollPos.Y=49
+ScrollPos.Y=1
 SearchListCount=1
 
 [Files\17\SearchList\0]
@@ -273,7 +273,7 @@ Text=sdk
 [Files\17]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=2
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -289,15 +289,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=432
-CaretPos.Y=28
+CaretPos.X=0
+CaretPos.Y=0
 CharSet=def
 FileName=chap04\chap04.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
-ScrollPos.Y=114
+ScrollPos.Y=1
 SearchListCount=1
 
 [Files\18\SearchList\0]
@@ -310,7 +310,7 @@ Text=sdk
 [Files\18]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=5
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -326,13 +326,13 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=175
-CaretPos.Y=13
+CaretPos.X=0
+CaretPos.Y=0
 CharSet=def
 FileName=chap05\chap05.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=1
@@ -347,7 +347,7 @@ Text=sdk
 [Files\19]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=6
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -397,7 +397,7 @@ CharSet=def
 FileName=chap06\chap06.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
 ScrollPos.Y=1
 SearchListCount=2
@@ -419,7 +419,7 @@ Text=sdk
 [Files\20]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=7
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -435,36 +435,36 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=499
-CaretPos.Y=262
+CaretPos.X=0
+CaretPos.Y=180
 CharSet=def
 FileName=chap07\chap07.tex
 FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=337
+ScrollPos.Y=221
 SearchListCount=5
 
 [Files\21\SearchList\0]
 CaseSensitive=no
 Color=65280
 RegExp=no
-Show=0
+Show=1
 Text=colon
 
 [Files\21\SearchList\1]
 CaseSensitive=no
 Color=65280
 RegExp=no
-Show=0
+Show=1
 Text=javascript
 
 [Files\21\SearchList\2]
 CaseSensitive=no
 Color=65280
 RegExp=no
-Show=0
+Show=1
 Text=javascriptvalidationcode
 
 [Files\21\SearchList\3]
@@ -484,13 +484,13 @@ Text=sdk
 [Files\21]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=0
+TabOrder=3
 UseThesaurus=yes
 WrapLine=yes
 
 [Files\22]
 ActiveFilters=
-Bookmark#0=0
+Bookmark#0=27
 Bookmark#1=0
 Bookmark#2=0
 Bookmark#3=0
@@ -500,19 +500,19 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=0
-CaretPos.Y=0
+CaretPos.X=22
+CaretPos.Y=27
 CharSet=def
 FileName=chap08\chap08.tex
 FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=0
+ScrollPos.Y=19
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=8
+TabOrder=1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -528,15 +528,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=368
-CaretPos.Y=5
+CaretPos.X=0
+CaretPos.Y=0
 CharSet=def
 FileName=chap09\chap09.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
-ScrollPos.Y=242
+ScrollPos.Y=1
 SearchListCount=5
 
 [Files\23\SearchList\0]
@@ -577,7 +577,7 @@ Text=sdk
 [Files\23]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=9
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -599,13 +599,13 @@ CharSet=def
 FileName=chap10\chap10.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=10
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -649,15 +649,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=0
-CaretPos.Y=0
+CaretPos.X=463
+CaretPos.Y=73
 CharSet=def
 FileName=terminology\terminology.tex
 FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=1
+ScrollPos.Y=79
 SearchListCount=1
 
 [Files\26\SearchList\0]
@@ -670,7 +670,7 @@ Text=sdk
 [Files\26]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=13
+TabOrder=2
 UseThesaurus=yes
 WrapLine=yes
 
@@ -692,13 +692,13 @@ CharSet=def
 FileName=chap11\chap11.tex
 FoldedLines=
 IsMainFile=no
-Opened=yes
+Opened=no
 ScrollPos.X=0
 ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=11
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -966,16 +966,16 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=52
-CaretPos.Y=256
+CaretPos.X=17
+CaretPos.Y=272
 CharSet=def
 FileName=master_thesis.bib
 FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=241
-SearchListCount=2
+ScrollPos.Y=267
+SearchListCount=4
 
 [Files\7\SearchList\0]
 CaseSensitive=no
@@ -991,10 +991,24 @@ RegExp=no
 Show=1
 Text=mobile
 
+[Files\7\SearchList\2]
+CaseSensitive=no
+Color=65280
+RegExp=no
+Show=1
+Text=metro
+
+[Files\7\SearchList\3]
+CaseSensitive=no
+Color=65280
+RegExp=no
+Show=1
+Text=webser
+
 [Files\7]
 ShowSyntax=yes
 SpellChecking=no
-TabOrder=1
+TabOrder=0
 UseThesaurus=yes
 WrapLine=yes
 

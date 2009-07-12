@@ -3,9 +3,82 @@
 \chapter{Web Service Interface}
 \label{sec:WebServiceInterface}
 
-\section{Metro}
+\section{Introduce web service and metro}
+
+\begin{quote}
+\textit{``A Web service is a software system designed to support interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically WSDL). Other systems interact with the Web service in a manner prescribed by its description using SOAP-messages, typically conveyed using HTTP with an XML serialization in conjunction with other Web-related standards.''}\cite{WebServicesW3C}
+\begin{flushright}
+--W3C
+\end{flushright}
+\end{quote}
+
+A web service interface of Web Call Example Application gives a most broad way for clients. Chapter \ref{sec:JavaMEClient} describes a Java ME Client of this web service interface. However, it is definitely not the only client for the web service. As long as a clients implements the interface, it can use the web call service and database. 
+
+The web service interface of Web Call Example Application is based on \textsf{Metro}. Metro is a \textit{high-performance}, \textit{extensible}, \textit{easy-to-use} web service stack\cite{MetroHomepage}. It is supported by Sun Microsystems. For more detail about Metro, please refer to Metro Homepage at \href{https://metro.dev.java.net/}{https://metro.dev.java.net/}. 
 
 \section{SOAP web service}
+
+The web service source file is \\ \texttt{sip.components.webapp.webserviceg.WebCallImpl}. 
+
+List \ref{WebServiceImplementation} shows a fragment of the source code that calls operation in Sip Call Component. 
+
+
+\lstdefinelanguage{Java}
+{morekeywords={import, @WebService, @WebMethod, @WebResult, @WebParam, public, class, String}}
+\lstset{language=Java}
+
+\begin{lstlisting}[frame=lines, float=!bph, caption=Web Service implementation (fragment), label=WebServiceImplementation]
+
+...
+import sip.components.core.controller.CallController;
+...
+
+@WebService(name = "WebCall")
+public class WebCallImpl {
+
+...
+@WebMethod
+@WebResult(name = "callID")
+public String call(@WebParam(name = "clientA") String clientA,
+               @WebParam(name = "clientB") String clientB,
+               @WebParam(name = "sipAccountName") 
+                         String sipAccountName,
+               @WebParam(name = "implType") String implType,
+               @WebParam(name = "username") String username,
+               @WebParam(name = "password") String password)
+                         Throws PersistenceLayerException, 
+                         AuthenticationFailedException {
+                             
+...
+...
+CallController controller = cf.createAudioCallController();
+controller.setClientA(clientA);
+controller.setClientB(clientB);
+controller.register();
+controller.start();
+...
+
+}
+\end{lstlisting}
+
+
+The implementing class of web service uses the \texttt{@WebService} annotation to set the port name, service name and the target namespace. The web service methods use the \texttt{WebMethod} to annotate the operation name and actions.  The parameter of the method is annotated with \texttt{@WebParam}.
+
+There are nine web service methods in the implementation Web Service:
+\begin{itemize}
+\item \texttt{getUserURIs:} Get the list of user's URIs.
+\item \texttt{getContacts:} Get the contact list.
+\item \texttt{getRecentCalls:} Get the recent calls list.
+\item \texttt{getSipAccounts:} Get accounts for sip providers. The register of sip provider's accounts can be done at both desktop and mobile browser views.
+\item \texttt{getImplTypes:} Get the implementation types list.
+\item \texttt{call:} Establish phone calls. In this method, the user's phone number and destination phone number will also be stored in database. A Ring Buffer is used to store the recent calls.
+\item \texttt{cancelCall:} cancel a phone call.
+\item \texttt{getState:} get a phone call's state.
+\item \texttt{syncContacts:} Synchronize contacts.  If same name with different phone number happens, the number in client will be kept.
+
+\end{itemize}
+
+For details about the method please refer the source code in \texttt{WebCallImpl}.
 
 \section{Synchronize}
 
