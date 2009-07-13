@@ -77,7 +77,7 @@
 \contentsline {chapter}{\chapternumberline {8}Web Service Interface}{43}{chapter.8}
 \contentsline {section}{\numberline {8.1}Introduce web service and metro}{43}{section.8.1}
 \contentsline {section}{\numberline {8.2}SOAP web service}{43}{section.8.2}
-\contentsline {section}{\numberline {8.3}Synchronize}{45}{section.8.3}
+\contentsline {section}{\numberline {8.3}Deploy of Web Service}{45}{section.8.3}
 \contentsline {chapter}{\chapternumberline {9}Java ME Client}{47}{chapter.9}
 \contentsline {section}{\numberline {9.1}Architecture}{47}{section.9.1}
 \contentsline {section}{\numberline {9.2}Web Service Client Stub}{48}{section.9.2}
