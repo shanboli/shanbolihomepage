@@ -65,7 +65,21 @@ The SIP Call Component is the core of Web Call Example Application. The design a
 
 It can be seen from Figure \ref{fig:TheArchitectureOfSIPCallComponent}, There is a interface \texttt{CallController} on the top of all kinds of call controllers. There are two subtype of Call Controller, one is Relay Call Controller and another is Third Party Call Controller. The Relay Call Controller is the legacy code of \textsf{Web Call SDK} which developed by Yuening Chen. In the old project, the Relay Call Controller is the core of all phone calls\cite{WebCallSDK}. However, in this version, four other implements are added to the SIP Call Component. They are Call Transfer, SDP Swap, Re-invite and Web Client. From a out side view, all of the four methods are doing the same thing. They just try to establish a phone call between caller and callee. Chapter \ref{sec:Solution} describes the different among the four methods in detail. Chapter will focus on the architecture and design part. All of four third party call methods are implemented the same interface. This means the user can easily switch call method from one to another. And other call method, if there is any, as long as it implements the interface at abstraction layer. It can be used in the SIP Call Component.
 
+\section{Class Hierarchy}
 
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap06/resources/call_controller_class_hierarchy_diagram, width=5.2in}
+\caption{Call Controller class hierarchy diagram}
+\label{fig:CallControllerClassHierarchyDiagram}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap06/resources/factory_class_hierarchy_diagram, width=5.2in}
+\caption{Controller Factory class hierarchy diagram}
+\label{fig:ControllerFactoryClassHierarchyDiagram}
+\end{figure}
 
 
 

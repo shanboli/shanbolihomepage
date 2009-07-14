@@ -391,15 +391,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=0
-CaretPos.Y=47
+CaretPos.X=43
+CaretPos.Y=80
 CharSet=def
 FileName=chap06\chap06.tex
 FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=46
+ScrollPos.Y=93
 SearchListCount=2
 
 [Files\20\SearchList\0]
@@ -972,7 +972,7 @@ Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
 CaretPos.X=0
-CaretPos.Y=6
+CaretPos.Y=0
 CharSet=def
 FileName=master_thesis.bib
 FoldedLines=
