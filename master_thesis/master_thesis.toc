@@ -44,13 +44,13 @@
 \contentsline {subsection}{\numberline {5.2.4}Java ME client}{24}{subsection.5.2.4}
 \contentsline {chapter}{\chapternumberline {6}SIP Call Component}{25}{chapter.6}
 \contentsline {section}{\numberline {6.1}Five layers architecture}{25}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Protocol stack}{26}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Abstraction layer}{26}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Implementation logic layer}{26}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}OOP use-case Based API Layer}{26}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.1}Protocol stack}{25}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Abstraction layer}{25}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Business logic layer}{25}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}OOP use-case Based API Layer}{25}{subsection.6.1.4}
 \contentsline {subsection}{\numberline {6.1.5}JavaBean for synchronized communication}{26}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Architecture of SIP Call Component}{26}{section.6.2}
-\contentsline {section}{\numberline {6.3}Hierarchy of Call Controller}{26}{section.6.3}
+\contentsline {section}{\numberline {6.2}Five layers architecture in Web Call Example Application}{26}{section.6.2}
+\contentsline {section}{\numberline {6.3}Architecture of SIP Call Component}{27}{section.6.3}
 \contentsline {chapter}{\chapternumberline {7}Web Application}{29}{chapter.7}
 \contentsline {section}{\numberline {7.1}Overview}{29}{section.7.1}
 \contentsline {section}{\numberline {7.2}Architecture of Mobile Front Controller 3}{30}{section.7.2}

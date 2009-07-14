@@ -5,7 +5,7 @@
 
 \section{Five layers architecture}
 
-A five layers architecture has to be introduced before illustrate the Third Party Call Controller. The five layers architecture is shown in Figure \ref{fig:FiveLayersArchitecture}. From bottom to top, the five layers are Protocol stack, Abstraction layer, Implementation layer, OOP use-case based API layer and JavaBean for synchronized communication.
+A five layers architecture has to be introduced before illustrate the Third Party Call Controller. The five layers architecture is shown in Figure \ref{fig:FiveLayersArchitecture}. From bottom to top, the five layers are Protocol stack, Abstraction layer, Implementation layer, OOP use-case based API layer and JavaBean for synchronized communication. This five layers architecture is developed by \textit{Peter Yeung} from Ericsson Developer Connection.
 
 \begin{figure}[!hbtp]
 \centering
@@ -22,7 +22,7 @@ The protocol stack is the low level API for the project. There could be several 
 
 This layer is used for abstracting low level protocol stack. So the project can be easily migrated from one protocol stack to another without modifying the logic layer.
 
-\subsection{Implementation logic layer}
+\subsection{Business logic layer}
 
 This layer contains the main logic of the project.
 
@@ -32,12 +32,29 @@ This layer is used for exposing public API for end user. Design Patterns such as
 
 \subsection{JavaBean for synchronized communication}
 
-Components in Java are called beans. This layer contains
-The JavaBean which special designed for synchronized communication has two pairs of constructor and business logic group. The constructor which has system parameters works with business logic which doesn't have system parameters. The constructor which doesn¡¯t have system parameters works with business logic which has system parameters. In addition, this kind of JavaBean only has method of \texttt{getState()} and no method of \texttt{setState()}.
+Components in Java are called beans. This layer contains the JavaBean which special designed for synchronized communication has two pairs of constructor and business logic group. The constructor which has system parameters works with business logic which doesn't have system parameters. The constructor which doesn't have system parameters works with business logic which has system parameters. In addition, this kind of JavaBean only has method of \texttt{getState()} and no method of \texttt{setState()}. 
+
+\section{Five layers architecture in Web Call Example Application}
+
+Web Call Example Application follows the concept of five layers architecture. 
+
+In SIP Call Component, there is abstraction layer and protocol stacks. As is shown in Figure \ref{fig:TheArchitectureOfSIPCallComponent}, Among the four implementations of Third Party Call Controller, the left three implementations are based on \textsf{MjSIP} and Web Client is based on \textsf{Apache} \textsf{Common} \textsf{HttpClient}. A advantage of separate logic and Protocol stack is that users can choose to use different stacks according to their requirements. Another advantage is that developers can focus on the business logic part and no need to touch lower level stacks. In SIP Call Component, the abstraction layer defined a general interface for normal phone call behaviors, such as \texttt{start()} and \texttt{terminate()}. The interface of abstraction layer in SIP Call Component is shown in Figure \ref{fig:ClassDiagramOfSessionInterface}.  As the business logic of SIP Call Component, Call Controller only needs to take care the call flow, e.g. set properties, register, make phone call and terminate call. And it will not handle any details about SIP message or media flow from the API level. The public API that opens to developers in SIP Call Component is the ``OOP use-case Based API Layer''. 
+
+In Web Call Example Application, SIP Call Component is used as the base library of Web Application. However, It is designed to use as a stand alone SIP call high level API. It is independent with other parts of the application. Any developers can take it and integrate it to their own applications.
+
+
+\begin{figure}[!hbtp]
+\centering
+\epsfig{file=chap06/resources/SessionInterface_class_diagram, width=3in}
+\caption{Class diagram of \texttt{SessionInterface}}
+\label{fig:ClassDiagramOfSessionInterface}
+\end{figure}
+
+
 
 \section{Architecture of SIP Call Component}
 
-The SIP Call Component is the core of Web Call Example Application. The design architecture of it is shown in Figure \ref{fig:TheArchitectureOfSIPCallComponent}.
+The SIP Call Component is the core of Web Call Example Application. The design architecture is shown in Figure \ref{fig:TheArchitectureOfSIPCallComponent}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -46,10 +63,7 @@ The SIP Call Component is the core of Web Call Example Application. The design a
 \label{fig:TheArchitectureOfSIPCallComponent}
 \end{figure}
 
-\textbf{TODO: write something here}
-
-\section{Hierarchy of Call Controller}
-
+It can be seen from Figure \ref{fig:TheArchitectureOfSIPCallComponent}, There is a interface \texttt{CallController} on the top of all kinds of call controllers. There are two subtype of Call Controller, one is Relay Call Controller and another is Third Party Call Controller. The Relay Call Controller is the legacy code of \textsf{Web Call SDK} which developed by Yuening Chen. In the old project, the Relay Call Controller is the core of all phone calls\cite{WebCallSDK}. However, in this version, four other implements are added to the SIP Call Component. They are Call Transfer, SDP Swap, Re-invite and Web Client. From a out side view, all of the four methods are doing the same thing. They just try to establish a phone call between caller and callee. Chapter \ref{sec:Solution} describes the different among the four methods in detail. Chapter will focus on the architecture and design part. All of four third party call methods are implemented the same interface. This means the user can easily switch call method from one to another. And other call method, if there is any, as long as it implements the interface at abstraction layer. It can be used in the SIP Call Component.
 
 
 
