@@ -27,6 +27,12 @@ Elena Fersman and Peter Yeung.
 \newblock {Using REST and Web Services to Mash Up Communications Capabilities}.
 \newblock In {\em JavaOne 2009}, June 2009.
 
+\bibitem{DesignPatternGoF}
+Erich Gamma, Richard Helm, Ralph Johnson, and John~M. Vlissides.
+\newblock {\em {Design Patterns: Elements of Reusable Object-Oriented
+  Software}}.
+\newblock Addison-Wesley Professional, November 1994.
+
 \bibitem{AjaxJesse}
 Jesse~James Garrett.
 \newblock {Ajax: A New Approach to Web Applications}.
