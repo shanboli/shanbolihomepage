@@ -67,19 +67,23 @@ It can be seen from Figure \ref{fig:TheArchitectureOfSIPCallComponent}, There is
 
 \section{Class Hierarchy}
 
-\begin{figure}[!hbtp]
+The hierarchy of call controller is shown in Figure \ref{fig:CallControllerClassHierarchyDiagram}. All of call controller is implemented the first interface \texttt{CallController}. This kind of design enables easily switch of call controllers. \texttt{SessionInterface} is a interface for third party call. \texttt{WebClientImpl}, \texttt{ReinviteImpl}, \texttt{SdpSwapImpl} and \texttt{MjSipCallTransferImpl} are implementations for \texttt{SessionInterface}. 
+
+\begin{sidewaysfigure}
 \centering
-\epsfig{file=chap06/resources/call_controller_class_hierarchy_diagram, width=5.2in}
+\epsfig{file=chap06/resources/call_controller_class_hierarchy_diagram,  width=8.3in}
 \caption{Call Controller class hierarchy diagram}
 \label{fig:CallControllerClassHierarchyDiagram}
-\end{figure}
+\end{sidewaysfigure}
 
-\begin{figure}[!hbtp]
+There are different call controller factories to create call controllers. The call controller factory follows the design pattern of \textsf{Abstract Factory}. An \textsf{Abstract Factory} is a class that exists to create instances of another class\cite{DesignPatternGoF}. The design of SIP Call Component considered that a call controller can not only establish audio call, but also video call and message channels. This can be seen from the Figure \ref{fig:ControllerFactoryClassHierarchyDiagram}. The very general difference between Relay Call and Third Party Call is the way to handle media flow. But both of them should have the competence to establish all kind of sessions. In current version of Web Call Example Application, only audio call is implemented.
+
+\begin{sidewaysfigure}
 \centering
-\epsfig{file=chap06/resources/factory_class_hierarchy_diagram, width=5.2in}
+\epsfig{file=chap06/resources/factory_class_hierarchy_diagram, width=8.3in}
 \caption{Controller Factory class hierarchy diagram}
 \label{fig:ControllerFactoryClassHierarchyDiagram}
-\end{figure}
+\end{sidewaysfigure}
 
 
 
