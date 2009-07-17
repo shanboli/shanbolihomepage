@@ -332,7 +332,7 @@ WrapLine=yes
 
 [Files\19]
 ActiveFilters=
-Bookmark#0=37
+Bookmark#0=46
 Bookmark#1=0
 Bookmark#2=0
 Bookmark#3=0
@@ -342,15 +342,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=0
-CaretPos.Y=0
+CaretPos.X=1556
+CaretPos.Y=9
 CharSet=def
 FileName=chap05\chap05.tex
 FoldedLines=
 IsMainFile=no
-Opened=no
+Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=0
+ScrollPos.Y=13
 SearchListCount=1
 
 [Files\19\SearchList\0]
@@ -363,7 +363,7 @@ Text=sdk
 [Files\19]
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=-1
+TabOrder=11
 UseThesaurus=yes
 WrapLine=yes
 

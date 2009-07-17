@@ -37,74 +37,74 @@
 \contentsline {section}{\numberline {4.4}Conclusion}{21}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Application Overview}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}Use Cases}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Architecture}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}SIP Call Component}{23}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Web Application}{23}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Web Service Interface}{24}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Java ME client}{24}{subsection.5.2.4}
-\contentsline {chapter}{\chapternumberline {6}SIP Call Component}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Five layers architecture}{25}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Protocol stack}{25}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Abstraction layer}{25}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Business logic layer}{25}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}OOP use-case Based API Layer}{25}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}JavaBean for synchronized communication}{26}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Five layers architecture in Web Call Example Application}{26}{section.6.2}
-\contentsline {section}{\numberline {6.3}Architecture of SIP Call Component}{27}{section.6.3}
-\contentsline {section}{\numberline {6.4}Class Hierarchy}{28}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Web Application}{31}{chapter.7}
-\contentsline {section}{\numberline {7.1}Overview}{31}{section.7.1}
-\contentsline {section}{\numberline {7.2}Architecture of Mobile Front Controller 3}{32}{section.7.2}
-\contentsline {section}{\numberline {7.3}Dual view}{33}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Desktop browser view}{33}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Mobile browser view}{34}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Site structure}{34}{section.7.4}
-\contentsline {section}{\numberline {7.5}User action}{35}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}User Registration}{35}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}User panel}{35}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}VoIP service provider account}{36}{subsection.7.5.3}
-\contentsline {subsection}{\numberline {7.5.4}Phone-to-Phone call}{36}{subsection.7.5.4}
-\contentsline {section}{\numberline {7.6}Administrator action}{38}{section.7.6}
-\contentsline {section}{\numberline {7.7}Validation mechanism}{39}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Page level}{39}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Server level}{40}{subsection.7.7.2}
-\contentsline {section}{\numberline {7.8}Session control}{40}{section.7.8}
-\contentsline {section}{\numberline {7.9}Ajax in web application}{40}{section.7.9}
-\contentsline {section}{\numberline {7.10}Java ME helper}{41}{section.7.10}
-\contentsline {section}{\numberline {7.11}Database}{41}{section.7.11}
-\contentsline {subsection}{\numberline {7.11.1}Design of database}{41}{subsection.7.11.1}
-\contentsline {subsection}{\numberline {7.11.2}User database utility}{41}{subsection.7.11.2}
-\contentsline {section}{\numberline {7.12}Security}{43}{section.7.12}
-\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{45}{chapter.8}
-\contentsline {section}{\numberline {8.1}Introduce web service and metro}{45}{section.8.1}
-\contentsline {section}{\numberline {8.2}SOAP web service}{45}{section.8.2}
-\contentsline {section}{\numberline {8.3}Deploy of Web Service}{47}{section.8.3}
-\contentsline {chapter}{\chapternumberline {9}Java ME Client}{49}{chapter.9}
-\contentsline {section}{\numberline {9.1}Architecture}{49}{section.9.1}
-\contentsline {section}{\numberline {9.2}Web Service Client Stub}{50}{section.9.2}
-\contentsline {section}{\numberline {9.3}Record Store Manager}{51}{section.9.3}
-\contentsline {section}{\numberline {9.4}PIM Contact Helper}{51}{section.9.4}
-\contentsline {section}{\numberline {9.5}Web Call Client}{52}{section.9.5}
-\contentsline {section}{\numberline {9.6}User Interface}{54}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}VoIP Call Form}{54}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}PIM Contacts}{55}{subsection.9.6.2}
-\contentsline {subsection}{\numberline {9.6.3}My Phone Number}{55}{subsection.9.6.3}
-\contentsline {subsection}{\numberline {9.6.4}Contacts}{56}{subsection.9.6.4}
-\contentsline {subsection}{\numberline {9.6.5}Synchronize}{56}{subsection.9.6.5}
-\contentsline {subsection}{\numberline {9.6.6}Phone Call}{56}{subsection.9.6.6}
-\contentsline {section}{\numberline {9.7}Two implementations of UI}{58}{section.9.7}
-\contentsline {subsection}{\numberline {9.7.1}VMD-based UI}{58}{subsection.9.7.1}
-\contentsline {subsection}{\numberline {9.7.2}Generic UI}{58}{subsection.9.7.2}
-\contentsline {section}{\numberline {9.8}Installation of Java ME Client}{60}{section.9.8}
-\contentsline {section}{\numberline {9.9}Security of Java ME Client}{60}{section.9.9}
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{61}{chapter.10}
-\contentsline {chapter}{\chapternumberline {11}Future Work}{63}{chapter.11}
-\contentsline {section}{\numberline {11.1}RESTful web service interface}{63}{section.11.1}
-\contentsline {section}{\numberline {11.2}Support for more mobile devices}{63}{section.11.2}
-\contentsline {section}{\numberline {11.3}Gadgets}{63}{section.11.3}
-\contentsline {section}{\numberline {11.4}Call history}{63}{section.11.4}
-\contentsline {chapter}{Bibliography}{65}{section*.18}
-\contentsline {appendix}{\chapternumberline {A}Appendix title}{71}{appendix.A}
-\contentsline {chapter}{List of Symbols and Abbreviations}{73}{appendix*.19}
-\contentsline {chapter}{List of Figures}{74}{section*.20}
-\contentsline {chapter}{List of Tables}{76}{section*.21}
+\contentsline {section}{\numberline {5.2}Architecture}{25}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}SIP Call Component}{25}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Web Application}{25}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Web Service Interface}{26}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Java ME client}{26}{subsection.5.2.4}
+\contentsline {chapter}{\chapternumberline {6}SIP Call Component}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Five layers architecture}{27}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Protocol stack}{27}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Abstraction layer}{27}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Business logic layer}{27}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}OOP use-case Based API Layer}{27}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}JavaBean for synchronized communication}{28}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Five layers architecture in Web Call Example Application}{28}{section.6.2}
+\contentsline {section}{\numberline {6.3}Architecture of SIP Call Component}{29}{section.6.3}
+\contentsline {section}{\numberline {6.4}Class Hierarchy}{30}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Web Application}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Overview}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Architecture of Mobile Front Controller 3}{34}{section.7.2}
+\contentsline {section}{\numberline {7.3}Dual view}{35}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Desktop browser view}{35}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Mobile browser view}{36}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Site structure}{36}{section.7.4}
+\contentsline {section}{\numberline {7.5}User action}{37}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}User Registration}{37}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}User panel}{37}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}VoIP service provider account}{38}{subsection.7.5.3}
+\contentsline {subsection}{\numberline {7.5.4}Phone-to-Phone call}{38}{subsection.7.5.4}
+\contentsline {section}{\numberline {7.6}Administrator action}{40}{section.7.6}
+\contentsline {section}{\numberline {7.7}Validation mechanism}{41}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Page level}{41}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Server level}{42}{subsection.7.7.2}
+\contentsline {section}{\numberline {7.8}Session control}{42}{section.7.8}
+\contentsline {section}{\numberline {7.9}Ajax in web application}{42}{section.7.9}
+\contentsline {section}{\numberline {7.10}Java ME helper}{43}{section.7.10}
+\contentsline {section}{\numberline {7.11}Database}{43}{section.7.11}
+\contentsline {subsection}{\numberline {7.11.1}Design of database}{43}{subsection.7.11.1}
+\contentsline {subsection}{\numberline {7.11.2}User database utility}{43}{subsection.7.11.2}
+\contentsline {section}{\numberline {7.12}Security}{45}{section.7.12}
+\contentsline {chapter}{\chapternumberline {8}Web Service Interface}{47}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introduce web service and metro}{47}{section.8.1}
+\contentsline {section}{\numberline {8.2}SOAP web service}{47}{section.8.2}
+\contentsline {section}{\numberline {8.3}Deploy of Web Service}{49}{section.8.3}
+\contentsline {chapter}{\chapternumberline {9}Java ME Client}{51}{chapter.9}
+\contentsline {section}{\numberline {9.1}Architecture}{51}{section.9.1}
+\contentsline {section}{\numberline {9.2}Web Service Client Stub}{52}{section.9.2}
+\contentsline {section}{\numberline {9.3}Record Store Manager}{53}{section.9.3}
+\contentsline {section}{\numberline {9.4}PIM Contact Helper}{53}{section.9.4}
+\contentsline {section}{\numberline {9.5}Web Call Client}{54}{section.9.5}
+\contentsline {section}{\numberline {9.6}User Interface}{56}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}VoIP Call Form}{56}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}PIM Contacts}{57}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.6.3}My Phone Number}{57}{subsection.9.6.3}
+\contentsline {subsection}{\numberline {9.6.4}Contacts}{58}{subsection.9.6.4}
+\contentsline {subsection}{\numberline {9.6.5}Synchronize}{58}{subsection.9.6.5}
+\contentsline {subsection}{\numberline {9.6.6}Phone Call}{58}{subsection.9.6.6}
+\contentsline {section}{\numberline {9.7}Two implementations of UI}{60}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}VMD-based UI}{60}{subsection.9.7.1}
+\contentsline {subsection}{\numberline {9.7.2}Generic UI}{60}{subsection.9.7.2}
+\contentsline {section}{\numberline {9.8}Installation of Java ME Client}{62}{section.9.8}
+\contentsline {section}{\numberline {9.9}Security of Java ME Client}{62}{section.9.9}
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{63}{chapter.10}
+\contentsline {chapter}{\chapternumberline {11}Future Work}{65}{chapter.11}
+\contentsline {section}{\numberline {11.1}RESTful web service interface}{65}{section.11.1}
+\contentsline {section}{\numberline {11.2}Support for more mobile devices}{65}{section.11.2}
+\contentsline {section}{\numberline {11.3}Gadgets}{65}{section.11.3}
+\contentsline {section}{\numberline {11.4}Call history}{65}{section.11.4}
+\contentsline {chapter}{Bibliography}{67}{section*.18}
+\contentsline {appendix}{\chapternumberline {A}Appendix title}{73}{appendix.A}
+\contentsline {chapter}{List of Symbols and Abbreviations}{75}{appendix*.19}
+\contentsline {chapter}{List of Figures}{76}{section*.20}
+\contentsline {chapter}{List of Tables}{78}{section*.21}

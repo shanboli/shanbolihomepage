@@ -5,7 +5,16 @@
 
 \section{Use Cases}
 
-\textbf{TODO: write some use cases as well as figures here}
+Web Call Example Application is a application that resides at a web server and supplies functionality of VoIP phone calls.
+
+As shown in Figure \ref{fig:UseCasesOfWebCallExampleApplication}, there are three use cases. They are Desktop Browser, Mobile Browser and Java ME Client. This makes it possible for users to make VoIP calls anytime anywhere, to anyone. The use case of Desktop Browser is used when user have a computer connected to Internet. He can use his desktop browser, e.g. Firefox or Chrome, to access the web call site by inputing URL to address bar of browser. Users can use this web site to make VoIP phone calls as well as manage his account. The use case of Mobile Browser is just a web site for mobile browsers. The function is the same as Desktop Browser. The user can also manage his account from the Mobile Browser view. Compare with Mobile Browser, the use case of Java ME Client gives the user a even easier way to make VoIP phone calls. There is no need to sign in and input any information. As long as user pre-input everything on web site, the Java ME Client will retrieve account informations the server. All user need to do is just click the "call" button and enjoy the cheap VoIP phone calls. The Java ME Client can also load mobile phone's native contact book and call the people in the list. It can also synchronize the contact book of mobile phone to server. So user can use the contact book later when he sitting in front of a computer. A user could have multi-account for different VoIP service providers. So when the user want to make a international call, he could choose a cheap cost service provider according different rates among providers.
+
+\begin{sidewaysfigure}
+\centering
+\epsfig{file=chap05/resources/use_case_overview, width=8.3in}
+\caption{Use Cases of Web Call Example Application}
+\label{fig:UseCasesOfWebCallExampleApplication}
+\end{sidewaysfigure}
 
 
 \section{Architecture}
