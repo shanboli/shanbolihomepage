@@ -3,11 +3,12 @@
 \chapter{Application Overview}
 \label{sec:ApplicationOverview}
 
+\lettrine[lines=3]{C}{hapter} 5 shows the brief use cases of \textsf{Web Call Example Application}. It also demonstrates the design architecture of the application. The components are also explained in general. In follow chapters, that is from chapter \ref{sec:SIPCallComponent} to chapter \ref{sec:JavaMEClient}, \textsf{SIP Call Component}, \textsf{Web Application}, \textsf{Web Service Interface} and \textsf{Java ME client} will be introduced separately in detail.
+
 \section{Use Cases}
+\label{sec:ApplicationOverview:UseCases}
 
-Web Call Example Application is a application that resides at a web server and supplies functionality of VoIP phone calls.
-
-As shown in Figure \ref{fig:UseCasesOfWebCallExampleApplication}, there are three use cases. They are Desktop Browser, Mobile Browser and Java ME Client. This makes it possible for users to make VoIP calls anytime anywhere, to anyone. The use case of Desktop Browser is used when user have a computer connected to Internet. He can use his desktop browser, e.g. Firefox or Chrome, to access the web call site by inputing URL to address bar of browser. Users can use this web site to make VoIP phone calls as well as manage his account. The use case of Mobile Browser is just a web site for mobile browsers. The function is the same as Desktop Browser. The user can also manage his account from the Mobile Browser view. Compare with Mobile Browser, the use case of Java ME Client gives the user a even easier way to make VoIP phone calls. There is no need to sign in and input any information. As long as user pre-input everything on web site, the Java ME Client will retrieve account informations the server. All user need to do is just click the "call" button and enjoy the cheap VoIP phone calls. The Java ME Client can also load mobile phone's native contact book and call the people in the list. It can also synchronize the contact book of mobile phone to server. So user can use the contact book later when he sitting in front of a computer. A user could have multi-account for different VoIP service providers. So when the user want to make a international call, he could choose a cheap cost service provider according different rates among providers.
+Web Call Example Application is an application that resides at a web server and supplies functionality of VoIP phone calls.
 
 \begin{sidewaysfigure}
 \centering
@@ -16,11 +17,12 @@ As shown in Figure \ref{fig:UseCasesOfWebCallExampleApplication}, there are thre
 \label{fig:UseCasesOfWebCallExampleApplication}
 \end{sidewaysfigure}
 
+As shown in Figure \ref{fig:UseCasesOfWebCallExampleApplication}, there are three use cases. They are Desktop Browser, Mobile Browser and Java ME Client. This makes it possible for users to make VoIP calls anytime anywhere, to anyone. The use case of Desktop Browser is used when user have a computer connected to Internet. He can use his desktop browser, e.g., Firefox or Chrome, to reach the web call site by inputting URL to address bar of browser. Users can use this web site to make VoIP phone calls as well as manage his account. The use case of Mobile Browser is just a web site for mobile browsers. The function is the same as Desktop Browser. The user can also manage his account from the Mobile Browser view. Compare with Mobile Browser, the use case of Java ME Client gives the user an even easier way to make VoIP phone calls. There is no need to sign in and input any information. As long as user pre-input everything on web site, the Java ME Client will retrieve account information from the server. All user need to do is just click the "call" button and enjoy the cheap VoIP phone calls. The Java ME Client can also load mobile phone's native contact book and call the people in the list. It can also synchronize the contact book of mobile phone to server. So user can use the contact book later when he sits in front of a computer. A user could have multi-account for different VoIP service providers. So when the user wants to make an international call, he could choose a cheap cost service provider according different rates among providers.
 
 \section{Architecture}
 \label{sec:ApplicationOverview:ArchitectureOverview}
 
-This chapter presents a brief solution description of Web Call Example Application. The design architecture is shown in Figure \ref{fig:ArchitectureOfWebCallExampleApplication}.
+This section presents a brief solution description of Web Call Example Application. The design architecture is shown in Figure \ref{fig:ArchitectureOfWebCallExampleApplication}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -33,13 +35,13 @@ Web Call Example Application contains three components which are SIP Call Compon
 
 \subsection{SIP Call Component}
 
-The SIP Call Component is the core of Web Call Example Application. It implemented 1 kind of relay call and four kind of third party call. It can be also used as a stand alone VoIP high-level API. 
+The SIP Call Component is the core of Web Call Example Application. It offers one kind of relay call and four kinds of third party call. It can be also used as a standalone VoIP high-level API. 
 
 The details about SIP Call Component will be described in Chapter \ref{sec:SIPCallComponent}.
 
 \subsection{Web Application}
 
-The Web Application is built on the architecture of Mobile Front Controller (MFC). SIP Call Component integrated into the web server as Java EE components: servlet, and web service. The Mobile Front Controller is used for detecting and selecting views, i.e. applications with views for desktop and mobile browsers. So Web Call Example Application supplies both XHTML view which used by desktop browser and XHTML-MP view which used by mobile browser. 
+The Web Application is built on the architecture of Mobile Front Controller (MFC). SIP Call Component integrated into the web server as Java EE components: servlet, and web service. The Mobile Front Controller is used for detecting and selecting views, i.e., applications with views for desktop and mobile browsers. So Web Call Example Application supplies both XHTML view which used by desktop browser and XHTML-MP view which used by mobile browser. 
 
 The details about Web Application will be described in Chapter \ref{sec:WebApplication}.
 
@@ -51,7 +53,7 @@ The details about Web Service Interface will be described in Chapter \ref{sec:We
 
 \subsection{Java ME client}
 
-Java ME client is a client of web service interface. It not only implement all of the client side function of web service interface, but also include some convenient function such as read phone contact book and synchronize with server contact book.
+Java ME client is a client of web service interface. It not only implements all the client side functions of web service interface, but also includes some convenient functions such as read phone contact book and synchronize the contact book with server.
 
 The details about Java ME client will be described in Chapter \ref{sec:JavaMEClient}.
 

@@ -3,18 +3,21 @@
 \chapter{Web Service Interface}
 \label{sec:WebServiceInterface}
 
+
+\lettrine[lines=3]{T}{his} chapter focuses on the web service interface of \textsf{Web Call Example Application}. It introduces web service technology at the first section. Then it explains the web service methods that defined in the web service interface. This chapter also mentions how to deploy this web service at the last section.
+
 \section{Introduce web service and metro}
 
 \begin{quote}
-\textit{``A Web service is a software system designed to support interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically WSDL). Other systems interact with the Web service in a manner prescribed by its description using SOAP-messages, typically conveyed using HTTP with an XML serialization in conjunction with other Web-related standards.''}\cite{WebServicesW3C}
+\textit{``A Web service is a software system designed to support interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically WSDL). Other systems interact with the Web service in a manner prescribed by its description using SOAP-messages, typically conveyed using HTTP with an XML serialization in conjunction with other Web-related standards.''} \cite{WebServicesW3C}
 \begin{flushright}
 --W3C
 \end{flushright}
 \end{quote}
 
-A web service interface of Web Call Example Application gives a most broad way for clients. Chapter \ref{sec:JavaMEClient} describes a Java ME Client of this web service interface. However, it is definitely not the only client for the web service. As long as a clients implements the interface, it can use the web call service and database. 
+A web service interface of Web Call Example Application gives a most broad way for clients. Chapter \ref{sec:JavaMEClient} describes a Java ME Client of this web service interface. However, it is definitely not the only client for the web service. As long as a client implements the interface, it can use the web call service and database. 
 
-The web service interface of Web Call Example Application is based on \textsf{Metro}. Metro is a \textit{high-performance}, \textit{extensible}, \textit{easy-to-use} web service stack\cite{MetroHomepage}. It is supported by Sun Microsystems. For more detail about Metro, please refer to Metro Homepage at \href{https://metro.dev.java.net/}{https://metro.dev.java.net/}. 
+The web service interface of Web Call Example Application is based on \textsf{Metro}. According to \textit{The homepage of Metro} \cite{MetroHomepage}, Metro is a \textit{high-performance}, \textit{extensible}, \textit{easy-to-use} web service stack. It is supported by Sun Microsystems. For more detail about Metro, please refer to Metro Homepage at \href{https://metro.dev.java.net/}{https://metro.dev.java.net/}. 
 
 \section{SOAP web service}
 
@@ -22,13 +25,9 @@ The web service source file is \\ \texttt{sip.components.webapp.webserviceg.WebC
 
 List \ref{WebServiceImplementation} shows a fragment of the source code that calls operation in Sip Call Component. 
 
-
-\lstdefinelanguage{Java}
 \lstset{language=Java}
 \lstset{basicstyle=\small}
-
 \begin{lstlisting}[frame=lines, float=!tbph, caption=Web Service implementation (fragment), label=WebServiceImplementation]
-
 ...
 import sip.components.core.controller.CallController;
 ...
@@ -62,26 +61,36 @@ controller.start();
 \end{lstlisting}
 
 
-The implementing class of web service uses the \texttt{@WebService} annotation to set the port name, service name and the target namespace. The web service methods use the \texttt{WebMethod} to annotate the operation name and actions.  The parameter of the method is annotated with \texttt{@WebParam}.
+The class of web service uses the \texttt{@WebService} annotation to set the port name, service name and the target namespace. The web service methods use the \texttt{WebMethod} to annotate the operation name and actions.  The parameter of the method is annotated with \texttt{@WebParam}.
 There are nine web service methods in the implementation Web Service:
 \begin{itemize}
+
 \item \texttt{getUserURIs:} Get a list of user's URIs. The URI (Uniform Resource Identifiers) can be a phone number with international dialing codes or in the form of \texttt{sip:USERNAME@HOST:PORT}. Username is the user name registered at host. Host is the domain name or IP address of host. The URIs in this list will be treated as caller/clientA. 
+
 \item \texttt{getContacts:} Get a contact list. The items in the list are instances of \texttt{ContactBean}. A \texttt{ContactBean} has a \texttt{contactName} and a \texttt{contactURI}.
+
 \item \texttt{getRecentCalls:} Get a recent calls list. The recent call is just like a call history with limited numbers. In Web Call Example Application, the default size of recent call list is 5. It could be specified in \texttt{web.xml} file.
-\item \texttt{getSipAccounts:} Get accounts for sip providers. The register of sip provider's accounts can be done at both desktop and mobile browser views.
-\item \texttt{getImplTypes:} Get the implementation types list of call method. As mentioned in chapter \ref{sec:Solution}, there are five types of implementation. They are \textsf{Relay Call}, \textsf{Call transfer}, \textsf{Re-invite}, \textsf{SDP swap} and \textsf{Web client}.
+
+\item \texttt{getSipAccounts:} Get accounts for sip providers. The registration of sip provider's account can be done at both desktop and mobile browser views.
+
+\item \texttt{getImplTypes:} Get the implementation types list of call method. As mentioned in chapter \ref{sec:Solution}, there are five types of implementation. They are \textsf{Relay Call}, 
+\textsf{Call transfer}, \textsf{Re-invite}, \textsf{SDP swap} and \textsf{Web client}.
+
 \item \texttt{call:} Establish phone calls. In this web service method, the user's phone number and destination phone number will also be stored in database. A \textsf{Ring Buffer} is used to store the recent calls.
+
 \item \texttt{cancelCall:} Cancel a phone call. To cancel the call, client has to pass the username, password and call ID as the parameter. Server will check if this call session belongs to the user, before cancel the call.
+
 \item \texttt{getState:} Get a phone call's state. The state could be \texttt{INITIALIZED}, \texttt{UNREGISTERED}, \texttt{REGISTERED}, \texttt{DIALING}, \texttt{OUTGOING\_A}, \texttt{OUTGOING\_B}, \linebreak \texttt{REGISTER\_FAILED}, \texttt{ON\_CALL}, \texttt{CALL\_FAILED}, \texttt{IDLE}, \texttt{ERROR}, \texttt{CLOSED} or \texttt{REFUSED}.
-\item \texttt{syncContacts:} Synchronize contacts. The method can be used to keep contacts list synchronized on clients and server. If same name with different phone number happens, the number in client will be kept. This method can be used after load/import contact from a third party contact book. e.g. the native contact book in mobile phone. The usage of synchronize contacts will also be explained in chapter \ref{sec:JavaMEClient}.
+
+\item \texttt{syncContacts:} Synchronize contacts. The method keeps contacts list synchronized on clients and server. If same name with different phone number happens, the number in client will be kept. This method can be used after load/import contact from a third party contact book. E.g., the native contact book in mobile phone. The usage of synchronize contacts will also be explained in chapter \ref{sec:JavaMEClient}.
 \end{itemize}
 
 All methods except \texttt{getState} and \texttt{getImplTypes} require a username and password. The password is in the format of digest. So even if the communication package is intercepted, the third party will not know the plain text of user password.
-For details about the method please refer the source code in \texttt{WebCallImpl}.
+For details about the method, please refer the source code in \texttt{WebCallImpl}.
 
 \section{Deploy of Web Service}
 
-To deploy web service, the service needs portable artifacts. In Web Call Example Application, the portable artifacts are generated by \textsf{art} (annotation processing tool). The \textsf{apt} tool is a tool which distributed with \textsf{Metro}. It generates portable artifacts used in JAX-WS services.\cite{aptHomepage} The execution of apt is integrated into ant target in \texttt{build.xml}. 
+To deploy web service, the service needs portable artifacts. In Web Call Example Application, the portable artifacts are generated by \textsf{art} (annotation processing tool). According to \textit{Metro 1.5 FCS - APT} \cite{aptHomepage}, the \textsf{apt} tool is a tool which distributed with \textsf{Metro}. It generates portable artifacts used in JAX-WS services. The execution of apt is integrated into ant target in \texttt{build.xml}. 
 
 The web service listener is setted to \texttt{WSServletContextListener} in \texttt{web.xml}. The url-pattern and implementation is specified at \texttt{sun-jaxws.xm}. The two configuration files are located at folder of \texttt{WEB-INF} in distributed package(WAR package). 
 

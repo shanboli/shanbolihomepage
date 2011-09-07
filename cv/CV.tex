@@ -18,7 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Don't like 10pt? Try 11pt or 12pt
-\documentclass[10pt]{article} 
+\documentclass[11pt]{article} 
 
 % This is a helpful package that puts math inside length specifications
 \usepackage{calc}
@@ -53,20 +53,20 @@
 %
 
 %% Use these lines for letter-sized paper
-%\usepackage[paper=letterpaper,
-%            %includefoot, % Uncomment to put page number above margin
-%            marginparwidth=1.2in,     % Length of section titles
-%            marginparsep=.05in,       % Space between titles and text
-%            margin=1in,               % 1 inch margins
-%            includemp]{geometry}
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=1in,               % 1 inch margins
+            includemp]{geometry}
 
 %% Use these lines for A4-sized paper
-\usepackage[paper=a4paper,
+%\usepackage[paper=a4paper,
 %            %includefoot, % Uncomment to put page number above margin
-            marginparwidth=30.5mm,    % Length of section titles
-            marginparsep=1.5mm,       % Space between titles and text
-            margin=25mm,              % 25mm margins
-            includemp]{geometry}
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
 
 %% More layout: Get rid of indenting throughout entire document
 \setlength{\parindent}{0in}
@@ -102,6 +102,12 @@
 \hypersetup{colorlinks,breaklinks,
             linkcolor=darkblue,urlcolor=darkblue,
             anchorcolor=darkblue,citecolor=darkblue}
+
+% for \textcopyright, \textregistered and \texttrademark
+\usepackage{textcomp}
+
+% for printing last update time
+\usepackage{datetime}
 
 %%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -204,11 +210,11 @@
 %
 \newlength{\rcollength}\setlength{\rcollength}{3.2in}%
 %
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-Rum 0738            & \textit{Tel:} +46 704646157 (SE) \textbar\space +86 13810559910 (CN)\\
-Hanstav\"{a}gen 51           & \textit{E-mail:}\href{mailto:shanboli@gmail.com}{shanboli@gmail.com}\\
-164 53 Kista, Sweden    &\textit{Homepage:}\href{http://www.isk.kth.se/~shanbo/}{http://www.isk.kth.se/\textasciitilde shanbo}\\
-\end{tabular}
+
+\textit{Tel:}  +86 13810559910 \\
+\textit{E-mail:} \href{mailto:shanboli@gmail.com}{shanboli@gmail.com}\\
+\textit{Homepage:} \href{http://www.borntojava.com/}{www.borntojava.com}\\
+\textit{LinkedIn:} \href{http://cn.linkedin.com/in/shanboli}{cn.linkedin.com/in/shanboli}
 
 \section{Nationality}
 %
@@ -224,12 +230,13 @@ male
 
 \section{Education}
 %
-\href{http://www.kth.se/}{\textbf{Royal Institute of Technology / Kungliga Tekniska H\"{o}gskolan (KTH)}},\\ 
+\href{http://www.kth.se/}{\textbf{Royal Institute of Technology /\\ Kungliga Tekniska H\"{o}gskolan (KTH)}},\\ 
 \textbf{Stockholm, Sweden}
 \begin{outerlist}
 \item[] Master's Degree,\\ 
         {Software Engineering of Distributed Systems} \\
-        expected graduation date: June 2009
+        September 2007 - September 2009
+\item[] Thesis: \href{http://shanbohomepage.googlecode.com/hg/master_thesis/master_thesis.pdf}{Web Call Example Application}
 \end{outerlist}
 \blankline
 
@@ -237,48 +244,298 @@ male
 \textbf{Beijing, China}
 \begin{outerlist}
 \item[] 4-year Bachelor's Degree in Engineering, \\
-             {Computer Science}, September 2003 - June 2007
+        {Computer Science}\\
+        September 2003 - June 2007
 \end{outerlist}       
 
-\section{Professional Projects}
 %
-\href{http://www.ericsson.com/cn}{\textbf{ERICSSON (CHINA) CO., LTD.}}, {System Intergration and Verification}
+\section{Working Experience}
+\href{http://www.ericsson.com/cn}{\textbf{Ericsson (China) CO., LTD.}}, {DUIB China}
 \begin{outerlist}
-
-\item[] \textit{Intern Software Developer}%
-        \hfill \textbf{March 2009 to Now}
+\item[] \textit{Team Leader, Software Design Engineer}%
+        \hfill \textbf{January 2010 to Now}
+\begin{outerlist}
+\item \textit{Responsibility:}\\
+Handle feature requests and bug reports for the project.
+Prioritize and assign trackers to team members.
+Cooperate tasks in global distributed teams with developers from different culture. Quality control and coding. Drive support forum to help customers. 
+Mentor for newcomers.
+\end{outerlist}
 \end{outerlist}
 \blankline
 
-
-
+\href{http://www.ericsson.com/cn}{\textbf{Ericsson (China) CO., LTD.}}, {DUIB China}
+\begin{outerlist}
+\item[] \textit{Software Engineer}%
+        \hfill \textbf{September 2009 to December 2009}
+\begin{outerlist}
+\item \textit{Responsibility:}\\
+Implement assigned tasks. Analyze the root cause and fix bugs.
+Refine projects. Communicate with customers, understand their requirements and implemented their feature requests. Support customers via forum and email, analyze their logs and help them to find the issues.
+\end{outerlist}
+\end{outerlist}
+\blankline
 
 %
-\href{http://www.ericsson.com/}{\textbf{ERICSSON AB}}, \href{http://www.ericsson.com/developer}{Ericsson Developer Connection} ,
+\href{http://www.ericsson.com/cn}{\textbf{Ericsson (China) CO., LTD.}}, {System Integration and Verification}
+\begin{outerlist}
+
+\item[] \textit{Intern, Software Developer}%
+        \hfill \textbf{March 2009 to September 2009}
+\begin{outerlist}
+\item \textit{Responsibility:}\\
+Implement assigned tasks. Analyze the root cause and fix bugs.
+Refine projects.
+\end{outerlist}
+\end{outerlist}
+\blankline
+
+%
+\href{http://www.ericsson.com/}{\textbf{Ericsson AB}}, \href{http://www.ericsson.com/developer}{Ericsson Developer Connection} ,
 Sweden
 \begin{outerlist}
 
 \item[] \textit{Java Programmer}%
-        \hfill \textbf{March 2008 to February 2009}
+        \hfill \textbf{March 2008 to March 2009}
 
 \item[] {\textbf{Web Call SDK}}
 \begin{outerlist}
+\item \textit{Responsibility:}\\
+Pre-study, Establish Theory, Design, Implement and Test. 
+\item \textit{Thesis:}\\
+\href{http://shanbohomepage.googlecode.com/hg/master_thesis/master_thesis.pdf}{Web Call Example Application}
+\end{outerlist}
+\end{outerlist}
+\blankline
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Award}
+\textbf{Ericsson Excellent Team}
+\begin{outerlist}
+\item[] \href{http://www.ericsson.com/}{\textit{Ericsson China R\&D}}
+        \hfill \textbf{2010}
+\end{outerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Professional Trainings %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Trainings}
+\textbf{Exerting the Influence in Project Management}
+\begin{outerlist}
+\item[] \href{http://www.ericssonacademy.com/}{\textit{Ericsson Academy, China}}
+        \hfill \textbf{June 2011}
+\end{outerlist}
+\blankline
+
+\textbf{On The Way To Lead}
+\begin{outerlist}
+\item[] \href{http://www.ericssonacademy.com/}{\textit{Ericsson Academy, China}}
+        \hfill \textbf{June 2010}
+\end{outerlist}
+\blankline
+
+\textbf{Manager Recruitment Training}
+\begin{outerlist}
+\item[] \href{http://www.ericssonacademy.com/}{\textit{Ericsson Academy, China}}
+        \hfill \textbf{May 2010}
+\end{outerlist}
+\blankline
+
+\textbf{Effective Java and Design Patterns}
+\begin{outerlist}
+\item[] \href{http://www.informator.se/}{\textit{Informator, Sweden}}
+        \hfill \textbf{February 2010}
+\end{outerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Social Skills %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Social Skills}
+{\textbf{Strong leader and full of team spirit}}\\
+{\textbf{Excellent communicator}}\\
+{\textbf{Travel on demand}}\\
+{\textbf{Cope with pressure}}\\
+{\textbf{Willing to learn new technology}}\\
+{\textbf{Fluent in English and Chinese}}\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Knowledge Areas %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Knowledge Areas}
+{\textbf{Web 2.0 and cutting-edge technologies}}\\
+{\textbf{Problem identify and resolve}}\\
+{\textbf{Distributed systems}}\\ 
+{\textbf{Network security}}\\ 
+{\textbf{OSI Model and network communication protocols}}\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Professional Skills%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Skills} 
+%
+{\textbf{8 Years of Java Programming Experience:}}\\
+Expert at Java EE/ Java SE/ Java ME
+
+\blankline
+
+{\textbf{4 Years of Ruby \nolinebreak on \nolinebreak Rails Experience:}}\\
+Expert at 
+\href{http://www.ruby-lang.org/en/}{Ruby}, 
+\href{http://rubyonrails.org/}{Ruby on Rails} and RoR plugin hacking
+
+\blankline
+
+{\textbf{Database development and Management:}}\\
+\href{http://www.mysql.com/}{MySQL}, 
+\href{http://www.oracle.com/us/products/database/index.html}{Oracle Database}, 
+\href{http://memcached.org/}{Memcached} and knowledge of NoSQL
+
+\blankline
+
+{\textbf{Java Frameworks:}}\\
+JSF, Hibernate, EJB, Spring, Struts, GWT, Swing, JUnit, TestNG, Log4j, SLF4J
+
+\blankline
+
+{\textbf{Ruby \nolinebreak on \nolinebreak Rails plugin:}}\\
+\href{http://activescaffold.com/}{ActiveScaffold},
+Restful Authentication,
+Cache Money,
+Seed Fu
+
+\blankline
+
+{\textbf{Skill set of Web Services development:}}\\
+SOAP, WSDL, UDDI, BPEL, Metro, AXIS, RESTful Web Service
+
+
+\blankline
+
+{\textbf{Skill set of Web Site development:}}\\
+XHTML, XHTML MP, HTML, CSS, XML, Javascript, JSON, AJAX, JSP, PHP 
+
+\blankline
+
+{\textbf{Application Server:}}\\
+Apache Tomcat, Jetty, Glassfish, JBoss, 
+\href{http://nginx.net/}{nginx}, Apache HTTP Server
+
+\blankline
+
+{\textbf{Software Development Concept:}}\\
+Agile Software Development 
+(\href{http://en.wikipedia.org/wiki/Scrum_\%28development\%29}{Scrum}, 
+\href{http://www.extremeprogramming.org/}{Extreme Programming}), Object-oriented Programming, UML, Design \nolinebreak Patterns
+
+\blankline
+
+{\textbf{Project management and team collaboration tools:}}\\
+\href{http://maven.apache.org/}{Apache Maven},
+\href{http://ant.apache.org/}{Apache Ant}, 
+\href{http://git-scm.com/}{Git}, \href{http://www-01.ibm.com/software/awdtools/clearcase/index.html}{Rational\textregistered\space ClearCase},
+\href{http://mercurial.selenic.com/}{Mercurial},
+\href{http://subversion.tigris.org/}{Subversion}, 
+\href{http://www.nongnu.org/cvs/}{CVS},
+\href{http://jenkins-ci.org/}{Jenkins/Hudson},
+\href{http://www.open.collab.net/products/ctf/}{CollabNet TeamForge},
+\href{https://jazz.net/projects/rational-team-concert/}{Rational Team Concert}
+
+\blankline
+
+{\textbf{Development Tools:}}\\
+\href{http://www.jetbrains.com/idea/}{IntelliJ\textregistered\space IDEA},
+\href{http://www.jetbrains.com/ruby}{RubyMine\texttrademark},
+\href{http://www.eclipse.org/}{Eclipse},
+\href{http://netbeans.org/}{NetBeans IDE}, 
+\href{http://www.ibm.com/developerworks/rational/products/rsa/}{IBM\textregistered\space Rational\textregistered\space Software Architect (RSA)},
+\href{http://www.embarcadero.com/products/jbuilder}{JBuilder}
+
+\blankline
+
+{\textbf{Other Programming Experience:}}\\
+C/C++, PHP, Erlang, Prolog, DOT language
+
+\blankline
+
+{\textbf{Documentation Tools:}}\\ 
+Microsoft Office, iWork, \LaTeX{}, 
+and other common productivity packages for Windows, Mac\nolinebreak\space OS\nolinebreak\space X, and
+Linux platforms
+
+\blankline
+
+{\textbf{Operating Systems:}}\\
+Windows, Linux, Unix, Mac OS X
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Commercial Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Commercial Projects}
+\textbf{JCAT(Java Common Automation Test)}
+\hfill \textbf{March 2009 to Now}
+\begin{outerlist}
+\item \textit{Role:}\\
+Team Leader (intern, team member in the beginning)
+\item \textit{Project Description:}\\
+A bundle of Java applications for automation test, statistics and report. It is widely used in the three major platforms (CPP, TSP, AXE) of Ericsson on integration and verification.
+\item \textit{Language and Frameworks:}\\
+Java SE, Java EE, JUnit, TestNG, MySQL
+\end{outerlist}
+\blankline
+
+\textbf{Ericsson China Recruiting System (Internal)}
+\hfill \textbf{August 2010 to Now}
+\begin{outerlist}
+\item \textit{Role:}\\
+Architect and main developer
+\item \textit{Responsibility:}\\
+Communicate with Ericsson China recruiting team and understand their requirements about a recruiting system for internal use. Independenctly design and implement the Ruby on Rail based recruiting and interview arrange system.
+\item \textit{Project Description:}\\
+A recruiting system for HR department internal use. Which includes application management, interview arrangement, duplicated applications checking, r\'{e}sum\'{e} management, data import and export, etc. 
+\item \textit{Language and Frameworks:}\\
+Ruby on Rails, 
+\href{http://activescaffold.com/}{ActiveScaffold},
+\href{http://memcached.org/}{Memcached}, MySQL, 
+\href{http://nginx.net/}{nginx}, 
+\href{http://www.modrails.com/}{Phusion \nobreak Passenger\texttrademark}
+\end{outerlist}
+\blankline
+
+\textbf{Web Call SDK}
+\hfill \textbf{March 2008 to March 2009}
+\begin{outerlist}
+\item \textit{Role:}\\
+Architecture and main developer
 \item \textit{Description:}\\
 A Java EE web application for making VoIP calls. It supplies both browser client and Java ME client. 
 \item \textit{Technologies:}\\
 IMS, VoIP, SIP, SDP, 3PCC, Web Application, Web Service, MIDlet
-\item \textit{API/Framework:}\\
+\item \textit{Language and Frameworks:}\\
 Java EE, Metro, MjSIP, JMF, Mobile Front Controller, JSR\nobreak\space 172, JSR\nobreak\space 75,\\ Tomcat, MySQL
-\end{outerlist}
+\item \textit{Thesis:}\\
+\href{http://shanbohomepage.googlecode.com/hg/master_thesis/master_thesis.pdf}{Web Call Example Application}
 \end{outerlist}
 \blankline
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% OpenSource Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{OpenSource Projects}
 \href{http://code.google.com/p/scallope/}{\textbf{Scallope}} 
 \begin{outerlist}
 \item \texttt{Description:}
 A application acts as a web client login to sip provider's web page and make VoIP calls. 
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java, Apache common HTTP.
 \item \texttt{Homepage:}
 \href{http://code.google.com/p/scallope/}{http://code.google.com/p/scallope/}
@@ -290,7 +547,7 @@ Java, Apache common HTTP.
 \begin{outerlist}
 \item \texttt{Description:}
 A Java ME currency converter. It fetches the latest currency exchange rate from Google Finance. 
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java ME
 \item \texttt{Homepage:}
 \href{http://code.google.com/p/mobilecurrencyconverter/}{http://code.google.com/p/mobilecurrencyconverter/}
@@ -301,7 +558,7 @@ Java ME
 \begin{innerlist}
 \item \texttt{Description:}
 A Packet bouncer that "bounces" connections from one machine to another.
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java, Jpcap
 \end{innerlist}
 
@@ -311,7 +568,7 @@ Java, Jpcap
 \begin{outerlist}
 \item \texttt{Description:}
 A SIP user agent (UA) that waits for incoming calls and answers them when received.
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java, JMF, FreeTTS
 \end{outerlist}
 
@@ -321,7 +578,7 @@ Java, JMF, FreeTTS
 \begin{outerlist}
 \item \texttt{Description:}
 A web server for sending e-mails. No 3rd party library.
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java
 \end{outerlist}
 
@@ -331,7 +588,7 @@ Java
 \begin{outerlist}
 \item \texttt{Description:}
 A web service for booking flight tickets.
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java EE, JSF, Web Service (Metro), BPEL, JPA, MySQL 
 \end{outerlist}
 
@@ -341,7 +598,7 @@ Java EE, JSF, Web Service (Metro), BPEL, JPA, MySQL
 \begin{outerlist}
 \item \texttt{Description:}
 A web shop
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java EE, Struts, MySQL
 \end{outerlist}
 
@@ -351,18 +608,8 @@ Java EE, Struts, MySQL
 \begin{outerlist}
 \item \texttt{Description:}
 A web site for checking currency exchange rate
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Java EE, JSF, EJB3
-\end{outerlist}
-
-\blankline
-
-\textbf{Hangman}, KTH, Sweden \hfill \textbf{November 2007 to January 2008}
-\begin{outerlist}
-\item \texttt{Description:}
-A Java ME game with a server.
-\item \texttt{API/Framework:}
-Java ME, Java SE, Swing
 \end{outerlist}
 
 \blankline
@@ -371,7 +618,7 @@ Java ME, Java SE, Swing
 \begin{outerlist}
 \item \texttt{Description:}
 A resource management system for advertisment company, which is developed by the method of Extreme Programming.
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Ruby on Rails, MySQL
 \end{outerlist}
 
@@ -381,7 +628,7 @@ Ruby on Rails, MySQL
 \begin{outerlist}
 \item \texttt{Description:}
 A online CAI system used to do online question, upload homework, check homework and manage student infomation.
-\item \texttt{API/Framework:}
+\item \texttt{Language and Frameworks:}
 Ruby on Rails, MySQL
 \end{outerlist}
 
@@ -390,124 +637,29 @@ Ruby on Rails, MySQL
 \textbf{Anti-Counterfeiting}, BJTU, China \hfill \textbf{September 2006 to January 2007}
 \begin{outerlist}
 \item \texttt{Description:}
-A online anti-conterfeiting system
-\item \texttt{API/Framework:}
+A online anti-counterfeiting system
+\item \texttt{Language and Frameworks:}
 Java, Struts, Spring, Hibernate, MySQL
 \end{outerlist}
 
-
-\section{Social Skills}
-{\textbf{Full of Team Spirit}}\\
-{\textbf{Good Ability of Communication}}\\
-{\textbf{Cope with Pressure}}\\
-{\textbf{Willing to Learn New Technology}}\\
-{\textbf{Good at Written and Spoken English }}\\
-
-\section{Knowledge Domain}
-{\textbf{IP Multimedia Subsystem (IMS)}}\\ 
-{\textbf{SIP}}, {\textbf{SDP}}, {\textbf{VoIP}}\\ 
-{\textbf{Network Security}}\\ 
-
-\section{Technical Skills} 
-%
-{\textbf{6 Years of Java Programming Experience:}}\\
-Expert at Java EE/ Java SE/ Java ME
-
-\blankline
-
-{\textbf{Database development and Management:}}\\
-JDBC, SQL, MySQL, Oracle
-
-\blankline
-
-{\textbf{Java API/Frameworks:}}\\
-Hibernate, EJB3, Spring2.5, JSF, Struts, Swing, Log4j, JUnit4 
-
-\blankline
-
-{\textbf{Skill set of Web Services development:}}\\
-SOAP, WSDL, UDDI, BPEL, Metro, AXIS, RESTful Web Service
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\blankline
-
-
-{\textbf{Skill set of Web Site development:}}\\
-XHTML, XHTML MP, HTML, CSS, Javascript, JSON, d\={o}j\={o}, AJAX, JSP, JSF, XML, Ruby \nolinebreak on \nolinebreak Rails, PHP 
-
-\blankline
-
-{\textbf{Application Server:}}\\
-Apache Tomcat, Glassfish, JBoss, WebSphere, Apache HTTP Server
-
-\blankline
-
-{\textbf{Software Development Concept:}}\\
-Object-oriented Programming, UML, Design \nolinebreak Patterns, Extreme Programming, Scrum, Agile Software Development
-
-\blankline
-
-{\textbf{Project/Code management tool:}}\\
-Ant, Maven, ClearCase, Subversion, CVS
-
-\blankline
-
-{\textbf{Development Tools:}}\\
-Eclipse, Intellij IDEA, NetBeans, IBM\circledR\space Rational\circledR\space Software Architect (RSA), JBuilder
-
-\blankline
-
-{\textbf{Other Programming Experience:}}\\
-Ruby/Ruby on Rails, C/C++, PHP, Erlang, Prolog
-
-\blankline
-
-{\textbf{Documentation Tools:}}\\ 
-\LaTeX{}, Microsoft Office,
-and other common productivity packages for Windows, Mac\nolinebreak OS\nolinebreak X, and
-Linux platforms
-
-\blankline
-
-{\textbf{Operating Systems:}}\\
-Windows, Mac OS X, Linux
-
-\newpage
-\section{References}
-\begin{minipage}[t]{0.9\textwidth}
-\begin{itemize}
-\item Peter Yeung \\ Chief Strategist - Strategy \& Development \\Ericsson Developer Connection\\ Ericsson AB, Sweden \\
-  +46 (0)1071 36652\\
-  \href{mailto:peter.yeung@ericsson.com}{\tt peter.yeung@ericsson.com}
-\end{itemize}
-\begin{itemize}
-\item Mihhail Matskin, PhD \\ Professor of Software Engineering  \\ Royal Institute of Technology (KTH), Sweden \\
-  +46 (0)8 790 4128 \\
-  \href{mailto:misha@kth.se}{\tt misha@kth.se}
-\end{itemize}
-\begin{itemize}
-\item Xudong Chen \\ Senior Engineer \\ School of Software \\ Beijing Jiaotong University, China \\
-  +86 (0)10-51683818 \\
-  \href{mailto:chenxd@bjtu.edu.cn}{\tt chenxd@bjtu.edu.cn} 
-\end{itemize}
-\begin{itemize}
-\item Fengjuan Feng \\ Senior Engineer \\ School of Software \\ Beijing Jiaotong University, China \\
-  +86 (0)10-51683818 \\
-  \href{mailto:fjfeng@bjtu.edu.cn}{\tt fjfeng@bjtu.edu.cn} \vspace{2in}
-\end{itemize}
-\end{minipage}
-
-% Footer
-
-\begin{narrow}{0.65in}{2.0in}
+\vfill
+\begin{narrow}{0.15in}{1.5in}
 \begin{center}
 \begin{footnotesize}
-Last updated: \today \\
-\href{http://www.isk.kth.se/~shanbo/CV.pdf}{\tt http://www.isk.kth.se/\textasciitilde shanbo/CV.pdf}
-\end{footnotesize}
+\begin{center}
+Last updated: \today 
+\end{center}
+\href{http://www.borntojava.com/CV.pdf}{\tt http://www.borntojava.com/CV.pdf}
+\end{footnotesize}\\
+\vspace{0.2in}
+\textit{Produced by \LaTeX}
 \end{center}
 \end{narrow}
-
 
 \end{document}
 

@@ -326,6 +326,16 @@ ul.bigLinks li a:hover span.desc {
     border:black solid 3px;
 }
 
+.pictureNoBorder{
+    border:0;
+}
+
+.pictureNoBorder a:hover{
+    border:0;
+    padding: 0 0;
+
+}
+
 .marginTop3em{
     margin-top:3em;
 }

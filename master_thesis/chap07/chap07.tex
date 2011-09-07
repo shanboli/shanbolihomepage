@@ -3,8 +3,7 @@
 \chapter{Web Application}
 \label{sec:WebApplication}
 
-\section{Overview}
-\label{sec:WebApplication:Overview}
+\lettrine[lines=3]{T}{he} web application is the main portal of the whole application. It is based on Mobile Front Controller. The role of web application in the whole application is shown in Figure \ref{fig:ArchitectureOfWebCallExampleApplication}. Users can use the web application to manage their accounts and VoIP calls. Administrators can use web applications to manage users. The web application can be packaged into a war file and easily to deploy. It only needs a sevlet container, like Tomcat, to run. It supplies two kind of views one is for desktop browser and another is for mobile browser. Besides these two views, the web application also contains a web service interface. This chapter will focus on two browser view. The web service interface will be introduced with detail in chapter \ref{sec:WebServiceInterface}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -13,14 +12,12 @@
 \label{fig:WelcomePageOfDesktopBrowserView}
 \end{figure}
 
-The web application is the main portal of the whole application. It is based on Mobile Front Controller. The role of web application in the whole application is shown in Figure \ref{fig:ArchitectureOfWebCallExampleApplication}. Users can use the web application to manage their accounts and VoIP calls. Administrators can use web applications to manage users. The web application can be packaged into a war file and easily to deploy. It only needs a sevlet container, like Tomcat, to run. It supplies two kind of views one is for desktop browser and another is for mobile browser. Beside these two views, the web application also contains a web service interface. This chapter will focus on two browser view. The web service interface will be introduced with detail in chapter \ref{sec:WebServiceInterface}.
-
 A welcome screen of desktop browser view of Web Application is shown in Figure \ref{fig:WelcomePageOfDesktopBrowserView}.
 
 \section{Architecture of Mobile Front Controller 3}
 \label{sec:WebApplication:ArchitectureOfMobileFrontController3}
 
-\textit{``Mobile Front Controller (MFC)\label{sym:MFC} is a light-weight Java EE web application framework for creating web applications for web browsing and mobile browsing.''}\cite{MobileFrontController} It was developed by Peter Yeung and P\"{a}r Johansson from \href{http://www.ericsson.com/developer/}{Ericsson Developer Connection}, Ericsson\cite{MobileFrontController}. The mobile front controller uses a sevlet to handle http request, and redirect request to different kind of view. All views share a same logic. An overview of Mobile Front Controller used by a web application on a Java EE web container is shown in Figure \ref{fig:MFCOverview}.
+\textit{``Mobile Front Controller (MFC)\label{sym:MFC} is a light-weight Java EE web application framework for creating web applications for web browsing and mobile browsing.''} \cite{MobileFrontController} It was developed by Peter Yeung and P\"{a}r Johansson from \href{http://www.ericsson.com/developer/}{Ericsson Developer Connection}, Ericsson \cite{MobileFrontController}. The mobile front controller uses a sevlet to handle http request, and redirect request to different kind of view. All views share a same logic. An overview of Mobile Front Controller used by a web application on a Java EE web container is shown in Figure \ref{fig:MFCOverview}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -34,32 +31,32 @@ Java EE web container. (Figure taken from \textit{Mobile Front Controller Develo
 MFC does the following:}
 \begin{itemize}
 \item \textit{{Detects and selects appropriate views based on HTTP request headers. A view is a subdirectory that, for example, corresponds to a markup language such as XHTML, XHTML Mobile Profile (MP) and WML (see Figure \ref{fig:ArchitecureOfMFC}). The way MFC detects and selects views is customizable using view handlers.} }
-\item \textit{Shares UI logic between different views, for example, web and mobile browsing. This is done using action commands, which are classes that contain an execute method that is executed when a URL with, for example, the URL pattern *.do is called (for example http://localhost:8080/mfc-basic-demo/xhtml/Print.do).''}\cite{DevelopersGuideOfMFC}
+\item \textit{Shares UI logic among different views, for example, web and mobile browsing. This is done using action commands, which are classes that contain an execute method that is executed when a URL with, for example, the URL pattern *.do is called (for example http://localhost:8080/mfc-basic-demo/xhtml/Print.do).''} \cite{DevelopersGuideOfMFC}
 \end{itemize}
 
 \begin{figure}[!hbtp]
 \centering
 \epsfig{file=chap07/resources/architecture_of_mfc, width=5.2in}
-\caption{The architecture of Mobile Front Controller (Figure taken from \textit{Mobile Front Controller Developer's guide for software version 3.1}\cite{DevelopersGuideOfMFC})}
+\caption{The architecture of Mobile Front Controller (Figure taken from \textit{Mobile Front Controller Developer's guide for software version 3.1} \cite{DevelopersGuideOfMFC})}
 \label{fig:ArchitecureOfMFC}
 \end{figure} 
 
 The version of Mobile Front Controller used in Web Call Example Application is the latest version, v3.1.
 
-\section{Dual view}
+\section{Dual-view}
 \label{sec:WebApplication:DualView}
 
-As described in the section \ref{sec:WebApplication:ArchitectureOfMobileFrontController3}, Mobile Front Controller supplies multi-view function. Web Call Example Application is developed with two view, one is desktop browser view and the other is mobile browser view. The will be illustrated separately in subsection \ref{sec:WebApplication:DualView:DesktopBrowserView} and \ref{sec:WebApplication:DualView:MobileBrowserView}.
+As described in the section \ref{sec:WebApplication:ArchitectureOfMobileFrontController3}, Mobile Front Controller supplies multi-view function. Web Call Example Application is developed with two views, one is desktop browser view and the other is mobile browser view. The will be illustrated separately in subsection \ref{sec:WebApplication:DualView:DesktopBrowserView} and \ref{sec:WebApplication:DualView:MobileBrowserView}.
 
 \subsection{Desktop browser view}
 \label{sec:WebApplication:DualView:DesktopBrowserView}
 
-The Mobile Front Controller supplies a function of select view. If the user access web application via a desktop browser, the desktop browser view (XHTML view) will return to user. The desktop browser view is a normal web site that follows the standard of The XHTML 1.0. Extensible HyperText Markup Language (XHTML\label{sym:XHTML}) is a markup language for web pages which developed by W3C HTML Working Group. It is widely used as a standard language of web page on Internet. A example page (welcome page) of desktop browser view is shown in Figure \ref{fig:WelcomePageOfDesktopBrowserView}.
+The Mobile Front Controller supplies a function of select view. According to \textit{Mobile Front Controller Developer's guide} \cite{DevelopersGuideOfMFC}, if the user accesses web application via a desktop browser, the desktop browser view (XHTML view) will return to user. The desktop browser view is a normal web site that follows the standard of The XHTML 1.0. Extensible HyperText Markup Language (XHTML\label{sym:XHTML}) is a markup language for web pages which developed by W3C HTML Working Group. It is widely used as a standard language of web page on Internet. An example page (welcome page) of desktop browser view is shown in Figure \ref{fig:WelcomePageOfDesktopBrowserView}.
 
 \subsection{Mobile browser view}
 \label{sec:WebApplication:DualView:MobileBrowserView}
 
-If the user access web application via a mobile browser, the mobile browser view (XHTML MP view) will return to user. The mobile browser view is a normal web site that follows the standard of XHTML MP 1.1. XHTML Mobile Profile (XHTML MP) is a computer language standard designed specifically for mobile phones. It is developed by  A example page (welcome page) of mobile browser view is shown in Figure \ref{fig:WelcomePageOfMobileBrowserview}.
+According to \textit{Mobile Front Controller Developer's guide}, if the user accesses web application via a mobile browser, the mobile browser view (XHTML MP view) will return to user. The mobile browser view is a normal web site that follows the standard of XHTML MP 1.1. XHTML Mobile Profile (XHTML MP) is a computer language standard designed specifically for mobile phones. It is developed by an example page (welcome page) of mobile browser view is shown in Figure \ref{fig:WelcomePageOfMobileBrowserview}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -75,7 +72,7 @@ The web set structure contains three levels. \texttt{Base} \textrightarrow{} \te
 
 Under base directory, there is welcome page, user register page and login page. The pages on this level are public opened. There are no restrictions on requesting these pages. 
 
-All pages in protected directory are authenticated resources. To visit these pages, the user has to login first. Both user and administrator can request this kind of resources. Under user panel, user can freely edit information, e.g. user phone number, contact book, change password, VoIP provider account and recent calls. Users can make VoIP calls by clicking the link of Phone to Phone Call under user panel. 
+All pages in protected directory are authenticated resources. To visit these pages, the user has to login first. Both user and administrator can request this kind of resources. Under user panel, user can freely edit information, e.g., user phone number, contact book, change password, VoIP provider account and recent calls. Users can make VoIP calls by clicking the link of Phone to Phone Call under user panel. 
 The pages under admin directory are used for managing user information. Only user who has a role of administrator can access pages under admin directory. Administrator can modify user information or even delete users. 
 For more details about security, please refer section \ref{sec:WebApplication:Security}.
 
@@ -86,7 +83,7 @@ For more details about security, please refer section \ref{sec:WebApplication:Se
 
 To use the Web Call Example Application, a user must register him on the web site. It is quite easy and simple to register and there are only three steps: 
 \begin{enumerate}
-\item Navigate to the web site url and open the welcome page. There are user registration functions on both desktop and mobile views. So users can register either from a computer or a mobile phone.
+\item Navigate to the web site URL and open the welcome page. There are user registration functions on both desktop and mobile views. So users can register either from a computer or a mobile phone.
 \item At the welcome page. Click the link to New User Registration.
 \item Fill the form, include user name (in the format of email address), password and confirm password.
 \end{enumerate}
@@ -107,7 +104,7 @@ The user profile information menu is shown in Figure \ref{fig:UserProfileInforma
 \label{sec:WebApplication:UserAction:VoIPServiceProviderAccount}
 
 To make a VoIP call, the user must have a VoIP Provider Account first. Figure \ref{fig:RegisterVoIPAccount} shows how to register a VoIP provider account. To get the view of adding VoIP provider account, user should go to user panel \textrightarrow{} User Profile Information \textrightarrow{} VoIP Provider Account \textrightarrow{} add new VoIP provider account.
-Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP account information. The outbound proxy should in a format of SIP\_PROVIDER\_URL:PORT\_NUMBER. If no port number specified, the port \texttt{5060} will be used as defined in RFC3261\cite{RFC3261}.
+Follow the example in Figure \ref{fig:RegisterVoIPAccount} and input the VoIP account information. The outbound proxy should in a format of SIP\_PROVIDER\_URL:PORT\_NUMBER. If no port number specified, the port \texttt{5060} will be used as defined in RFC3261 \cite{RFC3261}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -139,11 +136,11 @@ Figure \ref{fig:UserPanelDesktopBrowserView} is the user panel of desktop browse
 \label{fig:PhoneToPhoneCall}
 \end{figure} 
 
-In the phone-to-phone call page, which is shown in Figure \ref{fig:PhoneToPhoneCall}, users can input their own number, or use the default numbers, which is set in ``my phone number'' of user profiles information. And input the destination phone number, or select from recent calls or the contact list. The client number could either be SIP address or a complete phone number. If users have more than one VoIP provider account, they can use the drop down list of VoIP provider account and choose an account as their wish. Different VoIP service provider may supply different rate for different destination. So the multi-account function can help user save money by choosing a cheapest provider. This page uses the technology of Ajax to dynamically show the information of VoIP account. More Ajax technologies will be introduced in section \ref{sec:WebApplication:AjaxInWebApplication}. 
+In the phone-to-phone call page, which is shown in Figure \ref{fig:PhoneToPhoneCall}, users can input their own number, or use the default numbers, which is set in ``my phone number'' of user profiles information. And input the destination phone number, or select from recent calls or the contact list. The client number could either be SIP address or a complete phone number. If users have more than one VoIP provider account, they can use the drop down list of VoIP provider account and choose an account as their wish. Different VoIP service provider may supply different rate for different destination. So the multi-account function can help user on saving money by choosing a cheapest provider. This page uses the technology of Ajax to dynamically show the information of VoIP account. More Ajax technologies will be introduced in section \ref{sec:WebApplication:AjaxInWebApplication}. 
 
-There is a drop down list of call methods. Five different implementations of connection methods will be illustrated at that list. They are Relay Call, Call transfer, Re-invite, SDP swap and Web client. The last four methods are so called third party call control (3PCC)\cite{RFC3725}. The differences of connection methods will be discussed in chapter \ref{sec:Solution}. It is recommend that by default user uses the method of Web client. 
+There is a drop down list of call methods. Five different implementations of connection methods will be illustrated at that list. They are \textsf{Relay Call}, \textsf{Call transfer}, \textsf{Re-invite}, \textsf{SDP swap} and \textsf{Web Client}.  The differences of connection methods is discussed in chapter \ref{sec:Solution} and chapter \ref{sec:Analysis}. It is recommend that by default user uses the method of Web client. 
 
-After user clicked ``Call'' button. The page will be directed to call state page. On call state page, users can see the phone numbers of two sides, call state, or even cancel the call.
+After user clicked ``Call'' button, the page will be directed to call state page. On call state page, users can see the phone numbers of two sides, call state, or even cancel the call.
 
 \section{Administrator action}
 \label{sec:WebApplication:AdministratorAction}
@@ -158,7 +155,7 @@ Figure \ref{fig:UserListOfAdministratorPanel} is the user list page. The adminis
 \label{fig:UserListOfAdministratorPanel}
 \end{figure} 
 
-Figure \ref{fig:AdministratorViewOfUserInformation} shows a administrator view of user info. The administrator can update user's basic info, E.g. password and roles. Administrators can change SIP relevant information, such as user's phone number, user's contact list and user's VoIP account info by clicking ``show'' button in the SIP relevant info section.
+Figure \ref{fig:AdministratorViewOfUserInformation} shows an administrator view of user info. The administrator can update user's basic info, e.g., password and roles. Administrators can change SIP relevant information, such as user's phone number, user's contact list and user's VoIP account info by clicking ``show'' button in the SIP relevant info section.
 
 \begin{figure}[!hbtp]
 \centering
@@ -167,12 +164,12 @@ Figure \ref{fig:AdministratorViewOfUserInformation} shows a administrator view o
 \label{fig:AdministratorViewOfUserInformation}
 \end{figure} 
 
-The administrator can not delete the last administrator, otherwise no one can manage the application. 
+The administrator cannot delete the last administrator; otherwise no one can manage the application. 
 
 \section{Validation mechanism}
 \label{sec:WebApplication:ValidationMechanism}
 
-The validation of web application is implemented both at presentation tier and logic tier. On presentation tier, all form are validated by \texttt{javascript}. 
+The validation of web application is implemented both at presentation tier and logic tier. On presentation tier, all forms are validated by \texttt{javascript}. 
 
 \subsection{Page level}
 \label{sec:WebApplication:ValidationMechanism:PageLevel}
@@ -198,12 +195,12 @@ function has_value(field, alert_message) {
 \subsection{Server level}
 \label{sec:WebApplication:ValidationMechanism:ServerLevel}
 
-However, to prevent user disables \texttt{javascript}, there is also a validation mechanism on server side, that is called server level validation. To make the server response faster, only important or sensitive actions use a server level validation. E.g. The action of changing password has a server level validation of checking if password matched. The action of cancel call is another sensitive function. Beside the session id, server will also check if this session belongs to the user who want to cancel it. This will prevent from arbitrary interrupt calls.
+However, to prevent user disables \texttt{javascript}, there is also a validation mechanism on server side, which is called server level validation. To make the server response faster, only important or sensitive actions use a server level validation. E.g., the action of changing password has a server level validation of checking if password matched. The action of cancel call is another sensitive function. In addition to the session id, server will also check if this session belongs to the user who wants to cancel it. This will prevent from arbitrary interrupt calls.
 
 \section{Session control}
 \label{sec:WebApplication:SessionControl}
 
-Web Call Example Application supports multi thread actions, that is many users can make phone calls concurrently. An \texttt{enum} class \texttt{CallSessions} works as a singleton\footnote{Singleton is a design pattern that used to restrict instantiation of a class to one object.} and manages call sessions. A class diagram of \texttt{CallSessions} is shown in Figure \ref{fig:ClassDiagramOfCallSessions}. It can be seen from picture, the four methods \texttt{add}, \texttt{getCallInfo}, \texttt{remove}, \texttt{contains} supply a very convenient way to manipulate sessions. A instance of \texttt{CallInfo} contains all of information of a phone call, it can be treated as a information pack.
+Web Call Example Application supports multi thread actions, that is, many users can make phone calls concurrently. An \texttt{enum} class \texttt{CallSessions} works as a singleton\footnote{According to \textit{Design Patterns} \cite{DesignPatternGoF}, Singleton is a design pattern that used to restrict instantiation of a class to one object.} and manages call sessions. A class diagram of \texttt{CallSessions} is shown in Figure \ref{fig:ClassDiagramOfCallSessions}. It can be seen from picture, the four methods \texttt{add}, \texttt{getCallInfo}, \texttt{remove}, \texttt{contains} supply a very convenient way to manipulate sessions. An instance of \texttt{CallInfo} contains all information of a phone call, it can be treated as a property pack.
 
 \begin{figure}[!hbtp]
 \centering
@@ -215,26 +212,26 @@ Web Call Example Application supports multi thread actions, that is many users c
 \section{Ajax in web application}
 \label{sec:WebApplication:AjaxInWebApplication}
 
-Ajax\label{sym:Ajax} is short for Asynchronous JavaScript and XML. It is a set of Internet techniques used on the client to generate interactive web applications or rich Internet applications. For more detail about Ajax, please refer to \textit{Ajax : A New Approach to Web Applications} by Jesse James Garrett\cite{AjaxJesse}.
+Ajax\label{sym:Ajax} is short for Asynchronous JavaScript and XML. \textit{``Ajax is a group of interrelated web development techniques used on the client-side to create interactive web applications or rich Internet applications.''} \cite{AjaxAtWiki} For more detail about Ajax, please refer to \textit{Ajax : A New Approach to Web Applications} by Jesse James Garrett \cite{AjaxJesse}.
 
-There are two places use Ajax in Web Call Example Application. One is at phone to phone call page, which is shown in Figure \ref{fig:PhoneToPhoneCall}. When user chooses a different VoIP service provider account. An Ajax request will be used to fetch account information from server. The fields will be updated automatically after browser get new account info. And there is no refresh of the page. 
+There are two places use Ajax in Web Call Example Application. One is at phone to phone call page, which is shown in Figure \ref{fig:PhoneToPhoneCall}. When user chooses a different VoIP service provider account, an Ajax request will be used to fetch account information from server. The fields will be updated automatically after browser gets new account info. And there is no refresh of the page. 
 
 Another place that uses Ajax is the call state page. The call state page shows a real time state of a call session. There is a \texttt{JavaScript} function named \texttt{updateState} sends ajaxGet request to server to check the session state in every minute. An action named \texttt{LoadCallState} at server side will communicate with \texttt{CallSessions} which described in section \ref{sec:WebApplication:SessionControl}, and response browser with the latest state of that session.
 
 \section{Java ME helper}
 \label{sec:WebApplication:JavaMEHelper}
 
-Java ME helper is a servlet which responses a content of JAD file to mobile devices. It is not simply load a JAD file and send content to client. Instead, it automatically generates the content of JAD file on demand. Normally, a JAD file contains the description of JAR and MIDlets. Beside the standard properties, the Java ME helper will also collect the user name and hashed password and write it into JAD. The username and hashed password will be used in communication of Java ME Client which will be introduced in chapter \ref{sec:JavaMEClient}.
+Java ME helper is a servlet which responses a content of JAD file to mobile devices. It is not simply load a JAD file and send content to client. Instead, it automatically generates the content of JAD file on demand. Normally, a JAD file contains the description of JAR and MIDlets. Besides the standard properties, the Java ME helper will also collect the user name and hashed password and write it into JAD. The username and hashed password will be used in communication of Java ME Client which will be introduced in chapter \ref{sec:JavaMEClient}.
 
 \section{Database}
 \label{sec:WebApplication:Database}
 
-The database of Web Call Example Application stores all user informations. When users login to the web page they will always be asked to input their user name and password. The inputted user name and password will be compared with the ones in database. 
+The database of Web Call Example Application stores all user information. When users login to the web page they will always be asked to input their user name and password. The inputted user name and password will be compared with the ones in database. 
 
 \subsection{Design of database}
 \label{sec:WebApplication:Database:DesignOfDatabase}
 
-A EER(Extended Entity-Relationship) diagram of database is shown in Figure \ref{fig:EERDiagram}. There are seven tables in the database. They are \texttt{user}, \texttt{role}, \texttt{user\_role}, \texttt{contact}, \texttt{user\_uri}, \texttt{sip\_account} and \texttt{recent\_call}. Table \texttt{user} stores user name and hashed password. Table \texttt{role} stores typical roles in the application, that is USER and ADMIN. Table \texttt{user\_role} is a bridge table that presences a many to many relationship of table \texttt{user} and \texttt{role}. Table \texttt{contact} stores the contacts informations. Table \texttt{user\_uri} stores primary phone numbers of user. Table \texttt{sip\_account} stores VoIP service provider account that is used to register to a proxy and make phone calls. Table \texttt{recent\_call} stores recent call history.
+An EER (Extended Entity-Relationship) diagram of database is shown in Figure \ref{fig:EERDiagram}. There are seven tables in the database. They are \texttt{user}, \texttt{role}, \texttt{user\_role}, \texttt{contact}, \texttt{user\_uri}, \texttt{sip\_account} and \texttt{recent\_call}. Table \texttt{user} stores user name and hashed password. Table \texttt{role} stores typical roles in the application, which are USER and ADMIN. Table \texttt{user\_role} is a bridge table that acts as a many to many relationship table of \texttt{user} and \texttt{role}. Table \texttt{contact} stores the contacts informations. Table \texttt{user\_uri} stores primary phone numbers of user. Table \texttt{sip\_account} stores VoIP service provider account that is used to register to a proxy and make phone calls. Table \texttt{recent\_call} stores recent call history.
 
 \begin{figure}[!hbtp]
 \centering
@@ -246,9 +243,9 @@ A EER(Extended Entity-Relationship) diagram of database is shown in Figure \ref{
 \subsection{User database utility}
 \label{sec:WebApplication:Database:UserDatabaseUtility}
 
-User database utility is originally a part of Web Call Example Application. It was separated from Web Call Example Application and distributed as an example of Mobile Front Controller. The User database utility supplies a light weight java API for manipulation database. The user database utility uses a Strategy Pattern\footnote{Strategy Pattern is a kind of Design Pattern. It defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.} to make user easy to interchange database connection from data source to direct connection. 
+User database utility is originally a part of Web Call Example Application. It was separated from Web Call Example Application and distributed as an example of Mobile Front Controller. The User database utility supplies a light weight java API for manipulation database. The user database utility uses a Strategy Pattern\footnote{According to \textit{Design Patterns} \cite{DesignPatternGoF}, the intent of the Strategy pattern is: Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.} to make user easy to interchange database connection from data source to direct connection. 
 
-As long as user creates a database, he can use Web Call Example Application. When the first time deploys, it will check if the database has the tables which it needs. If it is an empty database, Web Call Example Application will automatically generates essential tables. And the first user of this application will be automatically registered as administrator, which is shown in Figure \ref{fig:FirstUser}
+As long as user creates a database, he can use Web Call Example Application. When the first time deploys, it will check if the database has the tables which it needs. If it is an empty database, Web Call Example Application will automatically generate essential tables. And the first user of this application will be automatically registered as administrator, which is shown in Figure \ref{fig:FirstUser}
 
 \begin{figure}[!hbtp]
 \centering
@@ -260,8 +257,8 @@ As long as user creates a database, he can use Web Call Example Application. Whe
 \section{Security}
 \label{sec:WebApplication:Security}
 
-There are two parts of resources are in the security constraint domain. One is the user resource and another is administrator resources. They are both in the CONFIDENTIAL level. \textit{``A user data constraint (<user-data-constraint> in the deployment descriptor) requires that all constrained URL patterns and HTTP methods specified in the security constraint are received over a protected transport layer connection such as HTTPS (HTTP over SSL).''} from Java EE 5 Tutorial\cite{JavaEE5Tutorial}.  
+There are two parts of resources are in the security constraint domain. One is the user resource and another is administrator resources. They are both in the CONFIDENTIAL level. \textit{``A user data constraint (<user-data-constraint> in the deployment descriptor) requires that all constrained URL patterns and HTTP methods specified in the security constraint are received over a protected transport layer connection such as HTTPS (HTTP over SSL).''} from Java EE 5 Tutorial \cite{JavaEE5Tutorial}.  
 
-Web Call Example Application supports six different ways of password digest. They are MD2, MD5, SHA-1, SHA-256, SHA-384 and SHA-512. The method of digest can be specified in \texttt{web.xml}. They are fully compatible with standard servlet containers such as \textsf{Apache Tomcat}. All users' passwords in database are hashed password, even site/database managers can not get the plain text of users' passwords. The hashed password is also used in operations of web service interface. 
+Web Call Example Application supports six different ways of password digest. They are MD2, MD5, SHA-1, SHA-256, SHA-384 and SHA-512. The method of digest can be specified in \texttt{web.xml}. They are fully compatible with standard servlet containers such as \textsf{Apache Tomcat}. All users' passwords in database are hashed password, even site/database managers cannot get the plain text of users' passwords. The hashed password is also used in operations of web service interface. 
 
 % ********** End of chapter **********

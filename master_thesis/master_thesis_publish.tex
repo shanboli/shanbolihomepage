@@ -1,0 +1,43 @@
+% *************** LEd - MSc template document ***************
+%\input{style1.tex}
+\input{style2.tex}
+\input{title_config.tex}
+\begin{document}
+% *************** Front matter ***************
+\frontmatter
+\input{front.tex}
+\input{abstract.tex}
+\input{dedication.tex}
+
+% *************** Table of Contents **********
+\tableofcontents
+% *************** Main matter ****************
+\mainmatter
+\input{ack/ack.tex}
+\input{chap01/chap01.tex}
+\input{chap02/chap02.tex}
+\input{chap03/chap03.tex}
+\input{chap04/chap04.tex}
+\input{chap05/chap05.tex}
+\input{chap06/chap06.tex}
+\input{chap07/chap07.tex}
+\input{chap08/chap08.tex}
+\input{chap09/chap09.tex}
+\input{chap10/chap10.tex}
+\input{chap11/chap11.tex}
+
+
+% *************** Bibliography ***************
+\bibliographystyle{plain}
+{\small\bibliography{master_thesis_publish}}
+
+% *************** Appendixes ***************
+%\appendix
+%\appendixpage*
+%\input{app1/app1.tex}
+
+% *************** Back matter ***************
+\backmatter
+\input{back.tex}
+
+\end{document}

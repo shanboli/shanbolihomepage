@@ -1,7 +1,97 @@
 
 % ********** Chapter 10 **********
-\chapter{Conclusion}
-\label{sec:Conclusion}
+\chapter{Analysis}
+\label{sec:Analysis}
+
+\lettrine[lines=3]{T}{his} chapter will analysis the performance, usability and reliability of \textsf{Web Call Example Application}. A comparison table of Call Method will also be illustrated at the end of this chapter.
+
+\section{Performance}
+
+Since all portal of Web Call Example Application uses the same core that is \textsf{SIP call component}. The evaluation and analysis of performance will focus on the different call method of SIP call component.
+
+\subsection{Evaluation Environment}
+
+\textsf{Ericsson Service Development Studio (SDS)} 4.1 \cite{SDS4} is used as the SIP service provider. \textit{``SDS is the only fully comprehensive tool for development and end-to-end testing of both the client and server side of new convergent all-IP (IMS) applications.''} \cite{SDS4} Two clients are Express Talk \cite{ExpressTalkHomepage} and PhonerLite \cite{PhonerLiteHomepage}. They are both widely used SIP clients. Both clients registered with Ericsson SDS. Express Talk registers as A, which means it is client A and PhonerLite registers as B, which means it is client B.
+
+In this evaluation, we tried several use cases, direct client to client call, \textsf{Relay Call}, \textsf{Call Transfer}, \textsf{SDP Swap} and \textsf{Re-invite}. The \textsf{Web Client} is not test in this environment because it is special designed for real VoIP service provider.
+
+\subsection{Analysis}
+
+Different call methods are compared with direct call. The establish time for direct call is less than one second. \textsf{SDP swap} and \textsf{Re-invite} are less than two seconds. \textsf{Call Transfer} is a bit longer than them. And \textsf{Relay Call} takes about three seconds to establish the connection.
+
+The result shows that \textsf{Relay Call} gives the longest time of setup the connection. This is because the mechanism of Relay Call. In the process of establishing phone call, according to \textit{Web Call SDK} \cite{WebCallSDK}, it needs two phrase. One is setup the connection with Client A and the other is setup the connection with Client B. So the continuously two hand shake take longer time than others. And the method of \textsf{Call Transfer} uses a similar mechanism (explained in section \ref{sec:Solution:ThirdPartyCall:CallTransfer}). So it also spends longer time than others. \textsf{SDP Swap} sends \texttt{INVITE} concurrently to two clients (explained in section \ref{sec:Solution:ThirdPartyCall:SDPSwep}). This makes it finish the connection in one time unit of hand shake. From the point of signal flow (explained in section \ref{sec:Solution:ThirdPartyCall:Re-invite}), the connection time of \textsf{Re-invite} should be longer than \textsf{SDP Swap}. However, the \texttt{Re-INVITE} does not need any manually action from user. So it is also fast.
+
+For the latency of phone call, \textsf{Call Transfer}, \textsf{SDP swap} and \textsf{Re-invite} almost have no latency. This is the same as direct call. On the other hand, \textsf{Relay Call} has a latency of about 2 seconds. 
+
+The reason of different level of latency is obviously. Relay Call connects two stand alone phone calls. So the latency should be two times of normal latency plus the process time of controller. And all others are direct phone to phone audio flows.
+
+\section{Usability}
+
+This section will separately explain the usability of call method and portal.
+
+\subsection{Usability of Call Method}
+\label{sec:Analysis:Usability:UsabilityOfCallMethod}
+
+\begin{itemize}
+\item \textsf{Relay Call} According to \textit{Web Call SDK} \cite{WebCallSDK}, Relay Call connects two VoIP calls. So there is no limitation at the VoIP service provider. It can be used at all standard SIP network. However, the drawback of Relay Call is that it has a relevant long latency and it need more time to establish connection. This is because of its ``Bridge'' mechanism.
+
+\item \textsf{Call Transfer} The limitation of Call Transfer is that it needs a support of \textit{The Session Initiation Protocol (SIP) Refer Method (RFC 3515)}\cite{RFC3515} at client side. Also the VoIP call cannot be terminated from controller side. Except the limitation above the latency and establish time is fine.
+
+\item \textsf{SDP Swap} The limitation of SDP Swap is that some VoIP service provider, e.g., \textsf{Nonoh}, may treat SIP message which do not contain a SDP as an invalid message. So for such service providers, SDP Swap method will not work. So it is recommended to test it before use it in a commercial environment. The latency and establish time of SDP Swap method is fine.
+
+\item Re-invite The limitation of SDP Swap is that some VoIP service provider, e.g., \textsf{Nonoh}, may treat \texttt{RE-INVITE} SIP message as an invalid message. So for such service providers, Re-invite method will not work. So it is recommended to test it before use it in a commercial environment. The latency and establish time of Re-invite method is fine.
+
+\item Web Client As explained in section \ref{sec:Solution:ThirdPartyCall:WebClient}, Web Client method is special designed for some existing VoIP service provider, e.g., \textsf{Nonoh}. It is recommended to use it when Web Client works with the service provider. Because all signal and media flow are handled inside the network of service provider. It is the most efficiency method. The limitation is that it does not follow the standard of SIP. And it is special designed for some specified service provider. Each new service provider need a whole new design and implementation.
+
+\end{itemize}
+
+A comparison table of call method can be found in section \ref{sec:Analysis:ComparisonOfCallMethod}.
+
+\subsection{Usability of Portal}
+
+\begin{itemize}
+
+\item \textsf{Desktop Browser View} The desktop browser view is special designed for desktop browser of a compute. It could be either a laptop or a workstation. Users can access all functions via it. The limitation is that to use desktop browser view, user must have a computer with him.
+
+\item \textsf{Mobile Browser View} Like desktop browser view, mobile browser view also supplies all function of \textsf{Web Call Example Application}. As long as user has a mobile phone which connects to Internet and has a HTTP browser, user can enjoy it. However, due to the size of screen of mobile device, the operation is not as convenient as desktop browser.
+
+\item \textsf{Java ME Client} The Java ME Client is special designed for fast dial. So it has limitation of the function. It do not has a function of VoIP service provider account management. But it can load the native contact book from a mobile phone and synchronize it with the contact book at Web Call server. A limitation of Java ME Client is that it needs JSR 172 \cite{JSR172} to communicate with server. So only the mobile device which supports JSR 172 can use it.
+
+\end{itemize}
+
+\section{Reliability}
+
+For the point of connection, \textsf{Web Call Example Application} contains five different call methods. From the best choice (see section \ref{sec:Analysis:ComparisonOfCallMethod}) to the must work choice (Relay Call, see section \ref{sec:Analysis:Usability:UsabilityOfCallMethod}) there must be a method suit the specified VoIP network. 
+
+Since the VoIP call uses the network of VoIP service provider, the reliability of VoIP calls depend on the reliability of service provider. 
+
+\section{Comparison of Call Method}
+
+\label{sec:Analysis:ComparisonOfCallMethod}
+
+\begin{table}[!hbtp]
+\centering
+\begin{tabular}{|p{0.60in}|p{0.60in}|p{0.65in}|p{0.65in}|p{0.65in}|p{0.65in}|p{0.65in}|}
+\hline
+        & \multirow{3}{0.65in}{\textbf{PSTN}} &\multicolumn{5}{c|}{VoIP} \\ \cline{3-7}
+        &               & \multirow{3}{0.65in}{\textbf{Relay Call}} &\multicolumn{4}{c|}{Third Party Call} \\ \cline{4-7}
+ 		  &               &                    & \textbf{Call Transfer} &\textbf{SDP Swap} &\textbf{Re-Invite} &\textbf{Web Client} \\\cline{1-7}	
+\textbf{service provider} & All PSTN switch & \multirow{2}{0.65in}{support by all VoIP service providers} & \multicolumn{4}{c|}{Not support by all VoIP service providers}\\ \cline{4-7}
+& & & The ones who support REFER method & The ones who do not filter SIP message which doesn't carry SDP & The ones who support
+Re-Invite message & The ones who supply web site call \\ \cline{1-7}
+
+\textbf{Client} & \multirow{2}{0.65in}{Traditional telephone or mobile phone} &\multirow{2}{0.65in}{All clients (traditional phone, mobile phone, software-client)} & \multicolumn{3}{p{1.95in}|}{Traditional phone, mobile phone, software-client, under particular requirements of software-client or PSTN gateway} & \multirow{2}{0.65in}{All clients (traditional phone, mobile phone, software-client)} \\ \cline{4-6}
+& & & Client need support REFER method  & Client need implement RFC 3725 & Client need support Re-Invite & \\ \cline{1-7}
+\textbf{Media Stream} & In PSTN network & Internet and/or PSTN, need to be handled on controller & \multicolumn{4}{c|}{Internet and/or PSTN}\\ \cline{1-7}
+\textbf{Latency} & Very Short / QoS guarantee & long & \multicolumn{4}{c|}{Short, acceptable. But no QoS guarantee} \\ \cline{1-7}
+\textbf{Cost} & Expensive (especially for international call ) & \multicolumn{5}{c|}{cheap} \\
+\hline
+\end{tabular}
+\caption{Comparison of Call Method}
+\label{table:ComparisonOfCallMethod}
+\end{table}
+
+A comparison of different call method is shown in Table \ref{table:ComparisonOfCallMethod}. It can be seen from the table, when talk about latency, the best call method is the PSTN (the traditional way). It is the only method that supports QoS\label{sym:QOS} (Quality Of Service). So there is a guarantee of quality of audio. But it costs a lot for international sessions.  The Relay call can be used on any server and client with a low fee. But the latency is long and sometimes unacceptable. The relay call method brings media traffic to the controller so it not possible to have it on a small or personal server. The third party call is not support by all the services. We have developed four different solutions on third party call. Each of them has its own Cons and Pros. It is recommended that when make an international or long distance call, the web client method should be choose. If it is not possible to use web client method, users can try the other third party call implementations. If none of them works, user can choose either the PSTN which supplies a good quality and high cost or the \textsf{Relay Call} which supplies a poor quality but with low price.
 
 
 % ********** End of chapter **********

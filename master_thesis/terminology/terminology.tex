@@ -4,7 +4,7 @@
 
 The Java\texttrademark{} programming language is a popular high-level language which provides a portable feature and can be used on many different operating systems. 
 
-The source code of Java is first written in plain text files which ends with the \nolinebreak\texttt{.java}. Then the Java source files are compiled into bytecodes which ends with \nolinebreak\texttt{.class} by Java compiler (javac). A \nolinebreak\texttt{.class} file is platform independent. It will be executed by the Java Virtual Machine\label{sym:JVM}\footnote{The terms ``Java Virtual Machine'' and ``JVM'' mean a Virtual Machine for the Java platform. \cite{TheJavaProgrammingLanguage}}.\cite{TheJavaProgrammingLanguage}
+The source code of Java is first written in plain text files which end with the \nolinebreak\texttt{.java}. Then the Java source files are compiled into bytecodes which ends with \nolinebreak\texttt{.class} by Java compiler (javac). A \nolinebreak\texttt{.class} file is platform independent. It will be executed by the Java Virtual Machine\label{sym:JVM}\footnote{The terms ``Java Virtual Machine'' and ``JVM'' mean a Virtual Machine for the Java platform. \cite{TheJavaProgrammingLanguage}}. \cite{TheJavaProgrammingLanguage}
 
 A Java application can be distributed in the format of Java ARchive (JAR\label{sym:JAR}) file.
 
@@ -12,81 +12,115 @@ A Java application can be distributed in the format of Java ARchive (JAR\label{s
 \label{sec:JavaEE}
 \label{sym:JavaEE}
 
-Java Platform, Enterprise Edition (Java EE) is a set of coordinated technologies that significantly reduces the cost and complexity of developing, deploying, and managing multitier, server-centric applications.\cite{JavaEETechnology}
+Java Platform, Enterprise Edition (Java EE) is a set of coordinated technologies that significantly reduces the cost and complexity of developing, deploying, and managing multitier, server-centric applications. \cite{JavaEETechnology}
 
 
 \subsection*{Java ME}
 \label{sec:JavaME}
 \label{sym:JavaME}
 
-Java Platform, Micro Edition (Java ME) is a collection of technologies and specifications to create a platform that fits the requirements for mobile devices such as consumer products, embedded devices, and advanced mobile devices.\cite{JavaMETechnology}
+Java Platform, Micro Edition (Java ME) is a collection of technologies and specifications to create a platform that fits the requirements for mobile devices such as consumer products, embedded devices, and advanced mobile devices. \cite{JavaMETechnology}
 
 \subsection*{MIDlet}
 \label{sec:MIDlet}
 \label{sym:MIDlet}
 
-A MIDlet is a Java application framework for the Mobile Information Device Profile (MIDP\label{sym:MIDP}) that is typically implemented on a Java-enabled cell phone or other embedded device or emulator.
+A MIDlet is a Java application framework for the Mobile Information Device Profile (MIDP\label{sym:MIDP}) that is typically carried out on a Java-enabled cell phone or other embedded device or emulator.
 
 \subsection*{RMS}
 \label{sec:RMS}
 \label{sym:RMS}
-The Java ME Record Management System (RMS) provides a mechanism through which MIDlets can persistently store data and retrieve it later.\cite{J2MERecordManagementStore}
+The Java ME Record Management System (RMS) provides a mechanism through which MIDlets can persistently store data and retrieve it later. \cite{J2MERecordManagementStore}
 
 \subsection*{JAD}
 \label{sec:JAD}
 \label{sym:JAD}
 
-The Java Application Descriptor (JAD) file, as the name implies, describes a \textit{MIDlet} suite. The description includes the name of the MIDlet suite, the location and size of the JAR file, and the configuration and profile requirements. The file may also contain other attributes, defined by the Mobile Information Device Profile (MIDP), by the developer, or both.\cite{LearningPathMIDletLifeCycle}
+The Java Application Descriptor (JAD) file, as the name implies, describes a \textit{MIDlet} suite. The description includes the name of the MIDlet suite, the location and size of the JAR file, and the configuration and profile requirements. The file may also contain other attributes, defined by the Mobile Information Device Profile (MIDP), by the developer, or both. \cite{LearningPathMIDletLifeCycle}
 
 
 \subsection*{SSL}
 \label{sec:SSL}
 \label{sym:SSL}
 
-Secure Sockets Layer (SSL), is a cryptographic protocol which provides security and data integrity for communications over networks such as the Internet.\cite{SSLAtWiKi}
+Secure Sockets Layer (SSL), is a cryptographic protocol which provides security and data integrity for communications over networks such as the Internet. \cite{SSLAtWiKi}
 
 
 \subsection*{SIP}
 \label{sec:SIP}
 \label{sym:SIP}
 
-Session Initiation Protocol (SIP) is an application-layer control (signaling) protocol for creating, modifying, and terminating sessions with one or more participants. These sessions include Internet telephone calls, multimedia distribution, and multimedia conferences.\cite{RFC3261}
+Session Initiation Protocol (SIP) is an application-layer control (signaling) protocol for creating, modifying, and terminating sessions with one or more participants. These sessions include Internet telephone calls, multimedia distribution, and multimedia conferences. \cite{RFC3261}
 
 SIP is the format of control signal in VoIP. It describes the sender, receiver. A agent use SIP messages to register on a proxy, establish session or close session. 
+
+\subsection*{VoIP}
+\label{sec:VoIP}
+\label{sym:VoIP}
+
+\textit{``Internet telephony refers to communications services\textthreequartersemdash{}voice, facsimile, and/or voice-messaging applications\textthreequartersemdash{}that are transported via the Internet, rather than the public switched telephone network (PSTN). The basic steps involved in originating an Internet telephone call are conversion of the analog voice signal to digital format and compression/translation of the signal into Internet protocol (IP) packets for transmission over the Internet; the process is reversed at the receiving end.''} \cite{VoIPtheProtocol}
+
+
+\subsection*{IMS}
+\label{sec:IMS}
+\label{sym:IMS}
+
+The IP multimedia Subsystem (IMS) is a network functional architecture that is seen as a promising solution for facilitating multimedia service creation and deployment, as well as supporting interoperability and network convergence. \cite{IMSInNextGenerationNetworks}
+
+
 
 \subsection*{SDP}
 \label{sec:SDP}
 \label{sym:SDP}
 
-SDP is short for Session Description Protocol. It is intended for describing multimedia sessions for the purposes of session announcement, session invitation, and other forms of multimedia session initiation.\cite{RFC4566}
+SDP is short for Session Description Protocol. It is intended for describing multimedia sessions for the purposes of session announcement, session invitation, and other forms of multimedia session initiation.  \cite{RFC4566}
 
-A SIP message may carry a SDP message. The SDP message contains protocol version, session name, information, and most important, the connection data and media descriptions. This supplies a way to manipulate the connection of media flow. 
+A SIP message may carry a SDP message. The SDP message contains protocol version, session name, information, and most important, the connection data and media descriptions. This supplies a way to manipulate the connection of media flow.  \cite{RFC4566}
 
 \subsection*{RTP}
 \label{sec:RTP}
 \label{sym:RTP}
 
-RTP, the real-time transport protocol, provides end-to-end network transport functions suitable for applications transmitting real-time data, such as audio, video or simulation data, over multicast or unicast network services.\cite{RFC3550}
+RTP, the real-time transport protocol, provides end-to-end network transport functions suitable for applications transmitting real-time data, such as audio, video or simulation data, over multicast or unicast network services. \cite{RFC3550}
 
 \subsection*{Web Service}
-\label{sec:WebService}
 
-A web service is defined by the W3C as \textit{``A software system designed to support interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically WSDL). Other systems interact with the Web service in a manner prescribed by its description using SOAP-messages, typically conveyed using HTTP with an XML serialization in conjunction with other Web-related standards.''}.\cite{WebServicesW3C}
+A web service is defined by the W3C as \textit{``A software system designed to support interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically WSDL). Other systems interact with the Web service in a manner prescribed by its description using SOAP-messages, typically conveyed using HTTP with an XML serialization in conjunction with other Web-related standards.''}. \cite{WebServicesW3C}
 
 \subsection*{SOAP}
 \label{sec:SOAP}
 \label{sym:SOAP}
 
-SOAP is a lightweight protocol intended for exchanging structured information in a decentralized, distributed environment. It uses XML technologies, an extensible messaging framework containing a message construct that can be exchanged over a variety of underlying protocols.\cite{SOAPVersion1dot2}
+\textit{``SOAP is a lightweight protocol intended for exchanging structured information in a decentralized, distributed environment. It uses XML technologies, an extensible messaging framework containing a message construct that can be exchanged over a variety of underlying protocols.''} \cite{SOAPVersion1dot2}
 
 \subsection*{WSDL}
 \label{sec:WSDL}
 \label{sym:WSDL}
 
-WSDL is an XML format for describing network services as a set of endpoints operating on messages containing either document-oriented or procedure-oriented information.\cite{WSDL1dot1} 
+\textit{``WSDL is an XML format for describing network services as a set of endpoints operating on messages containing either document-oriented or procedure-oriented information.''} \cite{WSDL1dot1} 
 
 \subsection*{PSTN}
 \label{sym:PSTN} 
 \label{sec:PSTN}
 
 PSTN is short for Public Switched Telephone Network. It is the network of the world's public circuit-switched telephone networks. In another word, it is just the traditional phone network.
+
+\subsection*{ISDN}
+\label{sym:ISDN} 
+\label{sec:ISDN}
+
+Integrated Services Digital Network (ISDN) is a telephone system network.
+
+\subsection*{ISUP}
+\label{sym:ISUP} 
+\label{sec:ISUP}
+
+The ISDN User Part or ISUP is control signal of Public Switched Telephone Networks (PSTN).
+
+\subsection*{GSM}
+\label{sym:GSM} 
+\label{sec:GSM}
+
+\textit{``GSM (Global System for Mobile communications) is an open, digital cellular technology used for transmitting mobile voice and data services.''} \cite{GSMTheTechnology} More about GSM could be found at the web site of GSM world (\href{http://www.gsmworld.com/}{http://www.gsmworld.com/}). 
+
+
