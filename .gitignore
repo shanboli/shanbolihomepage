@@ -26,4 +26,6 @@
 *.mtc
 *.mtc0
 *.undo
+CV.log
+CV.dvi
 desktop.ini

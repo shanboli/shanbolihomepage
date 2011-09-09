@@ -10,64 +10,64 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=143
-CaretPos.Y=457
+CaretPos.X=52
+CaretPos.Y=656
 CharSet=def
 FileName=CV.tex
 FoldedLines=
 IsMainFile=yes
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=461
+ScrollPos.Y=665
 SearchListCount=7
 
 [Files\0\SearchList\0]
 CaseSensitive=no
 Color=255
 RegExp=no
-Show=0
+Show=1
 Text=api/framework
 
 [Files\0\SearchList\1]
 CaseSensitive=no
 Color=255
 RegExp=no
-Show=0
+Show=1
 Text=commer
 
 [Files\0\SearchList\2]
 CaseSensitive=no
 Color=255
 RegExp=no
-Show=0
+Show=1
 Text=commercial
 
 [Files\0\SearchList\3]
 CaseSensitive=no
 Color=255
 RegExp=no
-Show=0
+Show=1
 Text=project management tool
 
 [Files\0\SearchList\4]
 CaseSensitive=no
 Color=255
 RegExp=no
-Show=0
+Show=1
 Text=project managment
 
 [Files\0\SearchList\5]
 CaseSensitive=no
 Color=255
 RegExp=no
-Show=0
+Show=1
 Text=on the way
 
 [Files\0\SearchList\6]
 CaseSensitive=yes
 Color=255
 RegExp=no
-Show=0
+Show=1
 Text=ERICSSON
 
 [Files\0]
