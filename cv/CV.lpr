@@ -10,15 +10,15 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=52
-CaretPos.Y=656
+CaretPos.X=17
+CaretPos.Y=217
 CharSet=def
 FileName=CV.tex
 FoldedLines=
 IsMainFile=yes
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=665
+ScrollPos.Y=197
 SearchListCount=7
 
 [Files\0\SearchList\0]
