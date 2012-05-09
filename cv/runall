@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 latex CV_a4
 latex CV_a4
 pdflatex CV_a4

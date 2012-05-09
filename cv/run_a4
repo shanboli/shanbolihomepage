@@ -1,0 +1,5 @@
+#!/bin/bash
+latex CV_a4
+latex CV_a4
+pdflatex CV_a4
+open CV_a4.pdf
